@@ -142,6 +142,40 @@
         font-size: 15px;
       }
     }
+
+    @media screen and (max-width: 1030px) {
+      .normalNews {
+        width: 100%
+      }
+
+      .features {
+        font-size: 3em;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .features {
+        font-size: 1em
+      }
+    }
+
+    table, th, td {
+      border: 1px solid rgb(150,150,150);
+      background-color: rgb(220,220,220);
+    }
+
+    td {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      color: black
+    }
+
+    @media screen and (max-width: 800px) {
+      td {
+        font-size: 10px
+      }
+    }
+    
   </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
@@ -213,6 +247,7 @@
                 <p style="font-size:20px;">What is Stats Home?</p>
                 <p>Stats home is the new way to view specific players past results, as well as their accolades and mention history.</p>
                 <p>It's easy to use! Simply select a player from the drop down list below, and the stats will load for you! Everything should be self explanatory.</p>
+                <p>Numbers are marked as Average/Total (e.g. it will show 3.5/7 if the total is 7 over two games)</p>
           </div>
             <br><br><br><br>            
             <form>
@@ -234,42 +269,57 @@
             <div class="column right">
               <table class="" style="width: 80%">
               <tr>
-                <td><h3 class="features">Points per game: <strong id="points">20</strong></h3><br><br></td>
-                <td><h3 class="features">Finishes: <strong id="finishes">20</strong></h3></td>
+                <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; "><h3 class="features">Points: <strong id="points">20</strong></h3><br><br></div>
+                <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; "><h3 class="features">Finishes: <strong id="finishes">20</strong></h3></div>
               </tr>
               <tr>
-                <td><h3 class="features">Midranges: <strong id="midranges">20</strong></h3></td>
-                <td><h3 class="features">3-Pointers: <strong id="threepointers">20</strong></h3></td>
+                <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; "><h3 class="features">Midranges: <strong id="midranges">20</strong></h3></div>
+                <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; "><h3 class="features">3-Pointers: <strong id="threepointers">20</strong></h3></div>
               </tr>
               </table>
               <br>
               <table class="features" style="width: 75%; height:auto">
                 <tr>
-                  <td><h3>Accolades</h3></td>
+                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; width: 100%; margin-bottom: 30px; text-align: left;"><h3>Accolades</h3></div>
                 </tr>
                 <br>
                 <tr>
-                  <td><h3>1. <strong id="accolade1"></strong></h3></td>
-                  <td><h3>5. <strong id="accolade5"></strong></h3></td>
+                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>1. <strong id="accolade1"></strong></h3></div>
+                    <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>2. <strong id="accolade2"></strong></h3></div>
                 </tr>
                 <br>
                 <tr>
-                  <td><h3>2. <strong id="accolade2"></strong></h3></td>
-                  <td><h3>6. <strong id="accolade6"></strong></h3></td>
+                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>3. <strong id="accolade3"></strong></h3></div>
+                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>4. <strong id="accolade4"></strong></h3></div>
                 </tr>
                 <br>
                 <tr>
-                  <td><h3>3. <strong id="accolade3"></strong></h3></td>
-                  <td><h3>7. <strong id="accolade7"></strong></h3></td>
+                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>5. <strong id="accolade5"></strong></h3></div>
+                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>6. <strong id="accolade6"></strong></h3></div>
                 </tr>
                 <tr>
-                  <td><h3>4. <strong id="accolade4"></strong></h3></td>
-                  <td><h3>8. <strong id="accolade8"></strong></h3></td>
+                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>7. <strong id="accolade7"></strong></h3></div>
+                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>8. <strong id="accolade8"></strong></h3></div>
                 </tr>
               </table>
               <br><br><br>
-              <h3 class="features" style="position: relative; top: 30px">History: <strong id="history"></strong></h3>
+              <h3 class="features" style="position: relative; top: 30px; margin-left: 10px;">History: <strong id="history"></strong></h3>
             </div>
+          </div>
+          <div>
+            <br><br><br>
+            <p style="font-size: 30px">Past Results</p>
+            <table style="width: 100%; text-align: center;">
+              <tr>
+                <td>Date</td>
+                <td>Points</td>
+                <td>Finishes</td>
+                <td>Midranges</td>
+                <td>Three Pointers</td>
+              </tr>
+              <tr id="dOne"></tr>
+              <tr id="dTwo"></tr>
+            </table>
           </div>
         </div>
     </div>
@@ -305,63 +355,7 @@
       </div>
     </div>
   </div>
-  <script type="text/javascript">
-	let images = ['./images/one.jpg','./images/two.jpg','./images/three.jpg'];
-  let main = document.getElementById("main")
-  let points = document.getElementById("points")
-  let finishes = document.getElementById("finishes")
-  let midranges = document.getElementById("midranges")
-  let threepointers = document.getElementById("threepointers")
-  let accolade1 = document.getElementById("accolade1")
-  let accolade2 = document.getElementById("accolade2")
-  let accolade3 = document.getElementById("accolade3")
-  let accolade4 = document.getElementById("accolade4")
-  let accolade5 = document.getElementById("accolade5")
-  let accolade6 = document.getElementById("accolade6")
-  let accolade7 = document.getElementById("accolade7")
-  let accolade8 = document.getElementById("accolade8")
-  let history = document.getElementById("history")
-  let TeamImage = document.getElementById("TeamImage")
-  let PlayerImage = document.getElementById("PlayerImage")
-  let number = -1
-  let mainArea = document.getElementById("mainArea")
-  mainArea.style.display = "none"
-
-  
-	let selectDiv = document.getElementById('changer');
-	selectDiv.addEventListener('change',function(e){
-
-  switch (e.target.value) {
-    case 'zero' :
-      number = 0
-      break;
-    case 'one' :
-      number = 1
-      break;
-    case 'two' :
-      number = 2
-      break;
-  }
-	
-  points.innerHTML = mainArray.PPG[number]
-  finishes.innerHTML = mainArray.Finishes[number]
-  midranges.innerHTML = mainArray.Midranges[number]
-  threepointers.innerHTML = mainArray.threepointers[number]
-  accolade1.innerHTML = mainArray.AccoladesOne[number]
-  accolade2.innerHTML = mainArray.AccoladesTwo[number]
-  accolade3.innerHTML = mainArray.AccoladesThree[number]
-  accolade4.innerHTML = mainArray.AccoladesFour[number]
-  accolade5.innerHTML = mainArray.AccoladesFive[number]
-  accolade6.innerHTML = mainArray.AccoladesSix[number]
-  accolade7.innerHTML = mainArray.AccoladesSeven[number]
-  accolade8.innerHTML = mainArray.AccoladesEight[number]
-  history.innerHTML = mainArray.History[number]
-  TeamImage.src = mainArray.TeamImage[number]
-  PlayerImage.src = mainArray.PlayerImage[number]
-  mainArea.style.display = ''
-	});
-		
-
+  <script src="../js/Stats.js">
 </script>
   <script src="heading.js"></script>
   <script src="Array.js"></script>
