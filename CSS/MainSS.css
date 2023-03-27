@@ -2924,6 +2924,13 @@ html {
   filter: brightness(100%);
 }
 
+.stats {
+  background-image: url("../Images/Stats.jpg");
+  filter: brightness(100%);
+  background-repeat: repeat;
+  background-size: auto;
+}
+
 .mvp {
   background-image: url("../Images/jokic-mvp.jpg");
 }
@@ -3127,6 +3134,11 @@ html {
   width:48%;
 }
 
+.mainHeading {
+  font-size: 150px;
+  line-height: 180px;
+}
+
 @media screen and (max-width: 800px) {
   .normalNews{
     width: 100%;
@@ -3138,6 +3150,11 @@ html {
   .news-image { 
     height: auto;
     width: 20%;
+  }
+
+  .mainHeading {
+    font-size: 100px;
+    line-height: 120px;
   }
 }
 
@@ -3155,5 +3172,10 @@ html {
 
   .lessImportantImage {
     display: none;
+  }
+
+  .mainHeading {
+    font-size: 50px;
+    line-height: 70px;
   }
 }
