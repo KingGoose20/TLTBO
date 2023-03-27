@@ -6,7 +6,7 @@ mainArray = {
     "Midranges":[2,8],
     "threepointers":[3,21],
     "AccoladesOne":["MVP","dwdw"],
-    "AccoladesTwo":["LVP","fet"],
+    "AccoladesTwo":["Teammate of the Term","fet"],
     "AccoladesThree":["QVP","iuh"],
     "AccoladesFour":["DWd","iujj"],
     "AccoladesFive":["wdds","mmm"],

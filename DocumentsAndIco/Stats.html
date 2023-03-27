@@ -104,6 +104,44 @@
       font-size: 30px;
       line-height: 50px;
     }
+
+    .teamImage {
+        width: 80%;
+        height: auto;
+      }
+
+    .playerImage {
+      width: 90%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 1250px) {
+      .column {
+        width: 100%;
+      }
+
+      .teamImage {
+        width: 40%;
+        float: left;
+        position: relative;
+        top: 200px
+      }
+
+      .playerImage {
+        width: 50%;
+        float: right;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .teamImage {
+        top: 50px;
+      }
+
+      h3 {
+        font-size: 15px;
+      }
+    }
   </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
@@ -180,18 +218,18 @@
             <form>
                 <select id="changer" style="width: 40%">
                     <option disabled selected value="none">Choose a player</option>
-                    <option value="one">Player one</option>
-                    <option value="two">Player two</option>
-                    <option value="three">Player three</option>
+                    <option value="zero">Player one</option>
+                    <option value="one">Player two</option>
+                    <option value="two">Player three</option>
                 </select>
             </form>
         </div>
         <div class="section accent" id="main" style="min-height: 700px;">
-          <div class="row">
+          <div class="row" id="mainArea">
             <div class="column left">
-              <img src="../Images/LG_Final.png" style="width: 80%; height: auto;" id="TeamImage"/>
+              <img src="../Images/Logo.png" class="teamImage" id="TeamImage"/>
               <br>
-              <img src="../Images/Angus.png" style="width: 90%; height: auto;" id="PlayerImage"/>
+              <img src="../Images/Player Images/Chris.jpg" class="playerImage" id="PlayerImage"/>
             </div>
             <div class="column right">
               <table class="" style="width: 80%">
@@ -205,7 +243,7 @@
               </tr>
               </table>
               <br>
-              <table class="features" style="width: 60%">
+              <table class="features" style="width: 75%; height:auto">
                 <tr>
                   <td><h3>Accolades</h3></td>
                 </tr>
@@ -229,8 +267,8 @@
                   <td><h3>8. <strong id="accolade8"></strong></h3></td>
                 </tr>
               </table>
-              <br>
-              <h3 class="features">History: <strong id="history"></strong></h3>
+              <br><br><br>
+              <h3 class="features" style="position: relative; top: 30px">History: <strong id="history"></strong></h3>
             </div>
           </div>
         </div>
@@ -286,23 +324,24 @@
   let TeamImage = document.getElementById("TeamImage")
   let PlayerImage = document.getElementById("PlayerImage")
   let number = -1
+  let mainArea = document.getElementById("mainArea")
+  mainArea.style.display = "none"
 
   
 	let selectDiv = document.getElementById('changer');
 	selectDiv.addEventListener('change',function(e){
-	
-	if(e.target.value == "one"){
-  number = 0
-	}
 
-	if(e.target.value == "two"){
-  number = 1
-	}
-
-	if(e.target.value == "three"){
-	let ImageThree = images[2];
-	main.style.backgroundColor = 'green';
-	}
+  switch (e.target.value) {
+    case 'zero' :
+      number = 0
+      break;
+    case 'one' :
+      number = 1
+      break;
+    case 'two' :
+      number = 2
+      break;
+  }
 	
   points.innerHTML = mainArray.PPG[number]
   finishes.innerHTML = mainArray.Finishes[number]
@@ -319,6 +358,7 @@
   history.innerHTML = mainArray.History[number]
   TeamImage.src = mainArray.TeamImage[number]
   PlayerImage.src = mainArray.PlayerImage[number]
+  mainArea.style.display = ''
 	});
 		
 
