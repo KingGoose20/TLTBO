@@ -14,7 +14,7 @@
   
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
-  <title>Ladder | TLTBO</title>
+  <title>Stats | TLTBO</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="../CSS/MainSS.css" rel="stylesheet" type="text/css" />
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript">
@@ -27,7 +27,6 @@
     });
   </script>
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" />
-  
 </head>
 
 <body>
@@ -64,9 +63,47 @@
             width: 50%;
 		}
 
-        option {
-            font-family: sans-serif;
-        }
+    option {
+      font-family: sans-serif;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+
+      /* Create two unequal columns that floats next to each other */
+    .column {
+      float: left;
+      padding: 10px;
+    }
+
+    .left {
+      width: 25%;
+    }
+
+    .right {
+      width: 75%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .features {
+      float: left; 
+      width: 100%; 
+      text-align: left;
+      line-height: 70px;
+      margin-left: 40px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 50px;
+    }
   </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
@@ -150,10 +187,56 @@
             </form>
         </div>
         <div class="section accent" id="main" style="min-height: 700px;">
+          <div class="row">
+            <div class="column left">
+              <img src="../Images/LG_Final.png" style="width: 80%; height: auto;" id="TeamImage"/>
+              <br>
+              <img src="../Images/Angus.png" style="width: 90%; height: auto;" id="PlayerImage"/>
+            </div>
+            <div class="column right">
+              <table class="" style="width: 80%">
+              <tr>
+                <td><h3 class="features">Points per game: <strong id="points">20</strong></h3><br><br></td>
+                <td><h3 class="features">Finishes: <strong id="finishes">20</strong></h3></td>
+              </tr>
+              <tr>
+                <td><h3 class="features">Midranges: <strong id="midranges">20</strong></h3></td>
+                <td><h3 class="features">3-Pointers: <strong id="threepointers">20</strong></h3></td>
+              </tr>
+              </table>
+              <br>
+              <table class="features" style="width: 60%">
+                <tr>
+                  <td><h3>Accolades</h3></td>
+                </tr>
+                <br>
+                <tr>
+                  <td><h3>1. <strong id="accolade1"></strong></h3></td>
+                  <td><h3>5. <strong id="accolade5"></strong></h3></td>
+                </tr>
+                <br>
+                <tr>
+                  <td><h3>2. <strong id="accolade2"></strong></h3></td>
+                  <td><h3>6. <strong id="accolade6"></strong></h3></td>
+                </tr>
+                <br>
+                <tr>
+                  <td><h3>3. <strong id="accolade3"></strong></h3></td>
+                  <td><h3>7. <strong id="accolade7"></strong></h3></td>
+                </tr>
+                <tr>
+                  <td><h3>4. <strong id="accolade4"></strong></h3></td>
+                  <td><h3>8. <strong id="accolade8"></strong></h3></td>
+                </tr>
+              </table>
+              <br>
+              <h3 class="features">History: <strong id="history"></strong></h3>
+            </div>
+          </div>
         </div>
     </div>
   </div>
-  <div class="section accent">
+  <div class="section">
     <div class="w-container">
       <div class="footer">
         <div class="w-container">
@@ -186,18 +269,34 @@
   </div>
   <script type="text/javascript">
 	let images = ['./images/one.jpg','./images/two.jpg','./images/three.jpg'];
-    let main = document.getElementById("main")
+  let main = document.getElementById("main")
+  let points = document.getElementById("points")
+  let finishes = document.getElementById("finishes")
+  let midranges = document.getElementById("midranges")
+  let threepointers = document.getElementById("threepointers")
+  let accolade1 = document.getElementById("accolade1")
+  let accolade2 = document.getElementById("accolade2")
+  let accolade3 = document.getElementById("accolade3")
+  let accolade4 = document.getElementById("accolade4")
+  let accolade5 = document.getElementById("accolade5")
+  let accolade6 = document.getElementById("accolade6")
+  let accolade7 = document.getElementById("accolade7")
+  let accolade8 = document.getElementById("accolade8")
+  let history = document.getElementById("history")
+  let TeamImage = document.getElementById("TeamImage")
+  let PlayerImage = document.getElementById("PlayerImage")
+  let number = -1
+
+  
 	let selectDiv = document.getElementById('changer');
 	selectDiv.addEventListener('change',function(e){
 	
 	if(e.target.value == "one"){
-	let ImageOne = images[0];
-	main.style.backgroundColor = 'red';
+  number = 0
 	}
 
 	if(e.target.value == "two"){
-	let ImageTwo = images[1];
-	main.style.backgroundColor = 'blue';
+  number = 1
 	}
 
 	if(e.target.value == "three"){
@@ -205,11 +304,27 @@
 	main.style.backgroundColor = 'green';
 	}
 	
+  points.innerHTML = mainArray.PPG[number]
+  finishes.innerHTML = mainArray.Finishes[number]
+  midranges.innerHTML = mainArray.Midranges[number]
+  threepointers.innerHTML = mainArray.threepointers[number]
+  accolade1.innerHTML = mainArray.AccoladesOne[number]
+  accolade2.innerHTML = mainArray.AccoladesTwo[number]
+  accolade3.innerHTML = mainArray.AccoladesThree[number]
+  accolade4.innerHTML = mainArray.AccoladesFour[number]
+  accolade5.innerHTML = mainArray.AccoladesFive[number]
+  accolade6.innerHTML = mainArray.AccoladesSix[number]
+  accolade7.innerHTML = mainArray.AccoladesSeven[number]
+  accolade8.innerHTML = mainArray.AccoladesEight[number]
+  history.innerHTML = mainArray.History[number]
+  TeamImage.src = mainArray.TeamImage[number]
+  PlayerImage.src = mainArray.PlayerImage[number]
 	});
 		
 
 </script>
   <script src="heading.js"></script>
+  <script src="Array.js"></script>
 </body>
 
 </html>

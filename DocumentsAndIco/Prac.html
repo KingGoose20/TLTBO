@@ -1,87 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Javascript</title>
-	<style type="text/css">
-		body{
-			background-size:cover;
-			background-repeat: no-repeat;
-			background-color: #eee;
-
-		}
-
-		.container{
-			width:80%;
-			margin:0 auto;
-			
-		}
-
-		.content{
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 100vh;
-		}
-
-		.inner_content form{
-			text-align: center;
-			margin-top: 0;
-		}
-
-		h1{
-			font-weight: 200;
-			text-shadow: 2px 2px 8px white;
-			margin-top: 0;
-			margin-bottom: 0;
-			font-size:5rem;
-			text-align: center;
-		}
-	</style>
-</head>
 <body>
-<div class="container">
-	<div class="content">
-		<div class="inner_content">
 
-		<h1>Hello <strong>Abhishek</strong></h1>
+<h2>Access Array Values</h2>
+<p id="demo"></p>
 
-		<form>
-			<select id="changer">
-				<option disabled selected>Choose an image</option>
-				<option value="one">Image one</option>
-				<option value="two">Image two</option>
-				<option value="three">Image three</option>
-			</select>
-		</form>
+<script>
+const myJSON = '[
+    {
+        "Name": [
+            "Angus Walker",
+            "Samuel"
+        ]
+    },
+    {
+        "Team": [
+            "Loose Gooses",
+            "5 Musketeers"
+        ]
+    }]';
+const myObj = JSON.parse(myJSON);
 
-		</div>
-	</div>
-
-</div>
-<script type="text/javascript">
-	let images = ['./images/one.jpg','./images/two.jpg','./images/three.jpg'];
-
-	let selectDiv = document.getElementById('changer');
-	selectDiv.addEventListener('change',function(e){
-	
-	if(e.target.value == "one"){
-	let ImageOne = images[0];
-	document.body.style.backgroundColor = 'red';
-	}
-
-	if(e.target.value == "two"){
-	let ImageTwo = images[1];
-	document.body.style.backgroundColor = 'blue';
-	}
-
-	if(e.target.value == "three"){
-	let ImageThree = images[2];
-	document.body.style.backgroundColor = 'green';
-	}
-	
-	});
-		
-
+document.getElementById("demo").innerHTML = myObj.cars[0];
 </script>
+
 </body>
 </html>
