@@ -160,20 +160,31 @@
     }
 
     table, th, td {
-      border: 1px solid rgb(150,150,150);
-      background-color: rgb(220,220,220);
+      border: 0.5px solid rgb(0,0,0);
+      background-color: rgb(146, 62, 9);
     }
 
-    td {
+    td, th {
       padding-top: 2px;
       padding-bottom: 2px;
-      color: black
+      color: rgb(210,210,210)
     }
 
     @media screen and (max-width: 800px) {
-      td {
+      td, th {
         font-size: 10px
       }
+    }
+
+    table {
+      position: relative;
+      border-collapse: separate;
+    }
+
+    th {
+      border: 0.5px solid rgb(0,0,0);
+      position: sticky;
+      top: 0;
     }
     
   </style>
@@ -306,20 +317,28 @@
               <h3 class="features" style="position: relative; top: 30px; margin-left: 10px;">History: <strong id="history"></strong></h3>
             </div>
           </div>
-          <div>
-            <br><br><br>
-            <p style="font-size: 30px">Past Results</p>
-            <table style="width: 100%; text-align: center;">
-              <tr>
-                <td>Date</td>
-                <td>Points</td>
-                <td>Finishes</td>
-                <td>Midranges</td>
-                <td>Three Pointers</td>
-              </tr>
-              <tr id="dOne"></tr>
-              <tr id="dTwo"></tr>
-            </table>
+          <div id="pastDetails">
+            <br><br><br><br><br><br>
+            <h3 style="font-size: 30px">Past Results</h3><br>
+            <div style="overflow-y: scroll; height: 200px;">
+              <table style="width: 100%; text-align: center;">
+                <tr style="height: 50px;">
+                  <th>Date</th>
+                  <th>Points</th>
+                  <th>Finishes</th>
+                  <th>Midranges</th>
+                  <th>Three Pointers</th>
+                </tr>
+                <tr id="dOne"></tr>
+                <tr id="dTwo"></tr>
+                <tr id="da"></tr>
+                <tr id="db"></tr>
+                <tr id="dc"></tr>
+                <tr id="dd"></tr>
+                <tr id="de"></tr>
+              </table>
+            </div>
+            <i><p>More dates can be viewed by scrolling</p></i>
           </div>
         </div>
     </div>

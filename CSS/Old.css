@@ -1373,7 +1373,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-dropdown-link.w--current {
-  color: #f5682c
+  color: #2e9dff
 }
 
 .w-nav[data-collapse="all"] .w-dropdown, .w-nav[data-collapse="all"] .w-dropdown-toggle {
@@ -1879,7 +1879,7 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-nav-link.w--current {
-  color: #f5682c
+  color: #2e9dff
 }
 
 .w-nav-menu {
@@ -2214,7 +2214,7 @@ p {
   margin-left: 10px;
   padding: 12px 30px;
   border-radius: 4px;
-  background-color: #bd3a02;
+  background-color: #69b9ff;
   -webkit-transition: background-color 300ms ease;
   transition: background-color 300ms ease;
   color: #fff;
@@ -2228,11 +2228,11 @@ p {
 }
 
 .button:hover {
-  background-color: #f5682c;
+  background-color: #2e9dff;
 }
 
 .button.w--current {
-  background-color: #f5682c;
+  background-color: #2e80b6;
 }
 
 .button.full-width {
@@ -2249,11 +2249,11 @@ p {
 }
 
 .button.tab:hover {
-  background-color: #bd3a02;
+  background-color: #2e80b6;
 }
 
 .button.tab.w--current {
-  background-color: #bd3a02;
+  background-color: #2e80b6;
 }
 
 .navigation-link {
@@ -2265,7 +2265,7 @@ p {
 }
 
 .navigation-link:hover {
-  color: #bd3a02;
+  color: #2e9dff;
 }
 
 -bar {
@@ -2276,7 +2276,7 @@ p {
   margin-top: 5px;
   margin-bottom: 0px;
   font-family: 'Bebas Neue', cursive;
-  color: #bd3a02;
+  color: #69b9ff;
   font-size: 40px;
   line-height: 40px;
   font-weight: 300;
@@ -2367,7 +2367,7 @@ p {
 
 .hero-subheading {
   margin-bottom: 40px;
-  color: #bd3a02;
+  color: #2e9dff;
   font-size: 25px;
   line-height: 25px;
   font-weight: 300;
@@ -2397,8 +2397,8 @@ p {
 }
 
 .hollow-button:hover {
-  border-color: #bd3a02;
-  color: #bd3a02;
+  border-color: #2e9dff;
+  color: #2e9dff;
 }
 
 .hollow-button.all-caps {
@@ -2480,8 +2480,8 @@ p {
   padding: 1.5rem;
   border: 0.5rem solid #fff;
   border-radius: 50%;
-  background-color: #bd3a02;
-  box-shadow: 0 0 0 1px #bd3a02;
+  background-color: #69b9ff;
+  box-shadow: 0 0 0 1px #2e9dff;
 }
 
 .champions-image {
@@ -2643,11 +2643,11 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 @media (max-width: 991px) {
 
   .hamburger-button.w--open {
-    background-color: #bd3a02;
+    background-color: #3b99d9;
   }
 
   .navigation-menu {
-    background-color: #bd3a02;
+    background-color: #3b99d9;
     align-self: right;
     font-family: 'Bebas Neue', cursive;
   }
@@ -2844,13 +2844,13 @@ html {
 }
 
 .nav-link:hover{
-  color: #bd3a02;
+  color: #2e9dff;
 }
 
 .nav-logo {
     font-size: 2.1rem;
     font-weight: 500;
-    color: #bd3a02;
+    color: #482ff7;
 }
 
 @media only screen and (max-width: 850px) {

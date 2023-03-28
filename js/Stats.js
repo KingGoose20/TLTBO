@@ -18,6 +18,8 @@ let PlayerImage = document.getElementById("PlayerImage")
 let number = -1
 let mainArea = document.getElementById("mainArea")
 mainArea.style.display = "none"
+let pastDetails = document.getElementById("pastDetails")
+pastDetails.style.display = "none"
 
 
   let selectDiv = document.getElementById('changer');
@@ -54,6 +56,7 @@ function RunMain() {
     TeamImage.src = mainArray.TeamImage[number]
     PlayerImage.src = mainArray.PlayerImage[number]
     mainArea.style.display = ''
+    pastDetails.style.display = ""
         
 
 
@@ -73,6 +76,46 @@ function RunMain() {
     "<td>" + String(dayOneArray.ThreePointers[number]) + "</td>"
 
     dayTwo = document.getElementById("dTwo")
+
+    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
+
+    dayTwo = document.getElementById("da")
+
+    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
+
+    dayTwo = document.getElementById("db")
+
+    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
+
+    dayTwo = document.getElementById("dc")
+
+    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
+
+    dayTwo = document.getElementById("dd")
+
+    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
+    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
+
+    dayTwo = document.getElementById("de")
 
     dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
     "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 

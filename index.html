@@ -102,8 +102,7 @@
   <br>
   <br>
   <div class="video-wrapper">
-    <video preload autoplay muted loop style="object-position:50% 25%;">
-      <source src="nbavideo.mp4" type="video/webm">
+    <video preload muted loop autoplay style="object-position:50% 25%;" src="Decider Final.mp4" type="video/webm" id="backgroundVideo">
       Your browser does not support the video tag.
     </video>
     <div class="header">
@@ -208,6 +207,28 @@
     </div>
   </div>
   <script src="DocumentsAndIco/heading.js"></script>
+  <script>
+    var myVid = document.getElementById("backgroundVideo");
+    switch (Math.floor(Math.random() * 4)) {
+      case 0: 
+        myVid.src = "Decider Final.mp4"
+        break;
+      case 1:
+        myVid.src = "Part 1.mp4"
+        break;
+      case 2:
+        myVid.src = "Part 2.mp4"
+        break;
+      case 3:
+        myVid.src = "Part 3.mp4"
+        break;
+    }
+
+    document.getElementById('backgroundVideo').addEventListener('loadedmetadata', function() {
+      this.currentTime = Math.floor(Math.random() * (myVid.duration - 300));
+    }, false);
+
+  </script>
 </body>
 
 </html>
