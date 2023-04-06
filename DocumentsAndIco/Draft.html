@@ -132,36 +132,31 @@
    <div class="section">
      <div class="w-container">
        <div class="LearnMore">
-         <div class="section-title-group">
-           <h2 class="section-heading centered" id="countDown">1</h2>
-           <h2 class="section-heading centered" id="countDown1">2</h2>
-           <h2 class="section-heading centered" id="countDown2">3<h2>
-         </div>
          <table style="width:100%" class="heading-hide">
             <col style="width: 20%">
             <col style="width: 40%">
             <col style="width: 40%">
             <thead>
              <tr>
-               <td><p>Pick Number</p></td>
-               <td><p>Team</p></td>
-               <td><p>Player</p></td>
+               <td><p><strong>Pick Number</strong></p></td>
+               <td><p><strong>Team</strong></p></td>
+               <td><p><strong>Player</strong></p></td>
              </tr>
             </thead>
             <tr style="height: 75px">
                <td><p>1st</p></td>
                <td><img src="../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
-               <td><p>Player Goes Here</p></td>
+               <td><p id="countDown"></p></td>
             </tr>
             <tr style="height: 75px">
                <td><p>2nd</p></td>
                <td><img src="../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
-               <td><p>Player Goes Here</p></td>
+               <td><p id="countDown1"></p></td>
              </tr>
              <tr style="height: 75px">
                <td><p>3rd</p></td>
                <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-               <td><p>Player Goes Here</p></td>
+               <td><p id="countdown2"></p></td>
              </tr>
          </table>
          <span class="inverseheading-hide"><p><b><u><i>Due to your device size, you cannot view the draft results. Please go into <span style="color: grey;">landscape mode</span> or <span style="color: grey;">open on a larger device</span> to view them.</i></u></b></p></span>
@@ -205,7 +200,7 @@
    </div>
    <script>
      // Set the date we're counting down to
-     var countDownDate = [new Date("April 6, 2023 14:20:00").getTime(), new Date("April 6, 2023 14:22:00"), new Date("April 6, 2023 14:23:00").getTime()];
+     var countDownDate = [new Date("April 6, 2023 15:36:00").getTime(), new Date("April 6, 2023 15:37:00"), new Date("April 6, 2023 15:38:00").getTime()];
      var selectedNumber = 0
      
      // Update the count down every 1 second
@@ -237,7 +232,7 @@
        
        // Output the result in an element with id=""
        allID = ["countDown", "countDown1", "countDown2"];
-       allAnswers = ["Number 1 Done", "Number 2 Poo", "Number 3 Yee"];
+       allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones"];
        document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
        + minutes + "m " + seconds + "s ";
          
