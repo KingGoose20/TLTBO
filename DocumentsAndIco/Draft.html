@@ -168,8 +168,8 @@
   </div>
   <script>
     // Set the date we're counting down to
-    var countDownDate = [new Date("April 6, 2023 14:01:00").getTime(), new Date("April 6, 2023 14:02:00"), new Date("April 6, 2023 14:03:00").getTime()];
-    alert("April Best");
+    var countDownDate = [new Date("April 6, 2023 14:20:00").getTime(), new Date("April 6, 2023 14:22:00"), new Date("April 6, 2023 14:23:00").getTime()];
+    alert("April Cool");
     var selectedNumber = 0
     
     // Update the count down every 1 second
@@ -203,11 +203,10 @@
       allID = ["countDown", "countDown1", "countDown2"];
       allAnswers = ["Number 1 Done", "Number 2 Poo", "Number 3 Yee"];
       document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s " + distance;
+      + minutes + "m " + seconds + "s ";
         
       // If the count down is over, write some text 
       if (distance < 0) {
-        alert("Done");
         document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
         selectedNumber += 1
         if (selectedNumber == 3) {
@@ -216,7 +215,7 @@
             main();
           }
       }
-    }, 1000);
+    }, 3000);
 </script>
 <script src="heading.js"></script>
 </body>
