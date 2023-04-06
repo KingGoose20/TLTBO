@@ -167,7 +167,7 @@
   </div>
   <script>
     // Set the date we're counting down to
-    var countDownDate = [new Date("April 24, 2023 08:30:00").getTime(), new Date("August 30, 2023 08:30:00").getTime()];
+    var countDownDate = [new Date("April 6, 2023 13:10:00").getTime(), new Date("August 30, 2023 08:30:00").getTime()];
     alert("April12");
     
     // Update the count down every 1 second
@@ -194,8 +194,12 @@
         
       // If the count down is over, write some text 
       if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countDown").innerHTML = "EXPIRED";
+        if (selectedNumber != 1) {
+          selectedNumber += 1
+        } else {
+          clearInterval(x);
+          document.getElementById("countDown").innerHTML = "EXPIRED";
+        }
       }
     }, 1000);
 </script>
