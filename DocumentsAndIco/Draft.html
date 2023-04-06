@@ -167,8 +167,8 @@
   </div>
   <script>
     // Set the date we're counting down to
-    var countDownDate = [new Date("April 6, 2023 13:42:00").getTime(), new Date("August 30, 2023 08:30:00").getTime()];
-    alert("April122");
+    var countDownDate = [new Date("April 6, 2023 13:46:00").getTime(), new Date("August 30, 2023 08:30:00").getTime()];
+    alert("April311");
     
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -182,7 +182,7 @@
       var minutes = 10
       var seconds = 10
       
-      selectedNumber = 0
+      var selectedNumber = 0
       
       // Find the distance between now and the count down date
       function main() {
@@ -212,7 +212,7 @@
         if (selectedNumber == 2) {
           clearInterval(x);
         } else {
-            alert("Continuing");
+            alert(selectedNumber);
             main();
           }
       }
