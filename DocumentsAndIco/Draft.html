@@ -230,7 +230,10 @@
    </div>
    <script>
      // Set the date we're counting down to
-     var countDownDate = [new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime()];
+     var countDownDate = [new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime(),
+                           new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime(),
+                           new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime() ];
+     
      var selectedNumber = 0
      
      // Update the count down every 1 second
@@ -261,8 +264,15 @@
        main()
        
        // Output the result in an element with id=""
-       allID = ["countDown", "countDown1", "countDown2"];
-       allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones"];
+       allID = ["countDown", "countDown1", "countDown2",
+                  "countDown3", "countDown4", "countDown5",
+                  "countDown6", "countDown7", "countDown8" ];
+      
+      
+       allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
+                     "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
+                     "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones" ];
+      
        document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
        + minutes + "m " + seconds + "s ";
          
@@ -270,7 +280,7 @@
        if (distance < 0) {
          document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
          selectedNumber += 1
-         if (selectedNumber == 3) {
+         if (selectedNumber == 9) {
            clearInterval(x);
          } else {
              main();
