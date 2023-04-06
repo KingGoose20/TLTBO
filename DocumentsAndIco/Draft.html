@@ -124,7 +124,8 @@
     <div class="w-container">
       <div class="LearnMore">
         <div class="section-title-group">
-          <h2 class="section-heading centered" id="">Completed</h2>
+          <h2 class="section-heading centered" id="countDown">1</h2>
+           class="section-heading centered" id="countDown1">2</h2>
         </div>
       </div>
     </div>
@@ -183,8 +184,9 @@
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
         
-      // Output the result in an element with id="demo"
-      document.getElementById("countDown").innerHTML = hours + "h "
+      // Output the result in an element with id="countDown"
+      name = ["countDown", "Countdown1"
+      document.getElementById(name[0]).innerHTML = hours + "h "
       + minutes + "m " + seconds + "s ";
         
       // If the count down is over, write some text 
