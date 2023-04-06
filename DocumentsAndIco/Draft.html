@@ -175,9 +175,11 @@
     
       // Get today's date and time
       var now = new Date().getTime();
-        
+      
+      selectedNumber = 0
+      
       // Find the distance between now and the count down date
-      var distance = countDownDate[1] - now;
+      var distance = countDownDate[selectedNumber] - now;
         
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -187,7 +189,6 @@
         
       // Output the result in an element with id=""
       allID = ["countDown", "countDown1"];
-      selectedNumber = 1
       document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
         
