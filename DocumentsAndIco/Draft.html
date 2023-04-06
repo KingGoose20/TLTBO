@@ -168,7 +168,7 @@
   <script>
     // Set the date we're counting down to
     var countDownDate = new Date("April 24, 2023 08:30:00").getTime();
-    alert("April1");
+    alert("April2");
     
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -187,8 +187,8 @@
         
       // Output the result in an element with id="countDown"
       name = ["countDown", "countDown1"];
-      namesss = "countDown";
-      document.getElementById(namesss).innerHTML = days + "d " + hours + "h "
+      namesss = ["countDown"];
+      document.getElementById(namesss[0]).innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
         
       // If the count down is over, write some text 
