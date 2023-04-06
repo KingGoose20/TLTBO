@@ -125,7 +125,8 @@
       <div class="LearnMore">
         <div class="section-title-group">
           <h2 class="section-heading centered" id="countDown">1</h2>
-           <h2 class="section-heading centered" id="countDown1">2</h2>
+          <h2 class="section-heading centered" id="countDown1">2</h2>
+          <h2 class="section-heading centered" id="countDown2">3<h2>
         </div>
       </div>
     </div>
@@ -167,8 +168,8 @@
   </div>
   <script>
     // Set the date we're counting down to
-    var countDownDate = [new Date("April 6, 2023 13:51:00").getTime(), new Date("August 30, 2023 08:30:00").getTime()];
-    alert("April15");
+    var countDownDate = [new Date("April 6, 2023 13:58:00").getTime(), new Date("April 6, 2023 13:59:00", new Date("April 6, 2023 14:00:00").getTime()];
+    alert("April Best");
     var selectedNumber = 0
     
     // Update the count down every 1 second
@@ -199,19 +200,19 @@
       main()
       
       // Output the result in an element with id=""
-      allID = ["countDown", "countDown1"];
+      allID = ["countDown", "countDown1", "countDown2"];
+      allAnswers = ["Number 1 Done", "Number 2 Poo", "Number 3 Yee"];
       document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s " + distance;
         
       // If the count down is over, write some text 
       if (distance < 0) {
         alert("Done");
-        document.getElementById(allID[selectedNumber]).innerHTML = "EXPIRED";
+        document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
         selectedNumber += 1
-        if (selectedNumber == 2) {
+        if (selectedNumber == 3) {
           clearInterval(x);
         } else {
-            alert(selectedNumber);
             main();
           }
       }
