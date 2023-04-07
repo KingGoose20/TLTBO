@@ -303,11 +303,10 @@
    }
 </script>
    <script>
-     rainConfetti()
      // Set the date we're counting down to
-     var countDownDate = [new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime(),
-                           new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime(),
-                           new Date("April 6, 2023 15:46:00").getTime(), new Date("April 6, 2023 15:46:20"), new Date("April 6, 2023 15:46:40").getTime() ];
+     var countDownDate = [new Date("April 7, 2023 13:33:00").getTime(), new Date("April 7, 2023 13:33:20"), new Date("April 7, 2023 13:33:40").getTime(),
+                           new Date("April 7, 2023 13:34:00").getTime(), new Date("April 7, 2023 13:34:20"), new Date("April 7, 2023 13:34:40").getTime(),
+                           new Date("April 7, 2023 13:35:00").getTime(), new Date("April 7, 2023 13:35:20"), new Date("April 7, 2023 13:35:40").getTime() ];
      
      var selectedNumber = 0
      
@@ -355,6 +354,7 @@
        if (distance < 0) {
          document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
          selectedNumber += 1
+         rainConfetti()
          if (selectedNumber == 9) {
            clearInterval(x);
          } else {
