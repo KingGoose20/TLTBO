@@ -66,7 +66,7 @@
   position: absolute;
   width: 1rem;
   height: 1.5rem;
-  animation: confettiRain 3s 3;
+  animation: confettiRain 3s 1;
 }
    
    
@@ -275,8 +275,7 @@
    <div id="confettissss" style="z-index: 300">
    <script>
    function rainConfetti() {
-      alert("running");
-      for(i=0; i<100; i++) {
+      for(i=0; i<200; i++) {
         // Random rotation
         var randomRotation = Math.floor(Math.random() * 360);
         // Random width & height between 0 and viewport
