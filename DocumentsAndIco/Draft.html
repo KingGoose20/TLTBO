@@ -66,7 +66,7 @@
   position: absolute;
   width: 1rem;
   height: 1.5rem;
-  animation: confettiRain 2s 5;
+  animation: confettiRain 3s 3;
 }
    
    
@@ -167,7 +167,7 @@
    <div class="hero-section centered gf" style="background-size: cover;">
      <br>
      <div data-ix="new-interaction" class="w-container">
-       <h1 class="hero-heading">The Draft3 | Term 2</h1>
+       <h1 class="hero-heading">The Draft | Term 2</h1>
        <div class="button"><i>Announced on TBD</i></div>
      </div>
    </div>
@@ -274,7 +274,8 @@
    </div>
    <div id="confettissss" style="z-index: 300">
    <script>
-   function rainConfetti(duration) {
+   function rainConfetti() {
+      alert("running");
       for(i=0; i<200; i++) {
         // Random rotation
         var randomRotation = Math.floor(Math.random() * 360);
