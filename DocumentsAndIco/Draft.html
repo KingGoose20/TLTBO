@@ -49,13 +49,13 @@
 @keyframes confettiRain {
   0% {
     opacity: 1;
-    margin-top: 100vh;
+    margin-top: -100vh;
     margin-left: -200px;
   } 
   
   100% {
     opacity: 1;
-    margin-top: 300vh;
+    margin-top: 200vh;
     margin-left: 100vw;
   }
 }
@@ -167,7 +167,7 @@
    <div class="hero-section centered gf" style="background-size: cover;">
      <br>
      <div data-ix="new-interaction" class="w-container">
-       <h1 class="hero-heading">The Draft3 | Term 2</h1>
+       <h1 class="hero-heading">The Draft | Term 2</h1>
        <div class="button"><i>Announced on TBD</i></div>
      </div>
    </div>
@@ -293,7 +293,7 @@
         // Create confetti piece
         var confetti = document.createElement('div');
         confetti.className = 'confetti';
-        confetti.style.top=randomHeight + 'px';
+        confetti.style.top=(randomHeight + 200) + 'px';
         confetti.style.left=randomWidth + 'px';
         confetti.style.backgroundColor=randomColor;
         confetti.style.transform='skew(15deg) rotate(' + randomRotation + 'deg)';
