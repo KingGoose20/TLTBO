@@ -181,7 +181,7 @@
    <div class="hero-section centered gf" style="background-size: cover;">
      <br>
      <div data-ix="new-interaction" class="w-container">
-       <h1 class="hero-heading glow">The Draft | Term 2</h1>
+       <h1 class="hero-heading">The Draft | Term 2</h1>
        <div class="button"><i>Announced on TBD</i></div>
      </div>
    </div>
@@ -318,7 +318,7 @@
 </script>
    <script>
      // Set the date we're counting down to
-     var countDownDate = [new Date("April 7, 2023 14:16:00").getTime(), new Date("April 7, 2023 14:16:20"), new Date("April 7, 2023 14:16:40").getTime(),
+     var countDownDate = [new Date("April 7, 2023 14:26:00").getTime(), new Date("April 7, 2023 14:26:20"), new Date("April 7, 2023 14:26:40").getTime(),
                            new Date("April 7, 2023 18:00:00").getTime(), new Date("April 7, 2023 18:00:20"), new Date("April 7, 2023 18:00:40").getTime(),
                            new Date("April 7, 2023 18:00:00").getTime(), new Date("April 7, 2023 18:00:20"), new Date("April 7, 2023 18:00:40").getTime() ];
      
@@ -340,7 +340,7 @@
        
        // Find the distance between now and the count down date
        function main() {
-           if (glowTick < 3) && (selectedNumber > 1) && glowOn {
+           if (glowTick < 3 && selectedNumber > 1 && glowOn) {
               glowTick += 1
            } else if (glowTick == 3) {
              glowTick = 0
@@ -379,7 +379,7 @@
          document.getElementById(allID[selectedNumber]).classList.add('glow');
          glowOn = true
          selectedNumber += 1
-         <!-- rainConfetti() -->
+         /* rainConfetti() */
          if (selectedNumber == 9) {
            clearInterval(x);
          } else {
