@@ -22,6 +22,14 @@ mainArray = {
   "PlayerImage":["../Images/Players/Jasper.png","../Images/Players/Conor.png","../Images/Players/Alex.png","../Images/Players/Rudy.png","../Images/Players/Michael.png","../Images/Players/Lukas.png","../Images/Players/Clarrie.png","../Images/Players/Kimmy.png","../Images/Players/SamM.png","../Images/Players/Ryan.png","../Images/Players/Nick.png","../Images/Players/Chris.png","../Images/Players/Angus.png","../Images/Players/Willie.png","../Images/Players/Mitch.png"]
 }
 
+dayOneArray = {
+  "Date":["29-Mar","29-Mar"],
+  "Points":[12,52],
+  "Finishes":[12,36],
+  "Midranges":[37,57],
+  "ThreePointers":[46,18]
+}
+
 dayTwoArray = {
   "Date":["29-Mar","29-Mar"],
   "Points":[12,52],
