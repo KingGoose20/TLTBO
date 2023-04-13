@@ -23,17 +23,17 @@ mainArray = {
 }
 
 dayOneArray = {
-  "Date":["29-Mar","29-Mar"],
-  "Points":[12,52],
-  "Finishes":[12,36],
-  "Midranges":[37,57],
-  "ThreePointers":[46,18]
+  "Date":["28-Mar"],
+  "Points":[5,4,5,4,5,2,3,0,1,3,2,4,2,5,5],
+  "Finishes":[1,1,5,0,2,3,4,3,5,3,0,1,2,5,5],
+  "Midrange":[2,1,2,4,3,2,0,0,1,5,5,2,3,1,3],
+  "ThreePointers":[3,2,0,6,5,3,1,5,1,3,2,4,5,5,1]
 }
 
 dayTwoArray = {
-  "Date":["29-Mar","29-Mar"],
-  "Points":[12,52],
-  "Finishes":[12,36],
-  "Midranges":[37,57],
-  "ThreePointers":[46,18]
+  "Date":["29-Mar"],
+  "Points":[1,3,1,6,4,2,5,1,2,5,2,3,1,3,1],
+  "Finishes":[1,5,5,1,3,1,3,3,4,1,2,4,1,3,3],
+  "Midrange":[6,5,1,2,5,1,3,6,4,4,5,2,6,3,2],
+  "3 Pointers":[3,1,6,3,1,5,4,3,3,4,6,4,0,5,3]
 }
