@@ -1,3 +1,4 @@
+alert("0")
 let images = ['./images/one.jpg','./images/two.jpg','./images/three.jpg'];
 let main = document.getElementById("main")
 let points = document.getElementById("points")
@@ -75,6 +76,8 @@ switch (e.target.value) {
 RunMain()
   });
 
+alert("1")
+
 function RunMain() {
     points.innerHTML = String(mainArray.PPG[number]) + "/" + String(mainArray.TP[number])
     finishes.innerHTML = String(mainArray.FPG[number]) + "/" + String(mainArray.TF[number])
@@ -96,7 +99,7 @@ function RunMain() {
         
 
 
-
+    alert("2")
 
 
 
@@ -104,6 +107,7 @@ function RunMain() {
     dayArrayOne = ["dOne", "dTwo", "da", "db", "dc", "dd", "de"]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
+      alert("start for")
       x = document.getElementById(dayArrayOne[i])
       day = dayTwoArray;
       
@@ -115,11 +119,13 @@ function RunMain() {
           day = dayOneArray;
           break;
       }
-      
+      alert("middle for")
       x.innerHTML = "<td>" + String(day.Date[0]) + "</td>" + 
       "<td>" + String(day.Points[number]) + "</td>" + 
       "<td>" + String(day.Finishes[number]) + "</td>" + 
       "<td>" + String(day.Midranges[number]) + "</td>" + 
       "<td>" + String(day.ThreePointers[number]) + "</td>"
+      
+      alert("end for")
     }
 }   
