@@ -25,7 +25,7 @@ mainArray = {
 
 dayOneArray = {
   "Date":["28-Mar","28-Mar"],
-  "Points":[1,5],
+  "Points":[4122,5],
   "Finishes":[2,6],
   "Midranges":[3,7],
   "ThreePointers":[4,8]
