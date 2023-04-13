@@ -1,4 +1,3 @@
-alert("0")
 let images = ['./images/one.jpg','./images/two.jpg','./images/three.jpg'];
 let main = document.getElementById("main")
 let points = document.getElementById("points")
@@ -75,8 +74,6 @@ switch (e.target.value) {
 }
 RunMain()
   });
-
-alert("1")
 
 function RunMain() {
     points.innerHTML = String(mainArray.PPG[number]) + "/" + String(mainArray.TP[number])
