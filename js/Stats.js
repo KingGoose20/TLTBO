@@ -116,7 +116,7 @@ function RunMain() {
           break;
       }
       
-      x.innerHTML = "<td>" + String(day.Date[number]) + "</td>" + 
+      x.innerHTML = "<td>" + String(day.Date[0]) + "</td>" + 
       "<td>" + String(day.Points[number]) + "</td>" + 
       "<td>" + String(day.Finishes[number]) + "</td>" + 
       "<td>" + String(day.Midranges[number]) + "</td>" + 
