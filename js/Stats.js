@@ -76,19 +76,24 @@ RunMain()
   });
 
 function RunMain() {
+  alert("1")
     points.innerHTML = String(mainArray.PPG[number]) + "/" + String(mainArray.TP[number])
     finishes.innerHTML = String(mainArray.FPG[number]) + "/" + String(mainArray.TF[number])
     midranges.innerHTML = String(mainArray.MPG[number]) + "/" + String(mainArray.TM[number])
+    alert("a")
     threepointers.innerHTML = String(mainArray.TPG[number]) + "/" + String(mainArray.TT[number])
     accolade1.innerHTML = mainArray.AccoladesOne[number]
     accolade2.innerHTML = mainArray.AccoladesTwo[number]
+    alert("b")
     accolade3.innerHTML = mainArray.AccoladesThree[number]
     accolade4.innerHTML = mainArray.AccoladesFour[number]
     accolade5.innerHTML = mainArray.AccoladesFive[number]
     accolade6.innerHTML = mainArray.AccoladesSix[number]
+    alert("c")
     accolade7.innerHTML = mainArray.AccoladesSeven[number]
     accolade8.innerHTML = mainArray.AccoladesEight[number]
     history.innerHTML = mainArray.History[number]
+    alert("d")
     TeamImage.src = mainArray.TeamImage[number]
     PlayerImage.src = mainArray.PlayerImage[number]
     mainArea.style.display = ''
