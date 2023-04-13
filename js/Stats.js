@@ -35,6 +35,42 @@ switch (e.target.value) {
   case 'two' :
     number = 2
     break;
+  case 'three' :
+    number = 3
+    break;
+  case 'four' :
+    number = 4
+    break;
+  case 'five' :
+    number = 5
+    break;
+  case 'six' :
+    number = 6
+    break;
+  case 'seven' :
+    number = 7
+    break;
+  case 'eight' :
+    number = 8
+    break;
+  case 'nine' :
+    number = 9
+    break;
+  case 'ten' :
+    number = 10
+    break;
+  case 'eleven' :
+    number = 11
+    break;
+  case 'twelve' :
+    number = 12
+    break;
+  case 'thirteen' :
+    number = 13
+    break;
+  case 'fourteen' :
+    number = 14
+    break;
 }
 RunMain()
   });
