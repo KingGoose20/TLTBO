@@ -101,62 +101,25 @@ function RunMain() {
 
 
     /* Past Results Section  */
-
+    dayArrayOne = ["dOne", "dTwo", "da", "db", "dc", "dd", "de"]
     
-    dayOne = document.getElementById("dOne")
-
-    dayOne.innerHTML = "<td>" + String(dayOneArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayOneArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayOneArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayOneArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayOneArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("dTwo")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("da")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("db")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("dc")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("dd")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
-    dayTwo = document.getElementById("de")
-
-    dayTwo.innerHTML = "<td>" + String(dayTwoArray.Date[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Points[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Finishes[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.Midranges[number]) + "</td>" + 
-    "<td>" + String(dayTwoArray.ThreePointers[number]) + "</td>"
-
+    for (let i = 0; i < dayArrayOne.length; i++) {
+      x = document.getElementById(dayArrayOne[i])
+      day = dayTwoArray;
+      
+      switch (i) {
+        case 0:
+          day = dayOneArray;
+          break;
+        case 3:
+          day = dayOneArray;
+          break;
+      }
+      
+      x.innerHTML = "<td>" + String(day.Date[number]) + "</td>" + 
+      "<td>" + String(day.Points[number]) + "</td>" + 
+      "<td>" + String(day.Finishes[number]) + "</td>" + 
+      "<td>" + String(day.Midranges[number]) + "</td>" + 
+      "<td>" + String(day.ThreePointers[number]) + "</td>"
+    }
 }   
