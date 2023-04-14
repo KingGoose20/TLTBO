@@ -18,7 +18,7 @@ mainArray = {
   "AccoladesSeven":["","","","","","","","","","","","","","",""],
   "AccoladesEight":["","","","","","","","","","","","","","",""],
   "History":["A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude","A not so cool dude","A cool dude"],
-  "TeamImage":["../Images/5M_Final.jpeg","../Images/5M_Final.jpeg","../Images/WW_Final.jpeg","../Images/WW_Final.jpeg","../Images/5M_Final.jpeg","../Images/5M_Final.jpeg","../Images/WW_Final.jpeg","../Images/LG_Final.jpeg","../Images/5M_Final.jpeg","../Images/WW_Final.jpeg","../Images/WW_Final.jpeg","../Images/LG_Final.jpeg","../Images/LG_Final.jpeg","../Images/WW_Final.jpeg","../Images/LG_Final.jpeg"],
+  "TeamImage":["../Images/5M_Final.png","../Images/5M_Final.png","../Images/WW_Final.png","../Images/WW_Final.png","../Images/5M_Final.png","../Images/5M_Final.png","../Images/WW_Final.png","../Images/LG_Final.png","../Images/5M_Final.png","../Images/WW_Final.png","../Images/WW_Final.png","../Images/LG_Final.png","../Images/LG_Final.png","../Images/WW_Final.png","../Images/LG_Final.png"],
   "PlayerImage":["../Images/Players/Jasper.jpeg","../Images/Players/Conor.jpeg","../Images/Players/Alex.jpeg","../Images/Players/Rudy.jpeg","../Images/Players/Michael.jpeg","../Images/Players/Lukas.jpeg","../Images/Players/Clarrie.jpeg","../Images/Players/Kimmy.jpeg","../Images/Players/SamM.jpeg","../Images/Players/Ryan.jpeg","../Images/Players/Nick.jpeg","../Images/Players/Chris.jpeg","../Images/Players/Angus.png","../Images/Players/Willie.jpeg","../Images/Players/Mitch.jpeg"]
 }
 
