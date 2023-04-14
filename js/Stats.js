@@ -100,7 +100,7 @@ function RunMain() {
     dayArrayOne = ["dOne", "dTwo", "da", "db", "dc", "dd", "de"]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
-      alert("start for")
+      alert("starting")
       x = document.getElementById(dayArrayOne[i])
       day = dayTwoArray;
       
@@ -114,8 +114,9 @@ function RunMain() {
       }
       x.innerHTML = "<td>" + String(day.Date) + "</td>" + 
       "<td>" + String(day.Points[number]) + "</td>" + 
-      "<td>" + String(day.Finishes[number]) + "</td>" + 
-      "<td>" + String(day.Midranges[number]) + "</td>" + 
+      "<td>" + String(day.Finishes[number]) + "</td>"
+      alert("made one")
+      x.innerHTML = "<td>" + String(day.Midranges[number]) + "</td>" + 
       "<td>" + String(day.ThreePointers[number]) + "</td>"
       
       alert("end for")
