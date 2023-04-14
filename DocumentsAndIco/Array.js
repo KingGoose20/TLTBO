@@ -13,7 +13,7 @@ mainArray = {
   "AccoladesTwo":["","","All-Defence Team T1","All-Offence Team T1","Thirdman T1","All-Offence Team T1","Finals MVP","All-Offence Team T1","All-Offence Team T1","Champion T1","Champion T1","","GM","Champion T1",""],
   "AccoladesThree":["","","Champion T1","All-Defence Team T1","GM","","","All-Defence Team T1","All-Defence Team T","","","","All-Offence Team T1","",""],
   "AccoladesFour":["","","","Champion T1","","","","","","","","","All-Defence Team T1","",""],
-  "AccoladesFive":["","","","","","","","","","","","","Scoring Champ T1","",0],
+  "AccoladesFive":["","","","","","","","","","","","","Scoring Champ T1","",""],
   "AccoladesSix":["","","","","","","","","","","","","","",""],
   "AccoladesSeven":["","","","","","","","","","","","","","",""],
   "AccoladesEight":["","","","","","","","","","","","","","",""],
