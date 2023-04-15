@@ -161,13 +161,19 @@
 
     table, th, td {
       border: 0.5px solid rgb(0,0,0);
-      background-color: rgb(146, 62, 9);
     }
 
     td, th {
       padding-top: 2px;
       padding-bottom: 2px;
       color: rgb(210,210,210)
+    }
+
+    table.menu, th.menu, td.menu {
+      border: none;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      color: rgb(0,0,0)
     }
 
     @media screen and (max-width: 800px) {
@@ -254,122 +260,94 @@
   <div class="hero-section centered stats">
     <br>
     <div data-ix="new-interaction" class="w-container">
-      <h1 class="hero-heading mainHeading">Stats Home</h1>
+      <h1 class="hero-heading mainHeading">Stat Tracker</h1>
       <br>
       <div>
-        <a href="#bottom" class="button">The latest addition to the LTBO website!</a>
+        <a href="#bottom" class="button">Stat Tracking App for Lunch Time</a>
       </div>
     </div>
   </div>
         <div class="section" style="padding: 60px 10px; height:auto; min-height: 500px;">
           <div class="w-container fade-in" style="height:100%">
-                <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">Stats Home</div>
-                <p style="font-size:20px;">Welcome to the latest addition to the Lunch Time Basketball Organisation Website, Stats</p>
-                <br><br><br>
-                <p style="font-size:20px;">What is Stats Home?</p>
-                <p>Stats home is the new way to view specific players past results, as well as their accolades and mention history.</p>
-                <p>It's easy to use! Simply select a player from the drop down list below, and the stats will load for you! Everything should be self explanatory.</p>
-                <p>Numbers are marked as Average/Total (e.g. it will show 3.5/7 if the total is 7 over two games)</p>
+                <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">Let's Start!</div>
           </div>
-            <br><br><br><br>            
-            <form>
-                <select id="changer" class="changer">
-                    <option disabled selected value="none">Choose a player</option>
-                    <option value="zero">Jasper Collier</option>
-                    <option value="one">Conor Farrington</option>
-                    <option value="two">Alexander Galt</option>
-                    <option value="three">Rudy Hoschke</option>
-                    <option value="four">Michael Iffland</option>
-                    <option value="five">Lukas Johnston</option>
-                    <option value="six">Clarrie Jones</option>
-                    <option value="seven">William Kim</option>
-                    <option value="eight">Samuel McConaghy</option>
-                    <option value="nine">Ryan Pattemore</option>
-                    <option value="ten">Nicholas Szogi</option>
-                    <option value="eleven">Christopher Tomkinson</option>
-                    <option value="twelve">Angus Walker</option>
-                    <option value="thirteen">Willie Weekes</option>
-                    <option value="fourteen">Mitch Yue</option>
-                </select>
+          <br><br><br>
+          <p>Choose starting teams</p>
+          <table style="width: 100%;" class="menu">
+            <tr class="menu">
+                <td class="menu">
+                    <form>
+                    <select id="aTeam" style="width:40vw">
+                        <option disabled selected value="none">Choose a starting team A</option>
+                        <option value="zero">Loose Gooses</option>
+                        <option value="one">5 Musketeers</option>
+                        <option value="two">Wet Willies</option>
+                    </select>
             </form>
+                </td>
+                <td class="menu">
+                    <form>
+                    <select id="bTeam" style="width:40vw">
+                        <option disabled selected value="none">Choose starting team B</option>
+                        <option value="three">Loose Gooses</option>
+                        <option value="four">5 Musketeers</option>
+                        <option value="five">Wet Willies</option>
+                    </select>
+            </form>
+                </td>
+            </tr>
+
+          </table>
+            <br><br>
+            <button id="startButton" onclick="start()" style="width: 40%"><p style="color: black">Start!</p></button>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>Choose the scorer and score type</p>
+            <table style="width: 100%" class="menu">
+                <tr class="menu">
+                    <td class="menu">
+                        <form>
+                        <select id="Scorer" style="width:40vw">
+                            <option disabled selected value="none">Choose the player who scored</option>
+                        </select>
+                </form>
+                    </td>
+                    <td class="menu">
+                        <form>
+                        <select id="Type" style="width:40vw">
+                            <option disabled selected value="none">Choose the type of score</option>
+                            <option value="three">Finish</option>
+                            <option value="four">Midrange</option>
+                            <option value="five">Three Pointer</option>
+                        </select>
+                </form>
+                    </td>
+                </tr>
+    
+              </table>
+              <br><br>
+              <button id="logButton" onclick="logDetails()" style="width: 40%"><p style="color: black">Log Score</p></button>
         </div>
         <div class="section accent" id="main" style="min-height: 700px;">
-          <div class="row" id="mainArea">
-            <div class="column left">
-              <img src="../Images/Logo.png" class="teamImage" id="TeamImage"/>
-              <br>
-              <img src="../Images/Player Images/Chris.jpg" class="playerImage" id="PlayerImage"/>
-            </div>
-            <div class="column right">
-              <table class="" style="width: 80%">
-              <tr>
-                <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; "><h3 class="features">Points: <strong id="points">20</strong></h3><br><br></div>
-                <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; "><h3 class="features">Finishes: <strong id="finishes">20</strong></h3></div>
-              </tr>
-              <tr>
-                <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; "><h3 class="features">Midranges: <strong id="midranges">20</strong></h3></div>
-                <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; "><h3 class="features">3-Pointers: <strong id="threepointers">20</strong></h3></div>
-              </tr>
-              </table>
-              <br>
-              <table class="features" style="width: 75%; height:auto">
-                <tr>
-                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; width: 100%; margin-bottom: 30px; text-align: left;"><h3>Accolades</h3></div>
-                </tr>
-                <br>
-                <tr>
-                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>1. <strong id="accolade1"></strong></h3></div>
-                    <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>2. <strong id="accolade2"></strong></h3></div>
-                </tr>
-                <br>
-                <tr>
-                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>3. <strong id="accolade3"></strong></h3></div>
-                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>4. <strong id="accolade4"></strong></h3></div>
-                </tr>
-                <br>
-                <tr>
-                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>5. <strong id="accolade5"></strong></h3></div>
-                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>6. <strong id="accolade6"></strong></h3></div>
-                </tr>
-                <tr>
-                  <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; text-align: left;"><h3>7. <strong id="accolade7"></strong></h3></div>
-                  <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; text-align: left;"><h3>8. <strong id="accolade8"></strong></h3></div>
-                </tr>
-              </table>
-              <br><br><br>
-              <h3 class="features" style="position: relative; top: 30px; margin-left: 10px;">History: <strong id="history"></strong></h3>
-            </div>
-          </div>
-          <div id="pastDetails">
+          <div>
             <br><br><br><br><br><br>
-            <h3 style="font-size: 30px">Past Results</h3><br>
-            <div style="overflow-y: scroll; height: 200px;">
-              <table style="width: 100%; text-align: center;">
+            <h3 style="font-size: 30px">Logged Details</h3><br>
+              <table style="width: 100%; text-align: center;" id="loggedDetails">
                 <tr style="height: 50px;">
-                  <th>Date</th>
-                  <th>Points</th>
-                  <th>Finishes</th>
-                  <th>Midranges</th>
-                  <th>Three Pointers</th>
+                  <th>Game Number</th>
+                  <th>Winner</th>
+                  <th>Loser</th>
+                  <th>Scorer</th>
+                  <th>Type</th>
+                  <th>W-Streak</th>
+                  <th>L-Streak</th>
                 </tr>
-                <tr id="dOne"></tr>
-                <tr id="dTwo"></tr>
-                <tr id="da"></tr>
-                <tr id="db"></tr>
-                <tr id="dc"></tr>
-                <tr id="dd"></tr>
-                <tr id="de"></tr>
               </table>
-            </div>
             <i><p>More dates can be viewed by scrolling on box</p></i>
           </div>
         </div>
     </div>
   </div>
   <div class="section">
-    <div>
-      <a href="../Stat Tracker/Main.html" class="button">Click here to go to day stat tracking</a>
-    </div>
     <div class="w-container">
       <div class="footer">
         <div class="w-container">
@@ -400,7 +378,7 @@
       </div>
     </div>
   </div>
-  <script src="../js/Stats.js">
+  <script src="StatTracker.js">
 </script>
   <script src="heading.js"></script>
   <script src="Array.js"></script>
