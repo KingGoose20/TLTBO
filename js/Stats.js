@@ -97,7 +97,7 @@ function RunMain() {
 
 
     /* Past Results Section  */
-    dayArrayOne = ["dOne", "dTwo", "da", "db", "dc", "dd", "de"]
+    dayArrayOne = ["dOne", "dTwo", "da", "db", "dc", "dd", "de", "df"]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
       x = document.getElementById(dayArrayOne[i])
@@ -109,6 +109,9 @@ function RunMain() {
           break;
         case 3:
           day = dayOneArray;
+          break;
+        case 7:
+          day= dayOneArray;
           break;
       }
       x.innerHTML = "<td>" + String(day.Date) + "</td>" + 
