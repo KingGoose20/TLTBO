@@ -13,7 +13,7 @@
   gtag('config', 'G-NGSFYZ4P9D');
 </script>
 
-  
+  <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
   <title>Stats | TLTBO</title>
@@ -343,8 +343,8 @@
                   <th>W-Streak</th>
                   <th>L-Streak</th>
                 </tr>
-              </table>
-            <i><p>More dates can be viewed by scrolling on box</p></i>
+              </table><br><br><br>
+              <button id="button" onclick="htmlTableToExcel('xlsx')" class="button">Export HTML Table to EXCEL</button>
           </div>
         </div>
     </div>
@@ -380,6 +380,16 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript">
+    function htmlTableToExcel(type){
+      const d = new Date();
+      CurrentDate = d.getDate() + "-" + (d.getMonth()+1)
+      var data = document.getElementById('loggedDetails');
+      var excelFile = XLSX.utils.table_to_book(data, {sheet: "sheet1"});
+      XLSX.write(excelFile, { bookType: type, bookSST: true, type: 'base64' });
+      XLSX.writeFile(excelFile, 'Results:from:' + CurrentDate + "."+ type);
+    }
+   </script>
   <script src="StatTracker.js">
 </script>
   <script src="heading.js"></script>
