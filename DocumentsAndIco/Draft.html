@@ -375,8 +375,15 @@
                      "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
                      "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones" ];
       
-       document.getElementById(allID[selectedNumber]).innerHTML = days + "d " + hours + "h "
-       + minutes + "m " + seconds + "s ";
+       function checkNotZero(variable, letter) {
+          if (variable > 0) {
+            return(variable + letter)
+          } else {
+            return("")
+          }
+       }
+       document.getElementById(allID[selectedNumber]).innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
+       + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
          
        // If the count down is over, write some text 
        if (distance < 0) {
