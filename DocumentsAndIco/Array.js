@@ -22,18 +22,10 @@ mainArray = {
   "PlayerImage":["../Images/Players/Jasper.jpeg","../Images/Players/Conor.jpeg","../Images/Players/Alex.jpeg","../Images/Players/Rudy.jpeg","../Images/Players/Michael.jpeg","../Images/Players/Lukas.jpeg","../Images/Players/Clarrie.jpeg","../Images/Players/Kimmy.jpeg","../Images/Players/SamM.jpeg","../Images/Players/Ryan.jpeg","../Images/Players/Nick.jpeg","../Images/Players/Chris.jpeg","../Images/Players/Angus.png","../Images/Players/Willie.jpeg","../Images/Players/Mitch.jpeg"]
 }
 
-dayOneArray = {
-  "Date":["28-Mar"],
+preseasonOne = {
+  "Date":["18-Apr"],
   "Points":[5,4,5,4,5,2,3,0,1,3,2,4,2,5,5],
   "Finishes":[1,1,5,0,2,3,4,3,5,3,0,1,2,5,5],
   "Midrange":[2,1,2,4,3,2,0,0,1,5,5,2,3,1,3],
   "ThreePointers":[3,2,0,6,5,3,1,5,1,3,2,4,5,5,1]
-}
-
-dayTwoArray = {
-  "Date":["29-Mar"],
-  "Points":[1,3,1,6,4,2,5,1,2,5,2,3,1,3,1],
-  "Finishes":[2,5,5,2,3,2,3,3,4,1,2,4,1,3,3],
-  "Midrange":[6,5,1,2,5,1,3,6,4,4,5,2,6,3,2],
-  "ThreePointers":[3,1,6,3,1,5,4,3,3,4,6,4,0,5,3]
 }
