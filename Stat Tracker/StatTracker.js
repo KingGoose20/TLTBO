@@ -9,6 +9,8 @@ gameNumber = 1
 LGstreak = 0
 WWstreak = 0
 Mstreak = 0
+Sstreak = 1
+pastScorer = ""
 
 
 function start() {
@@ -126,7 +128,12 @@ function logDetails() {
         lStreak = Mstreak * -1
     }
 
-
+    if (Scorer.options[Scorer.selectedIndex].text == pastScorer) {
+        sStreak += 1
+    } else {
+        pastScorer = Scorer.options[Scorer.selectedIndex].text;
+        sStreak = 1
+    }
 
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -135,6 +142,7 @@ function logDetails() {
     var cell5 = row.insertCell(4);
     var cell6 = row.insertCell(5);
     var cell7 = row.insertCell(6);
+    var cell8 = row.insertCell(7);
 
     cell1.innerHTML = gameNumber;
     cell2.innerHTML = winner;
@@ -143,6 +151,7 @@ function logDetails() {
     cell5.innerHTML = Type.options[Type.selectedIndex].text;
     cell6.innerHTML = wStreak;
     cell7.innerHTML = lStreak;
+    cell8.innerHTML = sStreak;
     gameNumber += 1;
     newTeams(winner)
     alert("Logged!")

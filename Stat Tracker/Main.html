@@ -29,6 +29,12 @@
     });
   </script>
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" />
+  <script>
+    window.addEventListener('beforeunload', function (e) {
+      e.preventDefault();
+      e.returnValue = '';
+    });
+  </script>
 </head>
 
 <body>
@@ -342,6 +348,7 @@
                   <th>Type</th>
                   <th>W-Streak</th>
                   <th>L-Streak</th>
+                  <th>S-Streak</th>
                 </tr>
               </table><br><br><br>
               <button id="button" onclick="htmlTableToExcel('xlsx')" class="button">Export HTML Table to EXCEL</button>
