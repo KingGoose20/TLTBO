@@ -78,10 +78,10 @@ RunMain()
   });
 
 function RunMain() {
-    points.innerHTML = String(mainArray.PPG[number]) + "/" + String(mainArray.TP[number])
-    finishes.innerHTML = String(mainArray.FPG[number]) + "/" + String(mainArray.TF[number])
-    midranges.innerHTML = String(mainArray.MPG[number]) + "/" + String(mainArray.TM[number])
-    threepointers.innerHTML = String(mainArray.TPG[number]) + "/" + String(mainArray.TT[number])
+    points.innerHTML = String(mainArray.PPG[number]) + "-" + String(mainArray.TP[number])
+    finishes.innerHTML = String(mainArray.FPG[number]) + "-" + String(mainArray.TF[number])
+    midranges.innerHTML = String(mainArray.MPG[number]) + "-" + String(mainArray.TM[number])
+    threepointers.innerHTML = String(mainArray.TPG[number]) + "-" + String(mainArray.TT[number])
     accolade1.innerHTML = mainArray.AccoladesOne[number]
     accolade2.innerHTML = mainArray.AccoladesTwo[number]
     accolade3.innerHTML = mainArray.AccoladesThree[number]
