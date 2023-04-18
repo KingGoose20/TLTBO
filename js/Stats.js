@@ -71,6 +71,8 @@ switch (e.target.value) {
   case 'fourteen' :
     number = 14
     break;
+  case 'fifteen' :
+    number = 15
 }
 RunMain()
   });
