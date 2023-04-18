@@ -190,9 +190,9 @@
    <div class="section">
      <div class="w-container">
        <div class="LearnMore">
-          <p>The <strong>Wet Willies</strong> will be retaining: <strong>¶¢ϐ¢›≥≤ œæϐˆµ«˘ⵇØ</strong></p>
-          <p>The <strong>5 Musketeers</strong> will be retaining: <strong>ᕕ¿˘ØӘɲ≥˘´ ΩӘ¿ı</strong></p>
-          <p>The <strong>Loose Gooses</strong> will be retaining: <strong>𝞜°¿¿°Ә›≥† ª°›Ø°ⵇ</strong></p>
+          <p>The <strong>Wet Willies</strong> will be retaining: <strong>Rudy Hoschke</strong></p>
+          <p>The <strong>5 Musketeers</strong> will be retaining: <strong>Alexander Galt (via the Wet Willies)</strong></p>
+          <p>The <strong>Loose Gooses</strong> will be retaining: <strong>William Kim</strong></p>
           <br><br>
          <table style="width:100%" class="heading-hide">
             <col style="width: 20%">
@@ -250,6 +250,11 @@
                <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                <td><p id="countDown8"></p></td>
              </tr>
+             <tr style="height: 75px">
+              <td><p>10th</p></td>
+              <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
+              <td><p id="countDown9"></p></td>
+            </tr>
          </table>
          <span class="inverseheading-hide"><p><b><u><i>Due to your device size, you cannot view the draft results. Please go into <span style="color: grey;">landscape mode</span> or <span style="color: grey;">open on a larger device</span> to view them.</i></u></b></p></span>
        </div>
@@ -325,7 +330,7 @@
      // Set the date we're counting down to
      var countDownDate = [new Date("April 18, 2023 11:31:00").getTime(), new Date("April 18, 2023 11:32:30"), new Date("April 18, 2023 11:34:00").getTime(),
                            new Date("April 18, 2023 11:35:30").getTime(), new Date("April 18, 2023 11:37:00"), new Date("April 18, 2023 11:38:30").getTime(),
-                           new Date("April 18, 2023 11:40:00").getTime(), new Date("April 18, 2023 11:41:30"), new Date("April 18, 2023 11:43:00").getTime() ];
+                           new Date("April 18, 2023 11:40:00").getTime(), new Date("April 18, 2023 11:41:30"), new Date("April 18, 2023 11:43:00").getTime(), new Date("April 18, 2023 11:44:30").getTime() ];
      
      var selectedNumber = 0
      
@@ -368,12 +373,12 @@
        // Output the result in an element with id=""
        allID = ["countDown", "countDown1", "countDown2",
                   "countDown3", "countDown4", "countDown5",
-                  "countDown6", "countDown7", "countDown8" ];
+                  "countDown6", "countDown7", "countDown8", "countDown9" ];
       
       
        allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
-                     "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
-                     "Lukas Johnston", "Nicholas Szogi", "Clarrie Jones" ];
+                     "Christopher Tomkinson", "Ryan Pattemore", "Conor Farrington",
+                     "Willie Weekes", "Jasper Collier", "Mitch Yue", "Sam James" ];
       
        function checkNotZero(variable, letter) {
           if (variable > 0) {
@@ -392,7 +397,7 @@
          glowOn = true
          selectedNumber += 1
          rainConfetti()
-         if (selectedNumber == 9) {
+         if (selectedNumber == 10) {
            clearInterval(x);
          } else {
              main();
