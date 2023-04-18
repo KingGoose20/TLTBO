@@ -116,17 +116,17 @@
               <table style="width:100%; height:100%">
                 <tr>
                   <td style="width:50%">
-                    <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">1st Place: The 5 Musketeers</div>
-                    <p style="font-size:20px;">Led by Samuel McConaghy, averaging 3 points</p>
-                    <p style="font-size:20px;">Preseason ladder points: 3</p>
+                    <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">1st Place: The <span id="firstName"></span></div>
+                    <p style="font-size:20px;">Led by <span id="firstLeader"></span>, averaging <span id="firstScoring"></span></p>
+                    <p style="font-size:20px;">Preseason ladder points: <span id="firstPoints"></span></p>
                   </td>
                   <td style="width:50%" class="AustraliansHide">
-                    <img src="../Images/5M_Final.png" alt="" style="width:80%"/>
+                    <img src="" alt="" style="width:80%" id="firstImagea"/>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="../Images/5M_Final.png" alt="" style="width:80%" class="AustraliansShow"/>
+                    <img src="" alt="" style="width:80%" class="AustraliansShow" id="firstImageb"/>
                   </td>
                 </tr>
               </table>
@@ -139,17 +139,17 @@
               <table style="width:100%; height:100%">
                 <tr>
                   <td style="width:50%" class="AustraliansHide">
-                    <img src="../Images/WW_Final.png" alt="" style="width:80%"/>
+                    <img src="" alt="" style="width:80%" id="secondImagea"/>
                   </td>
                   <td style="width:50%">
-                    <div class="section-subheading center" style="font-size:6rem; line-height: 50px;">2nd Place: The Wet Willies</div>
-                    <p style="font-size:20px;">Led by Rudy Hoschke and Michael Iffland, averaging 1 point</p>
-                    <p style="font-size:20px;">Preseason ladder points: 2</p>
+                    <div class="section-subheading center" style="font-size:6rem; line-height: 50px;">2nd Place: The <span id="secondName"></span></div>
+                    <p style="font-size:20px;">Led by <span id="secondLeader"></span>, averaging <span id="secondScoring"></span></p>
+                    <p style="font-size:20px;">Preseason ladder points: <span id="secondPoints"></span></p>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                    <img src="../Images/WW_Final.png" alt="" style="width:80%" class="AustraliansShow"/>
+                    <img alt="" style="width:80%" class="AustraliansShow" id="secondImageb"/>
                   </td>
                 </tr>
               </table>
@@ -161,17 +161,17 @@
             <div class="section-title-group" style="margin:0px; height:100%">
               <table style="width:100%; height:100%">
                 <td style="width:50%">
-                  <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: rgb(205, 127, 50)">3rd Place: The Loose Gooses</div>
-                  <p style="font-size:20px;">Led by Angus Walker and William Kim, averaging 1 point</p>
-                  <p style="font-size:20px;">Preseason ladder points: 1</p>
+                  <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: rgb(205, 127, 50)">3rd Place: The <span id="thirdName"></span></div>
+                  <p style="font-size:20px;">Led by <span id="thirdLeader"></span>, averaging <span id="thirdScoring"></span></p>
+                  <p style="font-size:20px;">Preseason ladder points: <span id="thirdPoints"></span></p>
                 </td>                
                 <td style="width:50%" class="AustraliansHide">
-                  <img src="../Images/LG_Final.png" alt="" style="width:80%"/>
+                  <img src="" alt="" style="width:80%" id="thirdImagea"/>
                 </td>
               </tr>
                 <tr>
                   <td>
-                    <img src="../Images/LG_Final.png" alt="" style="width:80%" class="AustraliansShow"/>
+                    <img alt="" style="width:80%" class="AustraliansShow" id="thirdImageb"/>
                   </td>
                 </tr>
               </table>
@@ -212,6 +212,8 @@
     </div>
   </div>
   <script src="heading.js"></script>
+  <script src="../js/Results.js"></script>
+  <script>ladder()</script>
 </body>
 
 </html>

@@ -119,7 +119,7 @@
           <div class="w-container fade-in" style="height:100%">
             <h3>Game-by-game</h3>
             <br>
-            <table style="width: 100%; text-align: center;" class="heading-hide">
+            <table style="width: 100%; text-align: center;" class="heading-hide" id="mainTable">
             <tr>
                 <td>Game Number</td>
                 <td>Winner</td>
@@ -130,126 +130,6 @@
                 <td>L-Streak</td>
                 <td>S-Streak</td>
             </tr>
-            <tr>
-                <td>1</td>
-                <td>Wet Willies</td>
-                <td>Loose Gooses</td>
-                <td>Michael Iffland</td>
-                <td>Finish</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Wet Willies</td>
-                <td>5 Musketeers</td>
-                <td>Conor Farrington</td>
-                <td>Finish</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Wet Willies</td>
-                <td>Loose Gooses</td>
-                <td>Willie Weekes</td>
-                <td>Finish</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>5 Musketeers</td>
-                <td>Wet Willies</td>
-                <td>Alexander Galt</td>
-                <td>Finish</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>5 Musketeers</td>
-                <td>Loose Gooses</td>
-                <td>Alexander Galt</td>
-                <td>Midrange</td>
-                <td>2</td>
-                <td>3</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>Wet Willies</td>
-                <td>5 Musketeers</td>
-                <td>Rudy Hoschke</td>
-                <td>Finish</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td>Loose Gooses</td>
-                <td>Wet Willies</td>
-                <td>Angus Walker</td>
-                <td>Finish</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td>5 Musketeers</td>
-                <td>Loose Gooses</td>
-                <td>Samuel McConaghy</td>
-                <td>Finish</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td>5 Musketeers</td>
-                <td>Wet Willies</td>
-                <td>Nick Szogi</td>
-                <td>Finish</td>
-                <td>2</td>
-                <td>2</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td>5 Musketeers</td>
-                <td>Loose Gooses</td>
-                <td>Samuel McConaghy</td>
-                <td>Midrange</td>
-                <td>3</td>
-                <td>2</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>11</td>
-                <td>5 Musketeers</td>
-                <td>Wet Willies</td>
-                <td>Samuel McConaghy</td>
-                <td>Midrange</td>
-                <td>4</td>
-                <td>3</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>12</td>
-                <td>Loose Gooses</td>
-                <td>5 Musketeers</td>
-                <td>William Kim</td>
-                <td>Midrange</td>
-                <td>1</td>
-                <td>1</td>
-                <td>1</td>
-            </tr>
             </table>
             <br>
             <br>
@@ -259,7 +139,7 @@
             <br>
             <br>
             <br>
-            <p>As the <i><u>5 Musketeers</u></i> won the most games today, they will start with the ball against the <i><u>Loose Gooses</u></i>.</p>
+            <p>As the <i><u><span id="winning"></span></u></i> won the most games today, they will start with the ball against the <i><u><span id="losing"></span></u></i>.</p>
             <br>
             <br>
             <br>
@@ -267,127 +147,15 @@
             <br>
             <h3>Box score</h3>
             <br>
-            <table style="width: 70%; text-align: center; margin-left:auto; margin-right: auto;">
+            <table style="width: 70%; text-align: center; margin-left:auto; margin-right: auto;" id="scoringTable">
               <tr>
                 <td>Scoring</td>
                 <td>Points</td>
                 <td>Finishes</td>
                 <td>Midrange</td>
                 <td>3 Pointers</td>
-            </tr>
-            <tr>
-                <td>Jasper Collier</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Conor Farrington</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Alexander Galt</td>
-                <td>2</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Rudy Hoschke</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Michael Iffland</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Lukas Johnston</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Clarrie Jones</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>William Kim</td>
-                <td>1</td>
-                <td>0</td>
-                <td>1</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Samuel McConaghy</td>
-                <td>3</td>
-                <td>1</td>
-                <td>2</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Ryan Pattemore</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Nick Szogi</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Chris Tomkinson</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Angus Walker</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Willie Weekes</td>
-                <td>1</td>
-                <td>1</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Mitch Yue</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Sam James</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-        </table>
+              </tr>
+            </table>
           </div>
         </div>
         <div class="section accent" style="padding: 60px 10px; height:auto; min-height: 300px;">
@@ -441,6 +209,8 @@
     </div>
   </div>
   <script src="heading.js"></script>
+  <script src="../js/Results.js"></script>
+  <script>results()</script>
 </body>
 
 </html>
