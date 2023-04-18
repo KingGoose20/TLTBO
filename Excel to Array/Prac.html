@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://unpkg.com/read-excel-file@5.x/bundle/read-excel-file.min.js"></script>
+</head>
+<body>
+    <input type="file" id="input" value="C:\Users\011445\Downloads\Results from 17-4.xlsx">
+    <table id="tbl-date"></table>
+    <script type="module" src="script1.js"></script>
+    <script>
+        var input = document.getElementById('input');
+        input.addEventListener('change', function() {
+            console.log(input.files[0])
+            x = input.files[0]
+            readXlsxFile(x).then(function(data) {
+                console.log(getDataAtPosition(data, 0, 1));
+            });
+
+        });
+
+        function getDataAtPosition(data, column, row) {
+            return(data[row][column])
+        }
+    </script>
+    <script>
+        fetch("C:\Users\011445\Downloads\Results from 17-4.xlsx")
+            .then(response => response.blob())
+            .then(blob => readXlsxFile(blob))
+            .then((rows) => {
+                console.log("Hello")
+            })
+    </script>
+</body>
