@@ -198,6 +198,23 @@
         width: 70%
       }
     }
+
+    .average {
+      width: 60vw;
+    }
+
+    @media screen and (max-width: 1250px) {
+      .average {
+        width: 85vw;
+      }
+    }
+
+    @media screen and (max-width: 800px) {
+      .average {
+        visibility: hidden;
+      }
+    }
+
   </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script>
@@ -305,6 +322,7 @@
             </div>
             <div class="column right">
               <table class="" style="width: 80%">
+              <tr><h3 class="features average" style="text-align: center;">Key: <strong>Average - Total</strong></h3></tr>
               <tr>
                 <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; "><h3 class="features">Points: <strong id="points">20</strong></h3><br><br></div>
                 <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; "><h3 class="features">Finishes: <strong id="finishes">20</strong></h3></div>
