@@ -275,3 +275,26 @@ function results() {
   }
 
 }
+
+
+
+function asOf() {
+  x = document.getElementById("asOf");
+  extra = "th"
+  dateNumber = Number(Today.Date[0].slice(0,2))
+  dateMonth = Today.Date[0].slice(getlength(dateNumber) + 1)
+
+  if (dateNumber == 1 || dateNumber == 21 || dateNumber == 31) {
+    extra = "st"
+  } else if (dateNumber == 2 || dateNumber == 22) {
+    extra = "nd"
+  } else if (dateNumber == 3 || dateNumber == 23) {
+    extra = "rd"
+  }
+
+  x.innerHTML = dateNumber + extra + " of " + dateMonth
+}
+
+function getlength(number) {
+  return number.toString().length;
+}
