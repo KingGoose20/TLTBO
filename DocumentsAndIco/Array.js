@@ -1,12 +1,12 @@
 mainArray = {
   "Name":["Jasper Collier","Conor Farrington","Alexander Galt","Rudy Hoschke","Michael Iffland","Lukas Johnston","Clarrie Jones","William Kim","Samuel McConaghy","Ryan Pattemore","Nicholas Szogi","Christopher Tomkinson","Angus Walker","Willie Weekes","Mitch Yue","Sam James"],
   "Team":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
-  "PPG":[0.00,1.00,2.00,1.00,1.00,0.00,0.00,1.00,3.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00],
-  "TP":[0,1,2,1,1,0,0,1,3,0,1,0,1,1,0,0],
-  "FPG":[0.00,1.00,1.00,1.00,1.00,0.00,0.00,0.00,1.00,0.00,1.00,0.00,1.00,1.00,0.00,0.00],
-  "TF":[0,1,1,1,1,0,0,0,1,0,1,0,1,1,0,0],
-  "MPG":[0.00,0.00,1.00,0.00,0.00,0.00,0.00,1.00,2.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00],
-  "TM":[0,0,1,0,0,0,0,1,2,0,0,0,0,0,0,0],
+  "PPG":[0.50,1.00,3.00,2.50,0.50,0.50,0.00,2.50,3.50,0.50,0.50,0.50,1.50,1.00,0.00,0.00],
+  "TP":[1,2,6,5,1,1,0,5,7,1,1,1,3,2,0,0],
+  "FPG":[0.50,1.00,3.00,2.50,0.50,0.00,0.00,0.50,0.50,0.00,0.50,0.50,1.50,1.00,0.00,0.00],
+  "TF":[1,2,6,5,1,0,0,1,1,0,1,1,3,2,0,0],
+  "MPG":[0.00,0.00,0.00,0.00,0.00,0.50,0.00,2.00,3.00,0.50,0.00,0.00,0.00,0.00,0.00,0.00],
+  "TM":[0,0,0,0,0,1,0,4,6,1,0,0,0,0,0,0],
   "TPG":[0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00],
   "TT":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
   "AccoladesOne":["","","Ex-GM","Ex-GM","Playmaker T1","MVP Runner Up T1","Champion T1","MVP T1","GM","Perimeter T1","The Biggest Bird","MIP T1","TLTBO CEO","Teammate T1","",""],
@@ -29,3 +29,14 @@ preseasonOne = {
   "Midrange":[0,0,1,0,0,0,0,1,2,0,0,0,0,0,0,0],
   "ThreePointers":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 }
+
+preseasonTwo = {
+  "Date":["19-Apr"],
+  "Points":[1,1,5,4,0,1,0,4,3,1,0,1,2,1,0,0],
+  "Finishes":[1,1,5,4,0,0,0,1,0,0,0,1,2,1,0,0],
+  "Midrange":[0,0,0,0,0,1,0,3,3,1,0,0,0,0,0,0],
+  "ThreePointers":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+}
+
+
+

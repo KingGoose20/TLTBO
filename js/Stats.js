@@ -99,7 +99,7 @@ function RunMain() {
 
 
     /* Past Results Section  */
-    dayArrayOne = ["dOne"]
+    dayArrayOne = ["dOne", "dTwo"]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
       x = document.getElementById(dayArrayOne[i])
@@ -108,6 +108,9 @@ function RunMain() {
       switch (i) {
         case 0:
           day = preseasonOne;
+          break;
+        case 1:
+          day = preseasonTwo;
           break;
       }
       x.innerHTML = "<td>" + String(day.Date) + "</td>" + 

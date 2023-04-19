@@ -1,18 +1,19 @@
 Today = {
-    "Date": ["18 April"],
-    "Winner":["Wet Willies","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses"],
-    "Loser":["Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers"],
-    "Scorer":["Michael Iffland","Conor Farrington","Willie Weekes","Alexander Galt","Alexander Galt","Rudy Hoschke","Angus Walker","Samuel McConaghy","Nick Szogi","Samuel McConaghy","Samuel McConaghy","William Kim"],
-    "Type":["Finish","Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Midrange","Midrange","Midrange"],
-    "WStreak":[1,2,3,1,2,1,1,1,2,3,4,1],
-    "LStreak":[1,1,2,1,3,1,1,1,2,2,3,1],
-    "SStreak":[1,1,1,1,2,1,1,1,1,1,2,1]
+    "Date": ["19 April"],
+    "Winner":["5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies"],
+    "Loser":["Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers"],
+    "Scorer":["Alexander Galt","Lukas Johnston","Willie Weekes","Rudy Hoschke","Conor Farrington","Rudy Hoschke","Chris Tomkinson","Alexander Galt","Alexander Galt","William Kim","William Kim","Samuel McConaghy","Alexander Galt","Ryan Pattemore","Alexander Galt","Angus Walker","Rudy Hoschke","Rudy Hoschke","William Kim","Jasper Collier","Samuel McConaghy","William Kim","Angus Walker","Samuel McConaghy","Rudy Hoschke"],
+    "Type":["Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Midrange","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Finish","Midrange","Finish","Midrange","Midrange","Finish","Midrange","Finish"],
+    "WStreak":[1,1,2,3,4,5,1,1,2,1,2,1,2,3,4,1,1,2,1,1,2,1,2,1,1],
+    "LStreak":[1,1,2,2,3,3,1,1,2,1,3,1,4,2,5,1,1,2,1,1,2,1,3,1,1],
+    "SStreak":[1,1,1,1,1,1,1,1,2,1,2,1,1,1,1,1,1,2,1,1,1,1,1,1,1]
   }
 
-LadderPoints = [1,2,3]
-Leaders = ["Angus Walker and William Kim", "Rudy Hoschke and Michael Iffland", "Samuel McConaghy"]
-LeadersPoints = [1,1,3]
-
+LadderPoints = [2,4,6]
+Leaders = ["William Kim", "Rudy Hoschke", "Samuel McConaghy"]
+LeadersPoints = [2.5,2.5,3.5]
+Override = false
+OverrideOrder = ["WW", "WW", "5M"]
 
 
 
@@ -25,130 +26,261 @@ LeadersPoints = [1,1,3]
 
 
 function ladder() {
-  LG = false
-  WW = false
-  MM = false
-  if ((LadderPoints[0] > LadderPoints[1]) && (LadderPoints[0] > LadderPoints[2])) {
-    document.getElementById("firstName").innerHTML = "Loose Gooses";
-    document.getElementById("firstPoints").innerHTML = LadderPoints[0];
-    document.getElementById("firstImagea").src = "../Images/LG_Final.png"
-    document.getElementById("firstImageb").src = "../Images/LG_Final.png"
-    document.getElementById("firstLeader").innerHTML = Leaders[0]
-    if (LeadersPoints[0] == 1) {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " point")
+  if (Override == false) {
+        LG = false
+    WW = false
+    MM = false
+    if ((LadderPoints[0] > LadderPoints[1]) && (LadderPoints[0] > LadderPoints[2])) {
+      document.getElementById("firstName").innerHTML = "Loose Gooses";
+      document.getElementById("firstPoints").innerHTML = LadderPoints[0];
+      document.getElementById("firstImagea").src = "../Images/LG_Final.png"
+      document.getElementById("firstImageb").src = "../Images/LG_Final.png"
+      document.getElementById("firstLeader").innerHTML = Leaders[0]
+      if (LeadersPoints[0] == 1) {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " point")
+      } else {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " points")
+      }
+      leader = LadderPoints[0]
+      LG = true
+    } else if ((LadderPoints[1] > LadderPoints[2]) && (LadderPoints[1] > LadderPoints[0])) {
+      document.getElementById("firstName").innerHTML = "Wet Willies";
+      document.getElementById("firstPoints").innerHTML = LadderPoints[1];
+      document.getElementById("firstImagea").src = "../Images/WW_Final.png"
+      document.getElementById("firstImageb").src = "../Images/WW_Final.png"
+      document.getElementById("firstLeader").innerHTML = Leaders[1]
+      if (LeadersPoints[1] == 1) {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
+      } else {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
+      }
+      leader = LadderPoints[1]
+      WW = true
     } else {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " points")
+      document.getElementById("firstName").innerHTML = "5 Musketeers";
+      document.getElementById("firstPoints").innerHTML = LadderPoints[2];
+      document.getElementById("firstImagea").src = "../Images/5M_Final.png"
+      document.getElementById("firstImageb").src = "../Images/5M_Final.png"
+      document.getElementById("firstLeader").innerHTML = Leaders[2]
+      if (LeadersPoints[2] == 1) {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
+      } else {
+        document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
+      }
+      leader = LadderPoints[2]
+      MM = true
     }
-    leader = LadderPoints[0]
-    LG = true
-  } else if ((LadderPoints[1] > LadderPoints[2]) && (LadderPoints[1] > LadderPoints[0])) {
-    document.getElementById("firstName").innerHTML = "Wet Willies";
-    document.getElementById("firstPoints").innerHTML = LadderPoints[1];
-    document.getElementById("firstImagea").src = "../Images/WW_Final.png"
-    document.getElementById("firstImageb").src = "../Images/WW_Final.png"
-    document.getElementById("firstLeader").innerHTML = Leaders[1]
-    if (LeadersPoints[1] == 1) {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
+
+
+
+
+
+
+    if (((LadderPoints[0] > LadderPoints[1]) || (LadderPoints[0] > LadderPoints[2])) && LG != true) {
+      document.getElementById("secondName").innerHTML = "Loose Gooses";
+      document.getElementById("secondPoints").innerHTML = LadderPoints[0];
+      document.getElementById("secondImagea").src = "../Images/LG_Final.png"
+      document.getElementById("secondImageb").src = "../Images/LG_Final.png"
+      document.getElementById("firstLeader").innerHTML = Leaders[0]
+      document.getElementById("secondLeader").innerHTML = Leaders[0]
+      if (LeadersPoints[0] == 1) {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
+      } else {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
+      }
+    } else if (((LadderPoints[1] > LadderPoints[2]) || (LadderPoints[1] > LadderPoints[0])) && WW != true) {
+      document.getElementById("secondName").innerHTML = "Wet Willies";
+      document.getElementById("secondPoints").innerHTML = LadderPoints[1];
+      document.getElementById("secondImagea").src = "../Images/WW_Final.png"
+      document.getElementById("secondImageb").src = "../Images/WW_Final.png"
+      document.getElementById("secondLeader").innerHTML = Leaders[1]
+      if (LeadersPoints[1] == 1) {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " point")
+      } else {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
+      }
     } else {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
+      document.getElementById("secondName").innerHTML = "5 Musketeers";
+      document.getElementById("secondPoints").innerHTML = LadderPoints[2];
+      document.getElementById("secondImagea").src = "../Images/5M_Final.png"
+      document.getElementById("secondImageb").src = "../Images/5M_Final.png"
+      document.getElementById("secondLeader").innerHTML = Leaders[2]
+      if (LeadersPoints[2] == 1) {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " point")
+      } else {
+        document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
+      }
     }
-    leader = LadderPoints[1]
-    WW = true
+
+
+
+
+
+
+    if(LG == false) {
+      document.getElementById("thirdName").innerHTML = "Loose Gooses";
+      document.getElementById("thirdPoints").innerHTML = LadderPoints[0];
+      document.getElementById("thirdImagea").src = "../Images/LG_Final.png"
+      document.getElementById("thirdImageb").src = "../Images/LG_Final.png"
+      document.getElementById("thirdLeader").innerHTML = Leaders[0]
+      if (LeadersPoints[0] == 1) {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " point")
+      } else {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
+      }
+    } else if (WW = false) {
+      document.getElementById("thirdName").innerHTML = "Wet Willies";
+      document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
+      document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
+      document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
+      document.getElementById("thirdLeader").innerHTML = Leaders[2]
+      if (LeadersPoints[1] == 1) {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
+      } else {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
+      }
+    } else {
+      document.getElementById("thirdName").innerHTML = "5 Musketeers";
+      document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
+      document.getElementById("thirdImagea").src = "../Images/5M_Final.png"
+      document.getElementById("thirdImageb").src = "../Images/5M_Final.png"
+      document.getElementById("thirdLeader").innerHTML = Leaders[2]
+      if (LeadersPoints[2] == 1) {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " point")
+      } else {
+        document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
+      }
+    }
+
+
+
+
+
+
+
+
+    
   } else {
-    document.getElementById("firstName").innerHTML = "5 Musketeers";
-    document.getElementById("firstPoints").innerHTML = LadderPoints[2];
-    document.getElementById("firstImagea").src = "../Images/5M_Final.png"
-    document.getElementById("firstImageb").src = "../Images/5M_Final.png"
-    document.getElementById("firstLeader").innerHTML = Leaders[2]
-    if (LeadersPoints[2] == 1) {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
-    } else {
-      document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
-    }
-    leader = LadderPoints[2]
-    MM = true
+      for (i = 0; i < OverrideOrder.length; i ++) {
+        switch (i) {
+          case 0 :
+            if (OverrideOrder[i] == "LG") {
+              document.getElementById("firstName").innerHTML = "Loose Gooses";
+              document.getElementById("firstPoints").innerHTML = LadderPoints[0];
+              document.getElementById("firstImagea").src = "../Images/LG_Final.png"
+              document.getElementById("firstImageb").src = "../Images/LG_Final.png"
+              document.getElementById("firstLeader").innerHTML = Leaders[0]
+              if (LeadersPoints[0] == 1) {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " point")
+              } else {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " points")
+              }
+              leader = LadderPoints[0]
+              LG = true
+            } else if (OverrideOrder[i] == "WW") {
+              document.getElementById("firstName").innerHTML = "Wet Willies";
+              document.getElementById("firstPoints").innerHTML = LadderPoints[1];
+              document.getElementById("firstImagea").src = "../Images/WW_Final.png"
+              document.getElementById("firstImageb").src = "../Images/WW_Final.png"
+              document.getElementById("firstLeader").innerHTML = Leaders[1]
+              if (LeadersPoints[1] == 1) {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
+              } else {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
+              }
+              leader = LadderPoints[1]
+              WW = true
+            } else {
+              document.getElementById("firstName").innerHTML = "5 Musketeers";
+              document.getElementById("firstPoints").innerHTML = LadderPoints[2];
+              document.getElementById("firstImagea").src = "../Images/5M_Final.png"
+              document.getElementById("firstImageb").src = "../Images/5M_Final.png"
+              document.getElementById("firstLeader").innerHTML = Leaders[2]
+              if (LeadersPoints[2] == 1) {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
+              } else {
+                document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
+              }
+              leader = LadderPoints[2]
+              MM = true
+            }
+            break;
+          case 1 :
+            if (OverrideOrder[i] == "LG") {
+              document.getElementById("secondName").innerHTML = "Loose Gooses";
+              document.getElementById("secondPoints").innerHTML = LadderPoints[0];
+              document.getElementById("secondImagea").src = "../Images/LG_Final.png"
+              document.getElementById("secondImageb").src = "../Images/LG_Final.png"
+              document.getElementById("secondLeader").innerHTML = Leaders[0]
+              if (LeadersPoints[0] == 1) {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
+              } else {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
+              }
+            } else if (OverrideOrder[i] == "WW") {
+              document.getElementById("secondName").innerHTML = "Wet Willies";
+              document.getElementById("secondPoints").innerHTML = LadderPoints[1];
+              document.getElementById("secondImagea").src = "../Images/WW_Final.png"
+              document.getElementById("secondImageb").src = "../Images/WW_Final.png"
+              document.getElementById("secondLeader").innerHTML = Leaders[1]
+              if (LeadersPoints[1] == 1) {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " point")
+              } else {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
+              }
+            } else {
+              document.getElementById("secondName").innerHTML = "5 Musketeers";
+              document.getElementById("secondPoints").innerHTML = LadderPoints[2];
+              document.getElementById("secondImagea").src = "../Images/5M_Final.png"
+              document.getElementById("secondImageb").src = "../Images/5M_Final.png"
+              document.getElementById("secondLeader").innerHTML = Leaders[2]
+              if (LeadersPoints[2] == 1) {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " point")
+              } else {
+                document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
+              }
+            }
+            break;
+          case 2 :
+            if (OverrideOrder[i] == "LG") {
+              document.getElementById("thirdName").innerHTML = "Loose Gooses";
+              document.getElementById("thirdPoints").innerHTML = LadderPoints[0];
+              document.getElementById("thirdImagea").src = "../Images/LG_Final.png"
+              document.getElementById("thirdImageb").src = "../Images/LG_Final.png"
+              document.getElementById("thirdLeader").innerHTML = Leaders[0]
+              if (LeadersPoints[0] == 1) {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " point")
+              } else {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
+              }
+            } else if (OverrideOrder[i] == "WW") {
+              document.getElementById("thirdName").innerHTML = "Wet Willies";
+              document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
+              document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
+              document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
+              document.getElementById("thirdLeader").innerHTML = Leaders[1]
+              if (LeadersPoints[1] == 1) {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
+              } else {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
+              }
+            } else {
+              document.getElementById("thirdName").innerHTML = "5 Musketeers";
+              document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
+              document.getElementById("thirdImagea").src = "../Images/5M_Final.png"
+              document.getElementById("thirdImageb").src = "../Images/5M_Final.png"
+              document.getElementById("thirdLeader").innerHTML = Leaders[2]
+              if (LeadersPoints[2] == 1) {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " point")
+              } else {
+                document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
+              }
+            }
+            break;
+        }
+      }
   }
 
-
-
-
-
-
-  if (((LadderPoints[0] > LadderPoints[1]) || (LadderPoints[0] > LadderPoints[2])) && LG != true) {
-    document.getElementById("secondName").innerHTML = "Loose Gooses";
-    document.getElementById("secondPoints").innerHTML = LadderPoints[0];
-    document.getElementById("secondImagea").src = "../Images/LG_Final.png"
-    document.getElementById("secondImageb").src = "../Images/LG_Final.png"
-    document.getElementById("firstLeader").innerHTML = Leaders[0]
-    document.getElementById("secondLeader").innerHTML = Leaders[0]
-    if (LeadersPoints[0] == 1) {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
-    } else {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
-    }
-  } else if (((LadderPoints[1] > LadderPoints[2]) || (LadderPoints[1] > LadderPoints[0])) && WW != true) {
-    document.getElementById("secondName").innerHTML = "Wet Willies";
-    document.getElementById("secondPoints").innerHTML = LadderPoints[1];
-    document.getElementById("secondImagea").src = "../Images/WW_Final.png"
-    document.getElementById("secondImageb").src = "../Images/WW_Final.png"
-    document.getElementById("secondLeader").innerHTML = Leaders[1]
-    if (LeadersPoints[1] == 1) {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " point")
-    } else {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
-    }
-  } else {
-    document.getElementById("secondName").innerHTML = "5 Musketeers";
-    document.getElementById("secondPoints").innerHTML = LadderPoints[2];
-    document.getElementById("secondImagea").src = "../Images/5M_Final.png"
-    document.getElementById("secondImageb").src = "../Images/5M_Final.png"
-    document.getElementById("secondLeader").innerHTML = Leaders[2]
-    if (LeadersPoints[2] == 1) {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " point")
-    } else {
-      document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
-    }
-  }
-
-
-
-
-
-
-  if(LG == false) {
-    document.getElementById("thirdName").innerHTML = "Loose Gooses";
-    document.getElementById("thirdPoints").innerHTML = LadderPoints[0];
-    document.getElementById("thirdImagea").src = "../Images/LG_Final.png"
-    document.getElementById("thirdImageb").src = "../Images/LG_Final.png"
-    document.getElementById("thirdLeader").innerHTML = Leaders[0]
-    if (LeadersPoints[0] == 1) {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " point")
-    } else {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
-    }
-  } else if (WW = false) {
-    document.getElementById("thirdName").innerHTML = "Wet Willies";
-    document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
-    document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
-    document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
-    document.getElementById("thirdLeader").innerHTML = Leaders[2]
-    if (LeadersPoints[1] == 1) {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
-    } else {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
-    }
-  } else {
-    document.getElementById("thirdName").innerHTML = "5 Musketeers";
-    document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
-    document.getElementById("thirdImagea").src = "../Images/5M_Final.png"
-    document.getElementById("thirdImageb").src = "../Images/5M_Final.png"
-    document.getElementById("thirdLeader").innerHTML = Leaders[2]
-    if (LeadersPoints[2] == 1) {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " point")
-    } else {
-      document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
-    }
-  }
 
 
 }
