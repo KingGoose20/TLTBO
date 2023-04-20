@@ -99,20 +99,12 @@ function RunMain() {
 
 
     /* Past Results Section  */
-    dayArrayOne = ["dOne", "dTwo"]
+    dayArrayOne = ["dOne", "dTwo", "dThree"]
+    dayArrayTwo = [preseasonOne, preseasonTwo, preseasonThree]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
       x = document.getElementById(dayArrayOne[i])
-      day = null;
-      
-      switch (i) {
-        case 0:
-          day = preseasonOne;
-          break;
-        case 1:
-          day = preseasonTwo;
-          break;
-      }
+      day = dayArrayTwo[i]
       x.innerHTML = "<td>" + String(day.Date) + "</td>" + 
       "<td>" + String(day.Points[number]) + "</td>" + 
       "<td>" + String(day.Finishes[number]) + "</td>" + 
