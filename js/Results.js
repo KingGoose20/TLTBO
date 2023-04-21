@@ -14,6 +14,7 @@ Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
 LeadersPoints = [2,2,3]
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
+overRideDate = "Preseason"
 
 
 
@@ -410,21 +411,29 @@ function results() {
 
 
 
-function asOf() {
-  x = document.getElementById("asOf");
-  extra = "th"
-  dateNumber = Number(Today.Date[0].slice(0,2))
-  dateMonth = Today.Date[0].slice(getlength(dateNumber) + 1)
 
-  if (dateNumber == 1 || dateNumber == 21 || dateNumber == 31) {
-    extra = "st"
-  } else if (dateNumber == 2 || dateNumber == 22) {
-    extra = "nd"
-  } else if (dateNumber == 3 || dateNumber == 23) {
-    extra = "rd"
+
+function asOf() {
+  if (overRideDate == "") {
+    x = document.getElementById("asOf");
+    extra = "th"
+    dateNumber = Number(Today.Date[0].slice(0,2))
+    dateMonth = Today.Date[0].slice(getlength(dateNumber) + 1)
+
+    if (dateNumber == 1 || dateNumber == 21 || dateNumber == 31) {
+      extra = "st"
+    } else if (dateNumber == 2 || dateNumber == 22) {
+      extra = "nd"
+    } else if (dateNumber == 3 || dateNumber == 23) {
+      extra = "rd"
+    }
+
+    x.innerHTML = dateNumber + extra + " of " + dateMonth
+  } else {
+    x = document.getElementById("asOf");
+    x.innerHTML = overRideDate
   }
 
-  x.innerHTML = dateNumber + extra + " of " + dateMonth
 }
 
 function getlength(number) {
