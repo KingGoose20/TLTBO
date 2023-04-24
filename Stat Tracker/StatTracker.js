@@ -14,11 +14,17 @@ pastScorer = ""
 
 
 function start() {
-    document.getElementById("aTeam").disabled = true;
-    document.getElementById("bTeam").disabled = true;
+    aElement = document.getElementById("aTeam")
+    bElement = document.getElementById("bTeam")
+    if (aElement.options[aElement.selectedIndex].text == bElement.options[bElement.selectedIndex].text) {
+        alert("Team A and B cannot be the same!");
+        return
+    }
+    aElement.disabled = true;
+    bElement.disabled = true;
     document.getElementById("startButton").disabled = true;
 
-    switch (document.getElementById("aTeam").value) {
+    switch (aElement.value) {
         case "zero" :
             aTeam = "Loose Gooses"
             break;
@@ -30,7 +36,7 @@ function start() {
             break;
     }
 
-    switch (document.getElementById("bTeam").value) {
+    switch (bElement.value) {
         case "three" :
             bTeam = "Loose Gooses"
             break;
