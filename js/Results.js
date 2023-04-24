@@ -1,20 +1,20 @@
 Today = {
-    "Date": ["20 April"],
-    "Winner":["Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies"],
-    "Loser":["5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers"],
-    "Scorer":["Chris Tomkinson","Conor Farrington","Samuel McConaghy","Chris Tomkinson","Angus Walker","Angus Walker","Angus Walker","Samuel McConaghy","Rudy Hoschke","Clarrie Jones","Clarrie Jones","Clarrie Jones","Jasper Collier","Willie Weekes"],
-    "Type":["Finish","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Finish","Three Pointer","Three Pointer","Finish","Midrange","Finish"],
-    "WStreak":[1,1,1,1,2,3,4,1,1,1,2,3,1,1],
-    "LStreak":[1,1,1,1,2,2,3,1,1,1,2,2,1,1],
-    "SStreak":[1,1,1,1,1,2,3,1,1,1,2,3,1,1]
+    "Date": ["24 April"],
+    "Winner":["Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies"],
+    "Loser":["5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses"],
+    "Scorer":["Lukas Johnston","Angus Walker","Alexander Galt","Samuel McConaghy","Alexander Galt","Lukas Johnston","Angus Walker","Alexander Galt","Nick Szogi","Nick Szogi","Samuel McConaghy","Angus Walker","Rudy Hoschke"],
+    "Type":["Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Finish"],
+    "WStreak":[1,1,1,2,3,1,1,1,2,3,4,1,1],
+    "LStreak":[1,1,1,2,2,1,1,1,2,2,3,1,1],
+    "SStreak":[1,1,1,1,1,1,1,1,1,2,1,1,1]
   }
 
-LadderPoints = [5,6,7]
-Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
-LeadersPoints = [2,2,3]
+LadderPoints = [2,1,3]
+Leaders = ["Angus Walker", "Lukas Johnston", "Alexander Galt"]
+LeadersPoints = [3,2,3]
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
-overRideDate = "Preseason"
+overRideDate = ""
 
 
 
@@ -28,7 +28,7 @@ overRideDate = "Preseason"
 
 function ladder() {
   if (Override == false) {
-        LG = false
+    LG = false
     WW = false
     MM = false
     if ((LadderPoints[0] > LadderPoints[1]) && (LadderPoints[0] > LadderPoints[2])) {
@@ -82,13 +82,13 @@ function ladder() {
       document.getElementById("secondPoints").innerHTML = LadderPoints[0];
       document.getElementById("secondImagea").src = "../Images/LG_Final.png"
       document.getElementById("secondImageb").src = "../Images/LG_Final.png"
-      document.getElementById("firstLeader").innerHTML = Leaders[0]
       document.getElementById("secondLeader").innerHTML = Leaders[0]
       if (LeadersPoints[0] == 1) {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
       } else {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
       }
+      LG = true
     } else if (((LadderPoints[1] > LadderPoints[2]) || (LadderPoints[1] > LadderPoints[0])) && WW != true) {
       document.getElementById("secondName").innerHTML = "Wet Willies";
       document.getElementById("secondPoints").innerHTML = LadderPoints[1];
@@ -100,6 +100,7 @@ function ladder() {
       } else {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
       }
+      WW = true
     } else {
       document.getElementById("secondName").innerHTML = "5 Musketeers";
       document.getElementById("secondPoints").innerHTML = LadderPoints[2];
@@ -111,6 +112,7 @@ function ladder() {
       } else {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
       }
+      MM = true
     }
 
 
@@ -129,12 +131,12 @@ function ladder() {
       } else {
         document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
       }
-    } else if (WW = false) {
+    } else if (WW == false) {
       document.getElementById("thirdName").innerHTML = "Wet Willies";
       document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
       document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
       document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
-      document.getElementById("thirdLeader").innerHTML = Leaders[2]
+      document.getElementById("thirdLeader").innerHTML = Leaders[1]
       if (LeadersPoints[1] == 1) {
         document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
       } else {

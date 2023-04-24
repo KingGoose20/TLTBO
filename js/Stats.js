@@ -99,8 +99,8 @@ function RunMain() {
 
 
     /* Past Results Section  */
-    dayArrayOne = ["dOne", "dTwo", "dThree"]
-    dayArrayTwo = [preseasonOne, preseasonTwo, preseasonThree]
+    dayArrayOne = ["dOne"]
+    dayArrayTwo = [WeekOneDayOne, preseasonTwo, preseasonThree]
     
     for (let i = 0; i < dayArrayOne.length; i++) {
       x = document.getElementById(dayArrayOne[i])
