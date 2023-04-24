@@ -2257,8 +2257,8 @@ p {
 }
 
 .navigation-link {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   color: #676770;
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;

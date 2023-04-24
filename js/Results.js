@@ -15,6 +15,8 @@ LeadersPoints = [3,2,3]
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
 overRideDate = ""
+overrideW = ""
+overrideL = "Wet Willies"
 
 
 
@@ -301,8 +303,6 @@ function results() {
   LGloss = 0
   WWloss = 0
   Mloss = 0
-  overrideW = ""
-  overrideL = ""
 
   for (i = 0; i < Today.Winner.length; i++) {
     if (Today.Winner[i] == "Loose Gooses") {
@@ -401,12 +401,12 @@ function results() {
     var cell3 = row.insertCell(2);
     var cell4 = row.insertCell(3);
     var cell5 = row.insertCell(4);
-
+    
     cell1.innerHTML = players[x];
-    cell2.innerHTML = (finishes + midrange + (2 * threes));
-    cell3.innerHTML = finishes;
-    cell4.innerHTML = midrange;
-    cell5.innerHTML = threes;
+    cell2.innerHTML = boldNumber((finishes + midrange + (2 * threes)));
+    cell3.innerHTML = boldNumber(finishes);
+    cell4.innerHTML = boldNumber(midrange);
+    cell5.innerHTML = boldNumber(threes);
   }
 
 }
@@ -440,4 +440,12 @@ function asOf() {
 
 function getlength(number) {
   return number.toString().length;
+}
+
+function boldNumber(number) {
+  if (number != 0) {
+    return("<span class='boldNumber'>" + number + "</span>")
+  } else {
+    return(number)
+  }
 }
