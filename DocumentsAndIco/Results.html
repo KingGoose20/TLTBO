@@ -55,6 +55,21 @@
 
     tr {
       line-height: 30px;
+      transition: line-height 0.7s ease-in-out;
+      transition: font-size 0.7s ease-in-out;
+    }
+
+    tr:hover {
+      line-height: 45px;
+      font-size: 24px
+    }
+
+    @keyframes ResultsGrow {
+
+      100% {
+        line-height: 45px;
+        font-size: 24px
+      }
     }
 
     table tr:nth-child(even){background-color: rgb(35,35,35);}
