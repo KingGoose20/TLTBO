@@ -374,7 +374,7 @@ function results() {
 
   players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", 
             "Michael Iffland", "Lukas Johnston", "Clarrie Jones", "William Kim",
-            "Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi", "Christopher Tomkinson", 
+            "Samuel McConaghy", "Ryan Pattemore", "Nick Szogi", "Christopher Tomkinson", 
             "Angus Walker", "Willie Weekes", "Mitch Yue", "Sam James"
     ]
 
