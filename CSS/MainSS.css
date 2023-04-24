@@ -2265,6 +2265,10 @@ p {
 }
 
 .navigation-link:hover {
+  font-size: 180%;
+}
+
+.navigation-link:hover {
   color: #bd3a02;
 }
 
@@ -2307,6 +2311,11 @@ p {
   background-color: rgb(10, 10, 10);
   text-align: center;
   margin: auto;
+  transition: transform .2s;
+}
+
+.white-box:hover {
+  transform: scale(1.08);
 }
 
 .white-boxForum {
