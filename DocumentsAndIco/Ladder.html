@@ -55,7 +55,7 @@
               var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
               var top_of_screen = $(window).scrollTop();
   
-              if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+              if (((bottom_of_screen-250) > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
                   $(this).addClass('is-visible');
               }
           });
@@ -117,8 +117,8 @@
                 <tr>
                   <td style="width:50%">
                     <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">1st Place: The <span id="firstName"></span></div>
-                    <p style="font-size:20px;">Led by <span id="firstLeader"></span>, averaging <span id="firstScoring"></span></p>
-                    <p style="font-size:20px;">Preseason ladder points: <span id="firstPoints"></span></p>
+                    <p style="font-size:20px;">Led by <strong id="firstLeader"></strong>, averaging <strong id="firstScoring"></strong></p>
+                    <p style="font-size:20px;">Ladder points: <strong id="firstPoints"></strong></p>
                   </td>
                   <td style="width:50%" class="AustraliansHide">
                     <img src="" alt="" style="width:80%" id="firstImagea"/>
@@ -143,8 +143,8 @@
                   </td>
                   <td style="width:50%">
                     <div class="section-subheading center" style="font-size:6rem; line-height: 50px;">2nd Place: The <span id="secondName"></span></div>
-                    <p style="font-size:20px;">Led by <span id="secondLeader"></span>, averaging <span id="secondScoring"></span></p>
-                    <p style="font-size:20px;">Preseason ladder points: <span id="secondPoints"></span></p>
+                    <p style="font-size:20px;">Led by <strong id="secondLeader"></strong>, averaging <strong id="secondScoring"></strong></p>
+                    <p style="font-size:20px;">Ladder points: <strong id="secondPoints"></strong></p>
                   </td>
                 </tr>
                 <tr>
@@ -162,8 +162,8 @@
               <table style="width:100%; height:100%">
                 <td style="width:50%">
                   <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: rgb(205, 127, 50)">3rd Place: The <span id="thirdName"></span></div>
-                  <p style="font-size:20px;">Led by <span id="thirdLeader"></span>, averaging <span id="thirdScoring"></span></p>
-                  <p style="font-size:20px;">Preseason ladder points: <span id="thirdPoints"></span></p>
+                  <p style="font-size:20px;">Led by <strong id="thirdLeader"></strong>, averaging <strong id="thirdScoring"></strong></p>
+                  <p style="font-size:20px;">Ladder points: <strong id="thirdPoints"></strong></p>
                 </td>                
                 <td style="width:50%" class="AustraliansHide">
                   <img src="" alt="" style="width:80%" id="thirdImagea"/>

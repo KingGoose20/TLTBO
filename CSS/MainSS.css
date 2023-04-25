@@ -2736,7 +2736,6 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
 .Whole {
   background-color: rgb(240,240,240);
   z-index: 2;
-  align-self: right;
   position: fixed;
   width: 100%;
 }
@@ -2836,11 +2835,17 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center
+    text-align: center;
     width:100%;
     padding-left: 0px;
 }
 
+@media screen and (max-width: 850px) {
+  .nav-menu {
+    overflow-y: scroll; 
+    max-height: 85vh;
+  }
+}
 .nav-item {
     margin: auto;
     list-style: none;
