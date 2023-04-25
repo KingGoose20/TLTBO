@@ -71,7 +71,7 @@
       </div>
     </div>
   </div>
-  <div class="hero-section centered mvp" style="background-size: cover;">
+  <div class="hero-section centered" style="background-size: cover;" id="imageToChange">
     <br>
     <div data-ix="new-interaction" class="w-container">
       <h1 class="hero-heading mainHeading animate-heading">Crunching Numbers | INSERT DATE HERE</h1><br>
@@ -125,7 +125,21 @@
       </div>
     </div>
   </div>
-  <script src="../heading.js"></script>
+    <script src="../heading.js"></script>
+  <script>
+    x = document.getElementById("imageToChange")
+    switch (Math.floor(Math.random() * 3)) {
+      case 0:
+        x.classList.add("mvp")
+        break;
+      case 1:
+        x.classList.add("champions")
+        break;
+      case 2:
+        x.classList.add("rules")
+        break;
+    }
+  </script>
 </body>
 
 </html>
