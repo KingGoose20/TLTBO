@@ -1,9 +1,9 @@
 mainArray = {
   "Name":["Jasper Collier","Conor Farrington","Alexander Galt","Rudy Hoschke","Michael Iffland","Lukas Johnston","Clarrie Jones","William Kim","Samuel McConaghy","Ryan Pattemore","Nicholas Szogi","Christopher Tomkinson","Angus Walker","Willie Weekes","Mitch Yue","Sam James"],
   "Team":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
-  "PPG":["0","0","3","1","0","2","0","0","2","0","-2","0","3","0","0","0",],
+  "PPG":["0","0","3","1","0","2","0","0","2","0","2","0","3","0","0","0",],
   "TP":["0","0","3","1","0","2","0","0","2","0","2","0","3","0","0","0"],
-  "FPG":["0","0","3","1","0","2","0","0","1","0","-2","0","3","0","0","0",],
+  "FPG":["0","0","3","1","0","2","0","0","1","0","2","0","3","0","0","0",],
   "TF":["0","0","3","1","0","2","0","0","1","0","2","0","3","0","0","0"],
   "MPG":["0","0","0","0","0","0","0","0","1","0","0","0","0","0","0","0",],
   "TM":["0","0","0","0","0","0","0","0","1","0","0","0","0","0","0","0"],
@@ -51,3 +51,7 @@ preseasonThree = {
 }
 
 
+
+
+
+dayArray = [WeekOneDayOne]

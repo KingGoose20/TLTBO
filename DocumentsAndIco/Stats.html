@@ -371,7 +371,7 @@
             <br><br><br><br><br><br>
             <h3 style="font-size: 30px">Past Results</h3><br>
             <div style="overflow-y: scroll; max-height: 200px;">
-              <table class="dayByDay" style="width: 100%; text-align: center;">
+              <table class="dayByDay" style="width: 100%; text-align: center;" id="dayByDay">
                 <tr style="height: 50px;">
                   <th>Date</th>
                   <th>Points</th>
@@ -379,9 +379,6 @@
                   <th>Midranges</th>
                   <th>Three Pointers</th>
                 </tr>
-                <tr id="dOne" style="height: 30px"></tr>
-                <tr id="dTwo" style="height: 30px"></tr>
-                <tr id="dThree" style="height: 30px"></tr>
               </table>
             </div>
             <i><p>More dates can be viewed by scrolling on box</p></i>
@@ -428,6 +425,15 @@
    <script src="../js/Draft.js"> </script>
  <script src="heading.js"></script>
   <script src="Array.js"></script>
+  <template>
+    <tr id="" style="height: 30px">
+      <td id="date"></td>
+      <td id="points"></td>
+      <td id="finishes"></td>
+      <td id="midranges"></td>
+      <td id="threes"></td>
+    </tr>
+  </template>
 </body>
 
 </html>

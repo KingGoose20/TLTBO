@@ -99,16 +99,19 @@ function RunMain() {
 
 
     /* Past Results Section  */
-    dayArrayOne = ["dOne"]
-    dayArrayTwo = [WeekOneDayOne, preseasonTwo, preseasonThree]
-    
-    for (let i = 0; i < dayArrayOne.length; i++) {
-      x = document.getElementById(dayArrayOne[i])
-      day = dayArrayTwo[i]
-      x.innerHTML = "<td>" + String(day.Date) + "</td>" + 
-      "<td>" + String(day.Points[number]) + "</td>" + 
-      "<td>" + String(day.Finishes[number]) + "</td>" + 
-      "<td>" + String(day.Midrange[number]) + "</td>" + 
-      "<td>" + String(day.ThreePointers[number]) + "</td>"
+    table = document.getElementById("dayByDay")
+    template = document.getElementsByTagName("template")[0];
+    for (let i=(table.rows.length-1); i > 0; i--) {
+      table.deleteRow(i)
+    }
+    for (let i = 0; i < dayArray.length; i++) {
+      clone = template.content.cloneNode(true);
+      day = dayArray[i]
+      clone.getElementById("date").innerHTML = String(day.Date)
+      clone.getElementById("points").innerHTML = String(day.Points[number])
+      clone.getElementById("finishes").innerHTML = String(day.Finishes[number])
+      clone.getElementById("midranges").innerHTML = String(day.Midrange[number])
+      clone.getElementById("threes").innerHTML = String(day.ThreePointers[number])
+      table.appendChild(clone)
     }
 }   
