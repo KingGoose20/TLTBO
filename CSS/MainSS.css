@@ -3018,43 +3018,6 @@ html {
   }
 }
 
-
-
-
-@media screen and (min-width:1441px) {
-  .index-set {
-    min-height: 400px;
-  }
-}
-
-@media screen and (max-width:1355px) {
-  .index-set {
-    margin-top: 2%;
-    height: 375px;
-  }
-}
-
-@media screen and (max-width:1260px) {
-  .index-set {
-    margin-top: 2%;
-    height: 350px;
-  }
-}
-
-@media screen and (max-width:1050px) {
-  .index-set {
-    margin-top: 2%;
-    height: 325px;
-  }
-}
-
-@media screen and (max-width:767px) {
-  .index-set {
-    margin-top: 2%;
-    height: auto;
-  }
-}
-
 @media screen and (min-width:869px) {
   .champions-set {
     margin-top: 2%;
@@ -3151,6 +3114,46 @@ html {
 
 .normalNews {
   width:48%;
+  display: table-cell;
+}
+
+.NewsHeader {
+  display: table;
+  width: 100%;
+}
+
+@media screen and (min-width:1441px) {
+  .index-set {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width:1355px) {
+  .index-set {
+    margin-top: 2%;
+    height: 375px;
+  }
+}
+
+@media screen and (max-width:1260px) {
+  .index-set {
+    margin-top: 2%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width:1050px) {
+  .index-set {
+    margin-top: 2%;
+    height: 325px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .index-set {
+    margin-top: 2%;
+    height: auto;
+  }
 }
 
 .mainHeading {
@@ -3161,6 +3164,7 @@ html {
 @media screen and (max-width: 800px) {
   .normalNews{
     width: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -3284,4 +3288,18 @@ html {
   -webkit-text-fill-color: transparent;
   animation: textclip 5s reverse infinite;
   display: inline-block;
+}
+
+@media screen and (max-width: 650px) {
+  .box-title {
+    font-size: 4vw
+  }
+}
+
+.leftNews {
+  float: left;
+}
+
+.rightNews {
+  float: right;
 }

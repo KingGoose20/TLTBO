@@ -16,8 +16,8 @@ Preseason = {
     "ArticleDate":["15/04", "20/04"],
     "ImageA":["Logo.png", "Logo.png"],
     "ImageB":["", "WW_Final.png"],
-    "ImageC":[""],
-    "ImageD":[""],
+    "ImageC":["", ""],
+    "ImageD":["", ""],
     "ArticleLink":["01", "02"],
     "ArticleType":["Normal", "Normal"]
 }
@@ -37,9 +37,19 @@ Week1 = {
 
 
 function createArticles(variableToUse, elementID) {
+    isEven = false
+    if ((variableToUse.ArticleName.length % 2) == 0) {
+        isEven = true
+    }
     main = document.getElementById(elementID)
     template = document.getElementsByTagName("template")[0];
+    rowToUse = ""
     for (i = 0; i < variableToUse.ArticleName.length; i++) {
+        if ((i%2) == 0) {
+            rowToUse = document.createElement("div")
+            rowToUse.id = i
+            rowToUse.classList.add("NewsHeader")
+        }
         clone = template.content.cloneNode(true);
         clone.getElementById("Title").innerHTML = variableToUse.ArticleName[i]
         clone.getElementById("Description").innerHTML = variableToUse.ArticleDescription[i]
@@ -86,10 +96,10 @@ function createArticles(variableToUse, elementID) {
 
         if ((variableToUse.ArticleName.length % 2) == 0) {
             if ((i % 2) != 0 ) {
-                clone.getElementById("Header").style.width = "48%";
+                
                 clone.getElementById("Header").style.float = "left";
             } else {
-                clone.getElementById("Header").style.width = "48%";
+                
                 clone.getElementById("Header").style.float = "right";
             }
         } else {
@@ -97,15 +107,19 @@ function createArticles(variableToUse, elementID) {
             clone.getElementById("Header").style.width = "100%";
             clone.getElementById("Header").style.float = "position";
         } else if ((i % 2) == 0 ) {
-            clone.getElementById("Header").style.width = "48%";
+            
             clone.getElementById("Header").style.float = "right";
         } else {
-            clone.getElementById("Header").style.width = "48%";
+            
             clone.getElementById("Header").style.float = "left";
         }
         }
 
 
-        main.insertBefore(clone, main.children[0])
+        rowToUse.insertBefore(clone, rowToUse.children[0])
+        
+        if ((i%2) != 0) {
+            main.insertBefore(rowToUse, main.children[0])
+        }
     }
 }
