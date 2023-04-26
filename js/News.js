@@ -23,15 +23,15 @@ Preseason = {
 }
 
 Week1 = {
-    "ArticleName":["All Lunch Team | Week 1 Day 1"],
-    "ArticleDescription":["Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the tournament!"],
-    "ArticleDate":["24/04"],
-    "ImageA":["Logo.png"],
-    "ImageB":["LG_Final.png"],
-    "ImageC":["WW_Final.png"],
-    "ImageD":["5M_Final.png"],
-    "ArticleLink":["03"],
-    "ArticleType":["Black"]
+    "ArticleName":["All Lunch Team | Week 1 Day 1", "All Lunch Team | Week 1 Day 2"],
+    "ArticleDescription":["Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the tournament!", "Clarrie Jones has announced the All-Lunch top 5 offensive and defensive players from the second day of the tournament."],
+    "ArticleDate":["24/04", "26/04"],
+    "ImageA":["Logo.png", "Logo.png"],
+    "ImageB":["LG_Final.png", "LG_Final.png"],
+    "ImageC":["WW_Final.png", "WW_Final.png"],
+    "ImageD":["5M_Final.png", "5M_Final.png"],
+    "ArticleLink":["03", "04"],
+    "ArticleType":["Black", "Black"]
 }
 
 
