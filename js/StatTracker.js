@@ -81,14 +81,14 @@ function assignPlayers(team) {
     } else if (team == "5 Musketeers") {
         for (i = 0; i<Musketeers.length; i++){
             var opt = document.createElement('option');
-            opt.value = i + 4;
+            opt.value = i + LooseGooses.length;
             opt.innerHTML = Musketeers[i];
             select.appendChild(opt);
         }
     } else {
         for (i = 0; i<WetWillies.length; i++){
             var opt = document.createElement('option');
-            opt.value = i + 9 ;
+            opt.value = i + (LooseGooses.length + Musketeers.length) ;
             opt.innerHTML = WetWillies[i];
             select.appendChild(opt);
         }
@@ -103,11 +103,11 @@ function logDetails() {
     row = table.insertRow(-1);
     winner = ""
     loser = ""
-    if (Scorer.options[Scorer.selectedIndex].value < 4) {
+    if (Scorer.options[Scorer.selectedIndex].value < LooseGooses.length) {
         winner = "Loose Gooses"
         LGstreak = range(LGstreak, 1, 1, 100)
         wStreak = LGstreak
-    } else if (Scorer.options[Scorer.selectedIndex].value < 9) {
+    } else if (Scorer.options[Scorer.selectedIndex].value < (LooseGooses.length + Musketeers.length)) {
         winner = "5 Musketeers"
         Mstreak = range(Mstreak, 1, 1, 100)
         wStreak = Mstreak
