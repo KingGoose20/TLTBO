@@ -47,6 +47,7 @@ function ladder() {
       }
       leader = LadderPoints[0]
       LG = true
+      AddData(LooseGooses, "teamLista")
     } else if ((LadderPoints[1] > LadderPoints[2]) && (LadderPoints[1] > LadderPoints[0])) {
       document.getElementById("firstName").innerHTML = "Wet Willies";
       document.getElementById("firstPoints").innerHTML = LadderPoints[1];
@@ -60,6 +61,7 @@ function ladder() {
       }
       leader = LadderPoints[1]
       WW = true
+      AddData(WetWillies, "teamLista")
     } else {
       document.getElementById("firstName").innerHTML = "5 Musketeers";
       document.getElementById("firstPoints").innerHTML = LadderPoints[2];
@@ -73,6 +75,7 @@ function ladder() {
       }
       leader = LadderPoints[2]
       MM = true
+      AddData(Musketeers, "teamLista")
     }
 
 
@@ -92,6 +95,7 @@ function ladder() {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
       }
       LG = true
+      AddData(LooseGooses, "teamListb")
     } else if (((LadderPoints[1] > LadderPoints[2]) || (LadderPoints[1] > LadderPoints[0])) && WW != true) {
       document.getElementById("secondName").innerHTML = "Wet Willies";
       document.getElementById("secondPoints").innerHTML = LadderPoints[1];
@@ -104,6 +108,7 @@ function ladder() {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
       }
       WW = true
+      AddData(WetWillies, "teamListb")
     } else {
       document.getElementById("secondName").innerHTML = "5 Musketeers";
       document.getElementById("secondPoints").innerHTML = LadderPoints[2];
@@ -116,6 +121,7 @@ function ladder() {
         document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
       }
       MM = true
+      AddData(Musketeers, "teamListb")
     }
 
 
@@ -134,6 +140,7 @@ function ladder() {
       } else {
         document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
       }
+      AddData(LooseGooses, "teamListc")
     } else if (WW == false) {
       document.getElementById("thirdName").innerHTML = "Wet Willies";
       document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
@@ -145,6 +152,7 @@ function ladder() {
       } else {
         document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
       }
+      AddData(WetWillies, "teamListc")
     } else {
       document.getElementById("thirdName").innerHTML = "5 Musketeers";
       document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
@@ -156,6 +164,7 @@ function ladder() {
       } else {
         document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
       }
+      AddData(Musketeers, "teamListc")
     }
 
 
@@ -448,5 +457,15 @@ function boldNumber(number) {
     return("<span class='boldNumber'>" + number + "</span>")
   } else {
     return(number)
+  }
+}
+
+
+
+function AddData(array, elementID) {
+  for (i = 0; i < array.length; i++) {
+    element = document.createElement("p")
+    element.innerHTML = array[i]
+    document.getElementById(elementID).appendChild(element)
   }
 }
