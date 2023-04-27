@@ -35,6 +35,7 @@ Week1 = {
 }
 
 
+numberOfElements = 0
 
 function createArticles(variableToUse, elementID) {
     isEven = false
@@ -115,11 +116,29 @@ function createArticles(variableToUse, elementID) {
         }
         }
 
-
+        clone.getElementById("Header").id = "Element" + numberOfElements
         rowToUse.insertBefore(clone, rowToUse.children[0])
         
         if ((i%2) != 0) {
             main.insertBefore(rowToUse, main.children[0])
         }
+        numberOfElements += 1
     }
+}
+
+
+function onHover(elementToUse) {
+    ourElement = document.getElementById(elementToUse)
+    ourElement.getElementsByTagName("h3")[0].classList.add("TitleHover")
+    ourElement.getElementsByTagName("p")[0].classList.add("TitleHover")
+    ourElement.getElementsByTagName("h5")[0].classList.add("TitleHover")
+    images =  ourElement.getElementsByTagName("img")   
+}
+
+function offHover(elementToUse) {
+    ourElement = document.getElementById(elementToUse)
+    ourElement.getElementsByTagName("h3")
+    ourElement.getElementsByTagName("h3")[0].classList.remove("TitleHover")
+    ourElement.getElementsByTagName("p")[0].classList.remove("TitleHover")
+    ourElement.getElementsByTagName("h5")[0].classList.remove("TitleHover")
 }
