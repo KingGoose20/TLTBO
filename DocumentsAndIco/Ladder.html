@@ -52,11 +52,15 @@
     }
 
     @keyframes Shrink {
-      0% {
-        width: 80%
+      from {
+        display: block;
+        transform: rotate3d(0, 0, 0, 0deg);
+        width: 80%;
       }
 
-      100% {
+      to {
+        display: block;
+        transform: rotate3d(0, 1, 1, 360deg);
         width: 40%;
       }
     }
@@ -96,9 +100,6 @@
         </a>
         <nav class="navbar heading-links w-nav-menu">
           <ul class="nav-menu">
-            <li class="nav-item" id="DraftElement">
-               <a href="../DocumentsAndIco/Draft.html" class="navigation-link w-nav-link" style="color: darkred" id="DraftText">Draft</a>
-             </li>
             <li class="nav-item">
               <a href="#" class="navigation-link w-nav-link w--current">Ladder</a>
             </li>
@@ -252,9 +253,9 @@
   <script>
       justRan = false
       function LadderMain(ImageID, TeamListID) {
-        ImageElement = document.getElementById(ImageID)
-        TeamListElement = document.getElementById(TeamListID)
         if (!justRan) {
+          ImageElement = document.getElementById(ImageID)
+          TeamListElement = document.getElementById(TeamListID)
           ImageElement.style.animation = "none"
           TeamListElement.style.animation = "none"
           ImageElement.offsetHeight
@@ -277,7 +278,8 @@
             TeamListElement.style.animation = "TeamList 2s 1 reverse"
             TeamListElement.style.animationFillMode = 'forwards';
             
-            setTimeout(() => { TeamListElement.style.display = "none"; justRan = false }, 1800);
+            setTimeout(() => { TeamListElement.style.display = "none";}, 1800);
+            setTimeout(() => {justRan = false }, 2500);
           }, 6000);
 
         }

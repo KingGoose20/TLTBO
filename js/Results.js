@@ -465,7 +465,12 @@ function boldNumber(number) {
 function AddData(array, elementID) {
   for (i = 0; i < array.length; i++) {
     element = document.createElement("p")
-    element.innerHTML = array[i]
+    if (i==0) {
+      element.innerHTML = "<strong>GM - " + array[i] + "</strong>"
+    } else {
+      element.innerHTML = array[i]
+    }
+    
     document.getElementById(elementID).appendChild(element)
   }
 }
