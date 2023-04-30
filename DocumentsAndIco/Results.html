@@ -59,18 +59,36 @@
       transition: all 0.7s ease-in-out;
     }
 
-    tr:hover {
+    tr:hover.boxScore {
       line-height: 45px;
       font-size: 24px
     }
 
-    .ResultsGrow {
-      animation: ResultsGrow 0.7s infinite alternate;
-    }
     @keyframes ResultsGrow {
+      0% {
+        line-height: 30px;
+      }
+
+      10% {
+        line-height: 30px;
+      }
+
+      40% {
+        color: inherit
+      }
+      60% {
+        color: rgb(200,200,200)
+      }
+      90% {
+        line-height: 45px;
+        font-size: 24px;
+        color: rgb(200,200,200);
+      }
+
       100% {
         line-height: 45px;
-        font-size: 24px
+        font-size: 24px;
+        color: rgb(200,200,200);
       }
     }
 
@@ -159,7 +177,7 @@
               <col style="width:17%">
               <col style="width:17%">
               <col style="width:17%">
-              <tr>
+              <tr class="boxScore">
                 <td><span class="boldNumber">Scoring</span></td>
                 <td><span class="boldNumber">Points</span></td>
                 <td><span class="boldNumber">Finishes</span></td>
@@ -191,6 +209,27 @@
  <script src="heading.js"></script>
   <script src="../js/Results.js"></script>
   <script>results(); asOf()</script>
+  <script>
+    i = 0
+    table = document.getElementById("mainTable")
+    function mainFunction(x) {
+      i++
+      animation = "ResultsGrow 1.8s 2 alternate"
+      if (i < table.rows.length) {
+        setTimeout(() => {
+          table.rows[i].style.animation = "none"
+          table.rows[i].offsetHeight
+          table.rows[i].style.animation = animation; 
+          table.rows[i].style.animationTimingFunction = "ease-in-out";
+          mainFunction(1800)
+        }, x)
+      } else {
+        i = 0; 
+        mainFunction(1800)
+      }
+    }
+    mainFunction(0)
+  </script>
 </body>
 
 </html>
