@@ -128,17 +128,13 @@ function createArticles(variableToUse, elementID) {
 
 
 function onHover(elementToUse) {
-    ourElement = document.getElementById(elementToUse)
-    ourElement.getElementsByTagName("h3")[0].classList.add("TitleHover")
-    ourElement.getElementsByTagName("p")[0].classList.add("TitleHover")
-    ourElement.getElementsByTagName("h5")[0].classList.add("TitleHover")
-    images =  ourElement.getElementsByTagName("img")   
+    elementToUse.getElementsByTagName("h3")[0].classList.add("TitleHover")
+    elementToUse.getElementsByTagName("p")[0].classList.add("TitleHover")
+    elementToUse.getElementsByTagName("h5")[0].classList.add("TitleHover")
 }
 
 function offHover(elementToUse) {
-    ourElement = document.getElementById(elementToUse)
-    ourElement.getElementsByTagName("h3")
-    ourElement.getElementsByTagName("h3")[0].classList.remove("TitleHover")
-    ourElement.getElementsByTagName("p")[0].classList.remove("TitleHover")
-    ourElement.getElementsByTagName("h5")[0].classList.remove("TitleHover")
+    elementToUse.getElementsByTagName("h3")[0].classList.remove("TitleHover")
+    elementToUse.getElementsByTagName("p")[0].classList.remove("TitleHover")
+    elementToUse.getElementsByTagName("h5")[0].classList.remove("TitleHover")
 }
