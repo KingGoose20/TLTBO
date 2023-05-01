@@ -95,6 +95,13 @@ function RunMain() {
     PlayerImage.src = mainArray.PlayerImage[number]
     mainArea.style.display = ''
     pastDetails.style.display = ""
+    if (mainArray.TeamImage[number] == "../Images/5M_Final.png") {
+      PlayerImage.style.border = "5px solid rgb(71,174,181)"
+    } else if (mainArray.TeamImage[number] == "../Images/WW_Final.png") {
+      PlayerImage.style.border = "5px solid rgb(136,54,3)"
+    } else {
+      PlayerImage.style.border = "5px solid rgb(195,45,83)"
+    }
 
 
 
