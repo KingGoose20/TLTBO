@@ -18,7 +18,7 @@
   <title>Results | TLTBO</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="../CSS/MainSS.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js" type="text/javascript">
+  <script src="../js/Webfont.js" type="text/javascript">
   </script>
   <script type="text/javascript">
     WebFont.load({
@@ -129,82 +129,80 @@
       </div>
     </div>
   </div>
-        <div class="section" style="padding: 60px 10px; height:auto; min-height: 500px;">
-          <div class="w-container fade-in" style="height:100%">
-            <h3>Game-by-game</h3>
-            <br>
-            <div style="overflow-x: auto;">
-              <table style="width: 100%; text-align: center; min-width: 850px" class="heading-hide" id="mainTable">
-                <col style="width:12%">
-                <col style="width:16%">
-                <col style="width:16%">
-                <col style="width:20%">
-                <col style="width:15%">
-                <col style="width:7%">
-                <col style="width:7%">
-                <col style="width:7%">
-              <tr>
-                  <td><span class="boldNumber">Game Number</span></td>
-                  <td><span class="boldNumber">Winner</span></td>
-                  <td><span class="boldNumber">Loser</span></td>
-                  <td><span class="boldNumber">Scorer</span></td>
-                  <td><span class="boldNumber">Type</span></td>
-                  <td><span class="boldNumber">W-Streak</span></td>
-                  <td><span class="boldNumber">L-Streak</span></td>
-                  <td><span class="boldNumber">S-Streak</span></td>
-              </tr>
-              </table>
-            </div>
-            <br>
-            <br>
-            <span class="inverseheading-hide"><p><b><u><i>Due to your device size, you cannot view the individual game results. Please go into <span style="color: grey;">landscape mode</span> or <span style="color: grey;">download the results</span> to view them.</i></u></b></p></span>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <p>As the <i><u><span id="winning"></span></u></i> had the best record today, they will start with the ball against the <i><u><span id="losing"></span></u></i>.</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h3>Box score</h3>
-            <br>
-            <table style="width: 70%; text-align: center; margin-left:auto; margin-right: auto;" id="scoringTable">
-              <col style="width:32%">
-              <col style="width:17%">
-              <col style="width:17%">
-              <col style="width:17%">
-              <col style="width:17%">
-              <tr class="boxScore">
-                <td><span class="boldNumber">Scoring</span></td>
-                <td><span class="boldNumber">Points</span></td>
-                <td><span class="boldNumber">Finishes</span></td>
-                <td><span class="boldNumber">Midrange</span></td>
-                <td><span class="boldNumber">3 Pointers</span></td>
-              </tr>
-            </table>
-          </div>
-          <br><br><br>
-        <div class="section accent" style="padding: 60px 10px; height:auto; min-height: 300px;">
-          <div class="w-container fade-in" style="height:100%">
-            <div class="section-title-group" style="margin:0px; height:100%">
-              <h1 class="title">To view past results and statistics, download the file below.</h1>
-              <br>
-              <br>
-              <a href="../Other Files/PastResults.xlsx" download><h2>Download Past Results Here</h2></a>
-              <br>
-              <p>Note: Naming conventions for dates are 'datemonth' (e.g. 4th of Feburary : 402)</p>
-            </div>
-          </div>
-        </div>  
-        <div id="footer">
-          <script>footer("results")</script>
-        </div> 
+    <div class="section" style="padding: 60px 10px; height:auto; min-height: 500px;">
+      <div class="w-container fade-in" style="height:100%">
+        <h3>Game-by-game</h3>
+        <br>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; text-align: center; min-width: 850px" class="heading-hide" id="mainTable">
+            <col style="width:12%">
+            <col style="width:16%">
+            <col style="width:16%">
+            <col style="width:20%">
+            <col style="width:15%">
+            <col style="width:7%">
+            <col style="width:7%">
+            <col style="width:7%">
+          <tr>
+              <td><span class="boldNumber">Game Number</span></td>
+              <td><span class="boldNumber">Winner</span></td>
+              <td><span class="boldNumber">Loser</span></td>
+              <td><span class="boldNumber">Scorer</span></td>
+              <td><span class="boldNumber">Type</span></td>
+              <td><span class="boldNumber">W-Streak</span></td>
+              <td><span class="boldNumber">L-Streak</span></td>
+              <td><span class="boldNumber">S-Streak</span></td>
+          </tr>
+          </table>
+        </div>
+        <br>
+        <br>
+        <span class="inverseheading-hide"><p><b><u><i>Due to your device size, you cannot view the individual game results. Please go into <span style="color: grey;">landscape mode</span> or <span style="color: grey;">download the results</span> to view them.</i></u></b></p></span>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>As the <i><u><span id="winning"></span></u></i> had the best record today, they will start with the ball against the <i><u><span id="losing"></span></u></i>.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Box score</h3>
+        <br>
+        <table style="width: 70%; text-align: center; margin-left:auto; margin-right: auto;" id="scoringTable">
+          <col style="width:32%">
+          <col style="width:17%">
+          <col style="width:17%">
+          <col style="width:17%">
+          <col style="width:17%">
+          <tr class="boxScore">
+            <td><span class="boldNumber">Scoring</span></td>
+            <td><span class="boldNumber">Points</span></td>
+            <td><span class="boldNumber">Finishes</span></td>
+            <td><span class="boldNumber">Midrange</span></td>
+            <td><span class="boldNumber">3 Pointers</span></td>
+          </tr>
+        </table>
       </div>
+      <br><br><br>
     </div>
-  </div>
+    <div class="section accent" style="padding: 60px 10px; height:auto; min-height: 300px;">
+      <div class="w-container fade-in" style="height:100%">
+        <div class="section-title-group" style="margin:0px; height:100%">
+          <h1 class="title">To view past results and statistics, download the file below.</h1>
+          <br>
+          <br>
+          <a href="../Other Files/PastResults.xlsx" download><h2>Download Past Results Here</h2></a>
+          <br>
+          <p>Note: Naming conventions for dates are 'datemonth' (e.g. 4th of Feburary : 402)</p>
+        </div>
+      </div>
+    </div>  
+    <div id="footer">
+      <script>footer("results")</script>
+    </div> 
 
  <script src="heading.js"></script>
   <script src="../js/Results.js"></script>

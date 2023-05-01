@@ -95,7 +95,7 @@ function footer(location) {
                     <a href="replacerDocumentsAndIco/Results.html" class="footer-link">Results</a>
                     <a href="replacerDocumentsAndIco/News.html" class="footer-link">News</a>
                     <a href="replacerDocumentsAndIco/Stats.html" class="footer-link">Stats</a>
-                    <a href="replacerDocumentsAndIco/Rules.html" class="footer-link">Rules</a>
+                    <a href="replacerDocumentsAndIco/Rules.html" class="footer-link">Rules + More</a>
                 </div>
                 </div>
             </div>
