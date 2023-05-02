@@ -25,6 +25,15 @@ weekOneDayTwo = {
     "DefensiveDescription":["Alex Galt was like a wall in the paint, his interior defence coming clutch to give the short-handed 5 musketeers the win today. Angus just did Angus things, making feats such as guarding Rudy and Alex look like child’s play. Rudy was much the same, coming in with a strong interior and perimeter game. Nicholas was also pivotal in the 5 musketeers win, and Will Kim played strongly, as well as stunning the crowd with a strong block on Alex."]
 }
 
+weekTwoDayOne = {
+    "Date":["2/05"],
+    "WeeklyPosition":["First day of the second week"],
+    "Offensive":["Angus Walker", "Samuel McConaghy", "Clarrie Jones", "Michael Iffland", "Ryan Pattemore"],
+    "Defensive":["William Kim", "Samuel McConaghy", "Angus Walker", "Alexander Galt", "Nicholas Szogi"],
+    "OffensiveDescription":["Angus Walker just proved why he is the best player in TLTBO. An unbeaten 6 points, which included some highlight reel and one’s, and a clean triple. Samuel comes in a 2nd with equal second most points (3) however what set him apart was his lack of turnovers, and all-round efficient offence. I come in at 3rd with three points, including a mid-range and a 3. My turnovers on the day held me below Sam. Michael is in at 4 with two tough middies, one coming in the clutch in the final game, and one coming to earn the Wet Willies their first dub. Ryan with two points, and tough bank middie and a nice layup of the post moves."],
+    "DefensiveDescription":["While Kimmy didn’t record a point, his defence guided the Loose Gooses to the dub, holding Alex to only one point against the Loose Gooses. Samuel McConaghy did all he could, guarding Michael and Angus to get his team the win, with his trademark lockdown D. Angus comes in just behind Samuel, with a very strong day, however a couple of late makes from Rudy and Samuel push him to third. Alex Galt remained a brick wall in the paint, coming in at 4, and Nick did a good job of supporting his teammates with help defence, while being a physical presence in rebounding and post defence."]
+}
+
 function main(setToUse) {
     document.getElementById("date").innerHTML = setToUse.Date[0]
     for (i = 0; i < setToUse.Offensive.length; i++) {

@@ -34,6 +34,18 @@ Week1 = {
     "ArticleType":["Black", "Black"]
 }
 
+Week2 = {
+    "ArticleName":["All Lunch Team | Week 2 Day 1"],
+    "ArticleDescription":["Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the second week!"],
+    "ArticleDate":["3/05"],
+    "ImageA":["Logo.png"],
+    "ImageB":["LG_Final.png"],
+    "ImageC":["WW_Final.png"],
+    "ImageD":["5M_Final.png"],
+    "ArticleLink":["05"],
+    "ArticleType":["Black"]
+}
+
 
 numberOfElements = 0
 
@@ -108,10 +120,8 @@ function createArticles(variableToUse, elementID) {
             clone.getElementById("Header").style.width = "100%";
             clone.getElementById("Header").style.float = "position";
         } else if ((i % 2) == 0 ) {
-            
             clone.getElementById("Header").style.float = "right";
         } else {
-            
             clone.getElementById("Header").style.float = "left";
         }
         }
@@ -120,6 +130,9 @@ function createArticles(variableToUse, elementID) {
         rowToUse.insertBefore(clone, rowToUse.children[0])
         
         if ((i%2) != 0) {
+            main.insertBefore(rowToUse, main.children[0])
+            console.log("abcd")
+        } else if (variableToUse.ArticleName.length == 1) {
             main.insertBefore(rowToUse, main.children[0])
         }
         numberOfElements += 1
