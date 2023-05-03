@@ -20,7 +20,7 @@ OverrideOrder = ["WW", "WW", "5M"]
 overRideDate = ""
 overrideW = ""
 overrideL = "Wet Willies"
-
+overrideDayPoints = []
 
 
 
@@ -336,22 +336,40 @@ function results() {
     }
   }
 
+  document.getElementById("LGrecord").innerHTML = LGwins + " - " + LGloss
+  document.getElementById("WWrecord").innerHTML = WWwins + " - " + WWloss
+  document.getElementById("5Mrecord").innerHTML = Mwins + " - " + Mloss
+  document.getElementById("LGpoints").innerHTML = "2"
+  document.getElementById("WWpoints").innerHTML = "2"
+  document.getElementById("5Mpoints").innerHTML = "2"
+
   if ((LGwins/LGloss) > (WWwins/WWloss) && (LGwins/LGloss) > (Mwins/Mloss)) {
     document.getElementById("winning").innerHTML = "Loose Gooses";
+    document.getElementById("LGpoints").innerHTML = "3"
   } else if ((WWwins/WWloss) > (LGwins/LGloss) && (WWwins/WWloss) > (Mwins/Mloss)) {
     document.getElementById("winning").innerHTML = "Wet Willies";
+    document.getElementById("WWpoints").innerHTML = "3"
   } else {
     document.getElementById("winning").innerHTML = "5 Musketeers";
+    document.getElementById("5Mpoints").innerHTML = "3"
   }
 
   if ((LGwins/LGloss) < (WWwins/WWloss) && (LGwins/LGloss) < (Mwins/Mloss)) {
     document.getElementById("losing").innerHTML = "Loose Gooses";
+    document.getElementById("LGpoints").innerHTML = "1"
   } else if ((WWwins/WWloss) < (LGwins/LGloss) && (WWwins/WWloss) < (Mwins/Mloss)) {
     document.getElementById("losing").innerHTML = "Wet Willies";
+    document.getElementById("WWpoints").innerHTML = "1"
   } else {
     document.getElementById("losing").innerHTML = "5 Musketeers";
+    document.getElementById("5Mpoints").innerHTML = "1"
   }
 
+  if (overrideDayPoints.length != 0) {
+    document.getElementById("LGpoints").innerHTML = overrideDayPoints[0]
+    document.getElementById("WWpoints").innerHTML = overrideDayPoints[1]
+    document.getElementById("5Mpoints").innerHTML = overrideDayPoints[2]
+  }
   if (overrideW != "") {
     document.getElementById("winning").innerHTML = overrideW;
   }
@@ -435,6 +453,8 @@ function results() {
     }
 
   }
+
+
 
 }
 
