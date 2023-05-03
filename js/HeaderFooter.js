@@ -125,7 +125,7 @@ function footer(location) {
         x = `
         accent">
         <div>
-            <a href="../Stat Tracker/Main.html" class="button">Click here to go to stat tracking app</a>
+            <a href="../Admin/StatTracker.html" class="button">Click here to go to stat tracking app</a>
         </div>
         `;
         
