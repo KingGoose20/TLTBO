@@ -34,6 +34,15 @@ weekTwoDayOne = {
     "DefensiveDescription":["While Kimmy didn’t record a point, his defence guided the Loose Gooses to the dub, holding Alex to only one point against the Loose Gooses. Samuel McConaghy did all he could, guarding Michael and Angus to get his team the win, with his trademark lockdown D. Angus comes in just behind Samuel, with a very strong day, however a couple of late makes from Rudy and Samuel push him to third. Alex Galt remained a brick wall in the paint, coming in at 4, and Nick did a good job of supporting his teammates with help defence, while being a physical presence in rebounding and post defence."]
 }
 
+weekTwoDayTwo = {
+    "Date":["3/05"],
+    "WeeklyPosition":["Second day of the second week"],
+    "Offensive":["Alexander Galt", "William Kim", "Samuel McConaghy", "Nicholas Szogi", "Rudy Hoschke"],
+    "Defensive":["Samuel McConaghy", "Alexander Galt", "William Kim", "Rudy Hoschke", "Nicholas Szogi"],
+    "OffensiveDescription":["Alexander Galt dominated the board today, with rebounds, a 6 point score that’s becoming more and more common for players of his calibre to achieve. William Kim proved the haters wrongs, pulling up today looking like vintage Kimmy, hitting his unguardable fade 3 times to guide the short handed Loose Gooses to a strong second place. Samuel McConaghy had a great day acting in his natural position as playmaker, feeding Alex all day, while also recording two points. Nick in at 4 with 2 finishes, one of those being really tough off the drive, and Rudy in due to his all round play, and two point effort. "],
+    "DefensiveDescription":["In a dominant performance by the 5 Musketeers, 3 players made each list as the took advantage of a weaker playing field. Samuel McConaghy is a defensive force, ever present in the paint and on the perimeter. Alex Galt held the paint in his grasp, allowing no one to breach, and no one to score. Will Kim rose up spectacularly for his usual blocks and shot contests, playing a large part in the Loose Gooses placing. Rudy Hoschke, despite his team’s poor result, was doing all he could on the defensive end. In at 5, the third player from the 5 Musketeers big three, Nicholas Szogi, using his size to box out and prevent."]
+}
+
 function main(setToUse) {
     document.getElementById("date").innerHTML = setToUse.Date[0]
     for (i = 0; i < setToUse.Offensive.length; i++) {

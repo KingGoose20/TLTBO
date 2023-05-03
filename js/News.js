@@ -35,15 +35,15 @@ Week1 = {
 }
 
 Week2 = {
-    "ArticleName":["All Lunch Team | Week 2 Day 1"],
-    "ArticleDescription":["Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the second week!"],
-    "ArticleDate":["3/05"],
-    "ImageA":["Logo.png"],
-    "ImageB":["LG_Final.png"],
-    "ImageC":["WW_Final.png"],
-    "ImageD":["5M_Final.png"],
-    "ArticleLink":["05"],
-    "ArticleType":["Black"]
+    "ArticleName":["All Lunch Team | Week 2 Day 1","All Lunch Team | Week 2 Day 2"],
+    "ArticleDescription":["Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the second week!","Clarrie Jones has announced the All-Lunch top 5 offensive and defensive players from the second day of the second week!"],
+    "ArticleDate":["2/05","3/05"],
+    "ImageA":["Logo.png", "Logo.png"],
+    "ImageB":["LG_Final.png", "LG_Final.png"],
+    "ImageC":["WW_Final.png", "WW_Final.png"],
+    "ImageD":["5M_Final.png", "5M_Final.png"],
+    "ArticleLink":["05","06"],
+    "ArticleType":["Black","Black"]
 }
 
 
