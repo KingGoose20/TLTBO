@@ -336,9 +336,9 @@ function results() {
     }
   }
 
-  document.getElementById("LGrecord").innerHTML = LGwins + " - " + LGloss
-  document.getElementById("WWrecord").innerHTML = WWwins + " - " + WWloss
-  document.getElementById("5Mrecord").innerHTML = Mwins + " - " + Mloss
+  document.getElementById("LGrecord").innerHTML = LGwins + " - " + LGloss + " <strong>(" + (Math.round(LGwins/(LGwins+LGloss)*1000)/10) + "%)</strong>"
+  document.getElementById("WWrecord").innerHTML = WWwins + " - " + WWloss + " <strong>(" + (Math.round(WWwins/(WWwins+WWloss)*1000)/10) + "%)</strong>"
+  document.getElementById("5Mrecord").innerHTML = Mwins + " - " + Mloss + " <strong>(" + (Math.round(Mwins/(Mwins+Mloss)*1000)/10) + "%)</strong>"
   document.getElementById("LGpoints").innerHTML = "2"
   document.getElementById("WWpoints").innerHTML = "2"
   document.getElementById("5Mpoints").innerHTML = "2"
