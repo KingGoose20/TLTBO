@@ -2738,6 +2738,8 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   z-index: 2;
   position: fixed;
   width: 100%;
+  transition: top 0.3s;
+  top: 0
 }
 
 a {

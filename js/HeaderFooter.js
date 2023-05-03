@@ -2,7 +2,7 @@ function header(location) {
     const template = document.createElement('template');
 
     template.innerHTML = `
-        <div class="Whole">
+        <div class="Whole" id="Whole">
         <div class="w-container">
         <a href="replacerindex.html" class="heading w--current" style="padding:8px;">
             <h1 class="title animate-character"><img src="replacerImages/Logo.png" style="width:0.75em"><span class="heading-hide">   Lunch Time Basketballers</span><span class="inverseheading-hide">   TLTBO</span></h1>
