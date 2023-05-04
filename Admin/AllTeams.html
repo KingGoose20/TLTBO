@@ -188,6 +188,7 @@
     table {
       position: relative;
       border-collapse: separate;
+      background-color: rgb(30,30,30);
     }
 
     th {
@@ -310,20 +311,48 @@
           <div>
             <br><br><br><br><br><br>
             <h3 style="font-size: 30px">Logged Details</h3><br>
-              <table style="width: 100%; text-align: center;" id="loggedDetails">
+              <table style="width: 100%; text-align: center;" id="tableA">
+                <colgroup>
+                  <col style="width: 15%;">
+                  <col style="width: 17%;">
+                  <col style="width: 17%;">
+                  <col style="width: 17%;">
+                  <col style="width: 17%;">
+                  <col style="width: 17%;">
+                </colgroup>
+                <tr>
+                  <th></th>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                </tr>
                 <tr style="height: 50px;" id="oPlayersTable">
                     <td>Offensive Players</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
                 <tr style="height: 50px;" id="dPlayersTable">
                     <td>Defensive Players</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                 </tr>
               </table><br><br>
               <table style="width: 100%; text-align: center;" id="loggedDetails">
                 <tr style="height: 50px;" id="oDescriptionTable">
                     <td style="width: 30%">Offensive Description</td>
+                    <td></td>
                 </tr>
                 <tr style="height: 50px;" id="dDescriptionTable">
                     <td style="width: 30%">Defensive Description</td>
+                    <td></td>
                 </tr>
               </table><br><br><br>
               <button id="button" onclick="exportToEmail()" class="button">Copy to Clipboard</button>

@@ -9,15 +9,8 @@ function LogPlayers() {
     oPlayers.push(o.options[o.selectedIndex].text)
     dPlayers.push(d.options[d.selectedIndex].text)
     document.getElementById("number").innerHTML = oPlayers.length + 1
-    node = document.createElement("td")
-    textnode = document.createTextNode(oPlayers.length + ". " + (o.options[o.selectedIndex].text));
-    node.appendChild(textnode);
-    document.getElementById("oPlayersTable").appendChild(node);
-
-    node = document.createElement("td")
-    textnode = document.createTextNode(dPlayers.length + ". " + (d.options[d.selectedIndex].text));
-    node.appendChild(textnode);
-    document.getElementById("dPlayersTable").appendChild(node);
+    document.getElementById("oPlayersTable").childNodes[(oPlayers.length*2)+1].innerHTML = o.options[o.selectedIndex].text
+    document.getElementById("dPlayersTable").childNodes[(dPlayers.length*2)+1].innerHTML = d.options[d.selectedIndex].text
 
     alert("Logged")
 }
@@ -26,22 +19,8 @@ function LogPlayers() {
 function SaveDetails() {
     oDescription = document.getElementById("offensiveDescription").value
     dDescription = document.getElementById("defensiveDescription").value
-    oTable = document.getElementById("oDescriptionTable")
-    dTable = document.getElementById("dDescriptionTable")
-    node = document.createElement("td")
-    for (i = 1; i < document.getElementById("dDescriptionTable").children.length; i++) {
-        oTable.removeChild(oTable.lastElementChild)
-        dTable.removeChild(dTable.lastElementChild)
-    }
-
-    textnode = document.createTextNode(dDescription);
-    node.appendChild(textnode);
-    document.getElementById("dDescriptionTable").appendChild(node);
-
-    node = document.createElement("td")
-    textnode = document.createTextNode(oDescription);
-    node.appendChild(textnode);
-    document.getElementById("oDescriptionTable").appendChild(node);
+    document.getElementById("dDescriptionTable").childNodes[3].innerHTML = dDescription
+    document.getElementById("oDescriptionTable").childNodes[3].innerHTML = oDescription
 }
 
 function exportToEmail() {
