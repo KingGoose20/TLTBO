@@ -18,7 +18,7 @@ Preseason = {
     "ImageB":["", "WW_Final.png"],
     "ImageC":["", ""],
     "ImageD":["", ""],
-    "ArticleLink":["01", "02"],
+    "ArticleLink":["01.html", "02.html"],
     "ArticleType":["Normal", "Normal"]
 }
 
@@ -30,7 +30,7 @@ Week1 = {
     "ImageB":["LG_Final.png", "LG_Final.png"],
     "ImageC":["WW_Final.png", "WW_Final.png"],
     "ImageD":["5M_Final.png", "5M_Final.png"],
-    "ArticleLink":["03", "04"],
+    "ArticleLink":["OD.html?Date=2404", "OD.html?Date=2604"],
     "ArticleType":["Black", "Black"]
 }
 
@@ -42,7 +42,7 @@ Week2 = {
     "ImageB":["LG_Final.png", "LG_Final.png"],
     "ImageC":["WW_Final.png", "WW_Final.png"],
     "ImageD":["5M_Final.png", "5M_Final.png"],
-    "ArticleLink":["05","06"],
+    "ArticleLink":["OD.html?Date=0205","OD.html?Date=0305"],
     "ArticleType":["Black","Black"]
 }
 
@@ -67,7 +67,7 @@ function createArticles(variableToUse, elementID) {
         clone.getElementById("Title").innerHTML = variableToUse.ArticleName[i]
         clone.getElementById("Description").innerHTML = variableToUse.ArticleDescription[i]
         clone.getElementById("Date").innerHTML = variableToUse.ArticleDate[i]
-        clone.getElementById("Link").href = "NewsPages/" + variableToUse.ArticleLink[i] + ".html"
+        clone.getElementById("Link").href = "NewsPages/" + variableToUse.ArticleLink[i]
 
         switch (variableToUse.ArticleType[i]) {
             case "Normal" :

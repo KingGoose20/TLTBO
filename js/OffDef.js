@@ -45,7 +45,12 @@ weekTwoDayTwo = {
 
 
 
-function main(setToUse) {
+function main() {
+    currentLocation = window.location
+    myKeyValues = currentLocation.search
+    urlParams = new URLSearchParams(myKeyValues)
+    SelectedDate = urlParams.get("Date")
+    setToUse = findVariable(SelectedDate);
     document.getElementById("date").innerHTML = setToUse.Date[0]
     for (i = 0; i < setToUse.Offensive.length; i++) {
         toAdd = "<li>" + setToUse.Offensive[i] + "</li>"
@@ -58,4 +63,21 @@ function main(setToUse) {
     document.getElementById("offensiveDescription").innerHTML = setToUse.OffensiveDescription[0]
     document.getElementById("defensiveDescription").innerHTML = setToUse.DefensiveDescription[0]
     document.getElementById("WeeklyPosition").innerHTML = setToUse.WeeklyPosition[0]
+}
+
+function findVariable(Param) {
+    switch (Param) {
+        case "2404" :
+            return weekOnedayOne
+            break;
+        case "2604" :
+            return weekOneDayTwo
+            break;
+        case "0205" :
+            return weekTwoDayOne
+            break;
+        case "0305" :
+            return weekTwoDayTwo
+            break;
+    }
 }
