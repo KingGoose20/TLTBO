@@ -2953,6 +2953,22 @@ html {
   background-image: url("../Images/jokic-mvp.jpg");
 }
 
+.lebron {
+  background-image: url("../Images/lebron.jpeg");
+}
+
+.ja {
+  background-image: url("../Images/jaMorant.jpg");
+}
+
+.curry {
+  background-image: url("../Images/Curry.jpg")
+}
+
+.dwade {
+  background-image: url("../Images/dwade.jpg")
+}
+
 .admin {
   background-image: url("../Images/Admin.jpg");
 }

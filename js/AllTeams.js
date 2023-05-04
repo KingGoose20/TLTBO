@@ -65,6 +65,6 @@ function exportToEmail() {
     // Alert the copied text
     alert("The following text has been copied to the clipboard: \n\n" + toExport + "\n\nPlease send me this directly.");
     OurDate = new Date()
-    extraParams = 'subject=Results from ' + (OurDate.getDate() + "/" + (OurDate.getMonth() + 1)) + "&body=" + elements[0] + "%0D%0A" + elements[1] + "%0D%0A" + elements[2] + "%0D%0A" + elements[3];
+    extraParams = 'subject=All Teams from the ' + (OurDate.getDate() + "/" + (OurDate.getMonth() + 1)) + "&body=" + elements[0] + "%0D%0A" + elements[1] + "%0D%0A" + elements[2] + "%0D%0A" + elements[3];
     window.open('mailto:011445@asas.qld.edu.au?' + extraParams);
 }

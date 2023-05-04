@@ -142,3 +142,7 @@ function footer(location) {
     document.getElementById("footer").appendChild(template.content);
 
 }
+
+
+
+imageURL = ["mvp", "rules", "champions", "lebron", "ja", "curry", "dwade"]
