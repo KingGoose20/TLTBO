@@ -17,7 +17,7 @@
   <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
-  <title>App | TLTBO</title>
+  <title>All Teams | TLTBO</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="../CSS/MainSS.css" rel="stylesheet" type="text/css" />
   <script src="../js/Webfont.js" type="text/javascript">
@@ -30,12 +30,6 @@
     });
   </script>
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" />
-  <script>
-    window.addEventListener('beforeunload', function (e) {
-      e.preventDefault();
-      e.returnValue = '';
-    });
-  </script>
 </head>
 
 <body>
@@ -236,10 +230,10 @@
   <div class="hero-section centered stats">
     <br>
     <div data-ix="new-interaction" class="w-container">
-      <h1 class="hero-heading mainHeading animate-heading">Stat Tracker</h1>
+      <h1 class="hero-heading mainHeading animate-heading">All Teams App</h1>
       <br>
       <div>
-        <a href="#bottom" class="button">Stat Tracking App for Lunch Time</a>
+        <a href="#bottom" class="button">Welcome, Top G Clarrie Jones</a>
       </div>
     </div>
   </div>
@@ -248,78 +242,91 @@
                 <div class="section-subheading center" style="font-size:6rem; line-height: 50px; color: gold">Let's Start!</div>
           </div>
           <br><br><br>
-          <p>Choose starting teams</p>
+          <p>Choose players (players that are number <strong id="number">1</strong> on their list)</p>
           <table style="width: 100%;" class="menu">
             <tr class="menu">
                 <td class="menu">
                     <form>
-                    <select id="aTeam" style="width:40vw">
-                        <option disabled selected value="none">Choose a starting team A</option>
-                        <option value="zero">Loose Gooses</option>
-                        <option value="one">5 Musketeers</option>
-                        <option value="two">Wet Willies</option>
-                    </select>
-            </form>
+                        <select id="oPlayer" style="width:40vw">
+                            <option disabled selected value="none">Offensive Player</option>
+                            <option value="zero">Jasper Collier</option>
+                            <option value="one">Conor Farrington</option>
+                            <option value="two">Alexander Galt</option>
+                            <option value="three">Rudy Hoschke</option>
+                            <option value="four">Michael Iffland</option>
+                            <option value="five">Lukas Johnston</option>
+                            <option value="six">Clarrie Jones</option>
+                            <option value="seven">William Kim</option>
+                            <option value="eight">Samuel McConaghy</option>
+                            <option value="nine">Ryan Pattemore</option>
+                            <option value="ten">Nicholas Szogi</option>
+                            <option value="eleven">Christopher Tomkinson</option>
+                            <option value="twelve">Angus Walker</option>
+                            <option value="thirteen">Willie Weekes</option>
+                            <option value="fourteen">Mitch Yue</option>
+                            <option value="fifteen">Sam James</option>
+                        </select>
+                    </form>
                 </td>
                 <td class="menu">
                     <form>
-                    <select id="bTeam" style="width:40vw">
-                        <option disabled selected value="none">Choose starting team B</option>
-                        <option value="three">Loose Gooses</option>
-                        <option value="four">5 Musketeers</option>
-                        <option value="five">Wet Willies</option>
-                    </select>
-            </form>
+                        <select id="dPlayer" style="width:40vw">
+                            <option disabled selected value="none">Defensive Player</option>
+                            <option value="zero">Jasper Collier</option>
+                            <option value="one">Conor Farrington</option>
+                            <option value="two">Alexander Galt</option>
+                            <option value="three">Rudy Hoschke</option>
+                            <option value="four">Michael Iffland</option>
+                            <option value="five">Lukas Johnston</option>
+                            <option value="six">Clarrie Jones</option>
+                            <option value="seven">William Kim</option>
+                            <option value="eight">Samuel McConaghy</option>
+                            <option value="nine">Ryan Pattemore</option>
+                            <option value="ten">Nicholas Szogi</option>
+                            <option value="eleven">Christopher Tomkinson</option>
+                            <option value="twelve">Angus Walker</option>
+                            <option value="thirteen">Willie Weekes</option>
+                            <option value="fourteen">Mitch Yue</option>
+                            <option value="fifteen">Sam James</option>
+                        </select>
+                    </form>
                 </td>
             </tr>
+            
 
           </table>
             <br><br>
-            <button id="startButton" onclick="start()" style="width: 40%"><p style="color: black">Start!</p></button>
+            <button id="startButton" onclick="LogPlayers()" style="width: 40%"><p style="color: black">Log Players</p></button>
             <br><br><br><br><br><br><br><br><br><br><br><br>
-            <p>Choose the scorer and score type</p>
-            <table style="width: 100%" class="menu">
-                <tr class="menu">
-                    <td class="menu">
-                        <form>
-                        <select id="Scorer" style="width:40vw">
-                            <option disabled selected value="none">Choose the player who scored</option>
-                        </select>
-                </form>
-                    </td>
-                    <td class="menu">
-                        <form>
-                        <select id="Type" style="width:40vw">
-                            <option disabled selected value="none">Choose the type of score</option>
-                            <option value="three">Finish</option>
-                            <option value="four">Midrange</option>
-                            <option value="five">Three Pointer</option>
-                        </select>
-                </form>
-                    </td>
-                </tr>
-    
-              </table>
-              <br><br>
-              <button id="logButton" onclick="logDetails()" style="width: 40%"><p style="color: black">Log Score</p></button>
+            <p>Enter descriptions below:</p>
+              <br>
+              <h3>Offensive Description:</h3>
+              <textarea type="text" id="offensiveDescription" name="oDes" style="display: inline-block; height: 100px; width: 80%"></textarea><br><br><br><br><br><br>
+              <h3>Defensive Description</h3>
+              <textarea type="text" id="defensiveDescription" name="dDes" style="display: inline-block; height: 100px; width: 80%"></textarea><br><br><br><br><br><br>
+              <button id="logButton" onclick="SaveDetails()" style="width: 40%"><p style="color: black">Save Details</p></button>
         </div>
         <div class="section accent" id="main" style="min-height: 700px;">
           <div>
             <br><br><br><br><br><br>
             <h3 style="font-size: 30px">Logged Details</h3><br>
               <table style="width: 100%; text-align: center;" id="loggedDetails">
-                <tr style="height: 50px;">
-                  <th>Game Number</th>
-                  <th>Winner</th>
-                  <th>Loser</th>
-                  <th>Scorer</th>
-                  <th>Type</th>
-                  <th>W-Streak</th>
-                  <th>L-Streak</th>
-                  <th>S-Streak</th>
+                <tr style="height: 50px;" id="oPlayersTable">
+                    <td>Offensive Players</td>
+                </tr>
+                <tr style="height: 50px;" id="dPlayersTable">
+                    <td>Defensive Players</td>
+                </tr>
+              </table><br><br>
+              <table style="width: 100%; text-align: center;" id="loggedDetails">
+                <tr style="height: 50px;" id="oDescriptionTable">
+                    <td style="width: 30%">Offensive Description</td>
+                </tr>
+                <tr style="height: 50px;" id="dDescriptionTable">
+                    <td style="width: 30%">Defensive Description</td>
                 </tr>
               </table><br><br><br>
-              <button id="button" onclick="htmlTableToExcel('xlsx')" class="button">Export HTML Table to EXCEL</button>
+              <button id="button" onclick="exportToEmail()" class="button">Copy to Clipboard</button>
           </div>
         </div>
     </div>
@@ -327,22 +334,11 @@
   <div id="footer">
     <script>footer("results")</script>
   </div> 
-  <script type="text/javascript">
-    function htmlTableToExcel(type){
-      const d = new Date();
-      CurrentDate = d.getDate() + "-" + (d.getMonth()+1)
-      var data = document.getElementById('loggedDetails');
-      var excelFile = XLSX.utils.table_to_book(data, {sheet: "sheet1"});
-      XLSX.write(excelFile, { bookType: type, bookSST: true, type: 'base64' });
-      XLSX.writeFile(excelFile, 'Results:from:' + CurrentDate + "."+ type);
-    }
-   </script>
-  <script src="../js/StatTracker.js">
+  <script src="../js/AllTeams.js">
 </script>
    
- <script src="heading.js"></script>
+ <script src="../DocumentsAndIco/heading.js"></script>
  <script src="../js/Scroll.js"></script>
-  <script src="Array.js"></script>
 </body>
 
 </html>

@@ -62,8 +62,12 @@ function header(location) {
             break;
         case "App" :
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
-            break;
+            break;          
             
+    }
+    if (location == "admin") {
+        template.innerHTML = template.innerHTML.replace('Lunch Time Basketballers', 'Lunch Time Basketballers | Admin')
+        template.innerHTML = template.innerHTML.replace('animate-character', 'animate-character-admin')
     }
 
     document.getElementById("header").appendChild(template.content);
@@ -125,7 +129,7 @@ function footer(location) {
         x = `
         accent">
         <div>
-            <a href="../Admin/StatTracker.html" class="button">Click here to go to stat tracking app</a>
+            <a href="../Admin/AdminHome.html" class="button">Click here to go to admin!</a>
         </div>
         `;
         

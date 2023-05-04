@@ -648,7 +648,6 @@ textarea.w-input, textarea.w-select {
 }
 
 .w-col {
-  position: relative;
   float: left;
   width: 100%;
   min-height: 1px;
@@ -2294,7 +2293,6 @@ p {
 }
 
 .section {
-  position: relative;
   padding: 80px 10px;
   background-color: rgb(22, 22, 22);
   text-align: center;
@@ -2956,6 +2954,10 @@ html {
   background-image: url("../Images/jokic-mvp.jpg");
 }
 
+.admin {
+  background-image: url("../Images/Admin.jpg");
+}
+
 .gf {
   background-image: url("../Images/GF.jpeg");
 }
@@ -3251,6 +3253,26 @@ html {
     #300e00 29%,
     #ec4700 67%, 
     #972d00 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+.animate-character-admin
+{
+  background-image: linear-gradient(
+    -100deg,
+    #00335f 0%,
+    #002647 29%,
+    #058aff 67%, 
+    #0060b3 100%
   );
   background-clip: border-box;
   background-size: 200% auto;

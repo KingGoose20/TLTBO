@@ -43,6 +43,8 @@ weekTwoDayTwo = {
     "DefensiveDescription":["In a dominant performance by the 5 Musketeers, 3 players made each list as the took advantage of a weaker playing field. Samuel McConaghy is a defensive force, ever present in the paint and on the perimeter. Alex Galt held the paint in his grasp, allowing no one to breach, and no one to score. Will Kim rose up spectacularly for his usual blocks and shot contests, playing a large part in the Loose Gooses placing. Rudy Hoschke, despite his team’s poor result, was doing all he could on the defensive end. In at 5, the third player from the 5 Musketeers big three, Nicholas Szogi, using his size to box out and prevent."]
 }
 
+
+
 function main(setToUse) {
     document.getElementById("date").innerHTML = setToUse.Date[0]
     for (i = 0; i < setToUse.Offensive.length; i++) {
