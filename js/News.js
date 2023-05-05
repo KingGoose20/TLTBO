@@ -46,6 +46,53 @@ Week2 = {
     "ArticleType":["Black","Black"]
 }
 
+Week3 = {
+    "ArticleName":[""],
+    "ArticleDescription":[""],
+    "ArticleDate":[""],
+    "ImageA":[""],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":[""],
+    "ArticleType":[""]
+}
+
+Week4 = {
+    "ArticleName":[""],
+    "ArticleDescription":[""],
+    "ArticleDate":[""],
+    "ImageA":[""],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":[""],
+    "ArticleType":[""]
+}
+
+Week5 = {
+    "ArticleName":[""],
+    "ArticleDescription":[""],
+    "ArticleDate":[""],
+    "ImageA":[""],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":[""],
+    "ArticleType":[""]
+}
+
+Finals = {
+    "ArticleName":[""],
+    "ArticleDescription":[""],
+    "ArticleDate":[""],
+    "ImageA":[""],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":[""],
+    "ArticleType":[""]
+}
 
 numberOfElements = 0
 
@@ -68,7 +115,6 @@ function createArticles(variableToUse, elementID) {
         clone.getElementById("Description").innerHTML = variableToUse.ArticleDescription[i]
         clone.getElementById("Date").innerHTML = variableToUse.ArticleDate[i]
         clone.getElementById("Link").href = "NewsPages/" + variableToUse.ArticleLink[i]
-
         switch (variableToUse.ArticleType[i]) {
             case "Normal" :
                 break;
@@ -106,7 +152,6 @@ function createArticles(variableToUse, elementID) {
         } else {
             clone.getElementById("ImageD").remove();
         }
-
         if ((variableToUse.ArticleName.length % 2) == 0) {
             if ((i % 2) != 0 ) {
                 
@@ -119,6 +164,7 @@ function createArticles(variableToUse, elementID) {
             if (i == (variableToUse.ArticleName.length-1)) {
             clone.getElementById("Header").style.width = "100%";
             clone.getElementById("Header").style.float = "position";
+            clone.getElementById("Header").style.marginBottom = "50px"
         } else if ((i % 2) == 0 ) {
             clone.getElementById("Header").style.float = "right";
         } else {
@@ -128,26 +174,31 @@ function createArticles(variableToUse, elementID) {
 
         clone.getElementById("Header").id = "Element" + numberOfElements
         rowToUse.insertBefore(clone, rowToUse.children[0])
-        
-        if ((i%2) != 0) {
-            main.insertBefore(rowToUse, main.children[0])
-            console.log("abcd")
-        } else if (variableToUse.ArticleName.length == 1) {
-            main.insertBefore(rowToUse, main.children[0])
-        }
+
+        main.insertBefore(rowToUse, main.children[0])
         numberOfElements += 1
     }
 }
 
 
 function onHover(elementToUse) {
-    elementToUse.getElementsByTagName("h3")[0].classList.add("TitleHover")
-    elementToUse.getElementsByTagName("p")[0].classList.add("TitleHover")
-    elementToUse.getElementsByTagName("h5")[0].classList.add("TitleHover")
+    if (elementToUse.getElementsByTagName("div")[0].style.backgroundColor == "rgb(230, 230, 230)") {
+        elementToUse.getElementsByTagName("h3")[0].classList.add("TitleHoverInverse")
+        elementToUse.getElementsByTagName("p")[0].classList.add("TitleHoverInverse")
+        elementToUse.getElementsByTagName("h5")[0].classList.add("TitleHoverInverse")
+    } else {
+        elementToUse.getElementsByTagName("h3")[0].classList.add("TitleHover")
+        elementToUse.getElementsByTagName("p")[0].classList.add("TitleHover")
+        elementToUse.getElementsByTagName("h5")[0].classList.add("TitleHover")
+    }
+
 }
 
 function offHover(elementToUse) {
     elementToUse.getElementsByTagName("h3")[0].classList.remove("TitleHover")
     elementToUse.getElementsByTagName("p")[0].classList.remove("TitleHover")
     elementToUse.getElementsByTagName("h5")[0].classList.remove("TitleHover")
+    elementToUse.getElementsByTagName("h3")[0].classList.remove("TitleHoverInverse")
+    elementToUse.getElementsByTagName("p")[0].classList.remove("TitleHoverInverse")
+    elementToUse.getElementsByTagName("h5")[0].classList.remove("TitleHoverInverse")
 }
