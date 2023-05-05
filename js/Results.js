@@ -383,6 +383,8 @@ function results() {
 
   for (i = 0; i < Today.Winner.length; i++) {
     row = table.insertRow(-1);
+    row.onclick = function() { openStatsLadder(this); };
+    row.id = i
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
@@ -517,5 +519,10 @@ function AddData(array, elementID) {
 
 function openStats(item) {
   ourHref = 'Stats.html?Player=' + players[item.id]
+  window.location.href = ourHref
+}
+
+function openStatsLadder(item) {
+  ourHref = 'Stats.html?Player=' + Today.Scorer[item.id]
   window.location.href = ourHref
 }
