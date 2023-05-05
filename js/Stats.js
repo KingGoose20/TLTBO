@@ -122,3 +122,21 @@ function RunMain() {
       table.appendChild(clone)
     }
 }   
+
+
+currentLocation = window.location
+myKeyValues = currentLocation.search
+urlParams = new URLSearchParams(myKeyValues)
+SelectedPlayer = urlParams.get("Player")
+Players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", 
+            "Clarrie Jones", "William Kim","Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi",
+            "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue", "Sam James"]
+
+for (i = 0; i < Players.length; i++) {
+  if (Players[i] == SelectedPlayer) {
+    number = i
+    window.location.href = '#main';
+    RunMain()
+  }
+}
+

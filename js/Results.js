@@ -426,6 +426,9 @@ function results() {
     }
 
     row = boxtable.insertRow(-1);
+    ourHref = 'Stats.html?Player=' + players[x]
+    row.onclick = function() { openStats(this); };
+    row.id = x
     row.classList.add("boxScore")
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
@@ -510,4 +513,9 @@ function AddData(array, elementID) {
     
     document.getElementById(elementID).appendChild(element)
   }
+}
+
+function openStats(item) {
+  ourHref = 'Stats.html?Player=' + players[item.id]
+  window.location.href = ourHref
 }
