@@ -3360,7 +3360,6 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s reverse infinite;
-  display: inline-block;
   font-weight: 500;
 }
 
@@ -3380,6 +3379,5 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s reverse infinite;
-  display: inline-block;
   font-weight: 500;
 }

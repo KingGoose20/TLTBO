@@ -129,25 +129,25 @@ function createArticles(variableToUse, elementID) {
                 break;
         }
 
-        if (variableToUse.ImageA[i] != "") {
+        if (variableToUse.ImageA[i] != "" && variableToUse.ImageA != "None") {
             clone.getElementById("ImageA").src = "../Images/" + variableToUse.ImageA[i]
         } else {
             clone.getElementById("ImageA").remove();
         }
 
-        if (variableToUse.ImageB[i] != "") {
+        if (variableToUse.ImageB[i] != "" && variableToUse.ImageB != "None") {
             clone.getElementById("ImageB").src = "../Images/" + variableToUse.ImageB[i]
         } else {
             clone.getElementById("ImageB").remove();
         }
 
-        if (variableToUse.ImageC[i] != "") {
+        if (variableToUse.ImageC[i] != "" && variableToUse.ImageC != "None") {
             clone.getElementById("ImageC").src = "../Images/" + variableToUse.ImageC[i]
         } else {
             clone.getElementById("ImageC").remove();
         }
 
-        if (variableToUse.ImageD[i] != "") {
+        if (variableToUse.ImageD[i] != "" && variableToUse.ImageD != "None") {
             clone.getElementById("ImageD").src = "../Images/" + variableToUse.ImageD[i]
         } else {
             clone.getElementById("ImageD").remove();
