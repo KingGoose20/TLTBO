@@ -298,7 +298,17 @@ function ladder() {
       }
   }
 
+  document.getElementById("firstText").title = "Click on me to see " + document.getElementById("firstLeader").innerHTML + "'s stats!"
+  document.getElementById("firstText").style.cursor = "pointer"
+  document.getElementById("firstText").onclick = function() {window.location.href = 'Stats.html?Player=' + document.getElementById("firstLeader").innerHTML; };
 
+  document.getElementById("secondText").title = "Click on me to see " + document.getElementById("secondLeader").innerHTML + "'s stats!"
+  document.getElementById("secondText").style.cursor = "pointer"
+  document.getElementById("secondText").onclick = function() {window.location.href = 'Stats.html?Player=' + document.getElementById("secondLeader").innerHTML; };
+
+  document.getElementById("thirdText").title = "Click on me to see " + document.getElementById("thirdLeader").innerHTML + "'s stats!"
+  document.getElementById("thirdText").style.cursor = "pointer"
+  document.getElementById("thirdText").onclick = function() {window.location.href = 'Stats.html?Player=' + document.getElementById("thirdLeader").innerHTML; };
 
 }
 
@@ -385,6 +395,7 @@ function results() {
     row = table.insertRow(-1);
     row.onclick = function() { openStatsLadder(this); };
     row.id = i
+    row.title = "Click on me to see " + Today.Scorer[i] + "'s stats!"
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
@@ -432,6 +443,7 @@ function results() {
     row.onclick = function() { openStats(this); };
     row.id = x
     row.classList.add("boxScore")
+    row.title = "Click on me to see " + players[x] + "'s stats!"
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);

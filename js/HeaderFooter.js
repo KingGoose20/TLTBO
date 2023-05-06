@@ -111,7 +111,7 @@ function footer(location) {
             <div class="footer-text">© 2023 The Lunchtime Basketball Organisation</a>
             <br>
             <br>
-            <img src="replacerImages/Logo.png" style="height: 20%; width:20%;">
+            <a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>
             </div>
         </div>
         </div>
