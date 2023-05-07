@@ -129,7 +129,8 @@ function footer(location) {
         x = `
         accent">
         <div>
-            <a href="../Admin/AdminHome.html" class="button" style="width: 60%">Click here to go to admin!</a>
+            <a href="../Admin/AdminHome.html" class="button" style="width: 45%">Click here to go to admin!</a>
+            <a href="../Admin/StatTracker.html" class="button" style="width: 45%">Click here to go to score tracking app</a>
         </div>
         `;
         
@@ -145,4 +146,4 @@ function footer(location) {
 
 
 
-imageURL = ["mvp", "rules", "champions", "lebron", "ja", "curry", "dwade"]
+imageURL = ["mvp", "rules", "champions", "lebron", "ja", "curry", "dwade", "kyrie"]
