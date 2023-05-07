@@ -535,6 +535,12 @@ function openStats(item) {
 }
 
 function openStatsLadder(item) {
-  ourHref = 'Stats.html?Player=' + Today.Scorer[item.id]
+  if (Today.Scorer[item.id] == "Nick Szogi") {
+    ourHref = 'Stats.html?Player=' + "Nicholas Szogi"
+  } else if (Today.Scorer[item.id] == "Chris Tomkinson") {
+    ourHref = 'Stats.html?Player=' + "Christopher Tomkinson"
+  } else {
+    ourHref = 'Stats.html?Player=' + Today.Scorer[item.id]
+  }
   window.location.href = ourHref
 }
