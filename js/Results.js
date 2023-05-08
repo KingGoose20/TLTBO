@@ -10,7 +10,7 @@ Today = {
     "SStreak":[1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1]
   }
 
-DidNotPlay = ["Angus Walker"]
+DidNotPlay = ["Lukas Johnston"]
 
 LadderPoints = [10,6,14]
 Leaders = ["Angus Walker", "Rudy Hoschke and Michael Iffland", "Alexander Galt"]
