@@ -15,11 +15,12 @@ DidNotPlay = ["Lukas Johnston"]
 LadderPoints = [10,6,14]
 Leaders = ["Angus Walker", "Rudy Hoschke and Michael Iffland", "Alexander Galt"]
 LeadersPoints = [3.5,1.6,2.6]
+
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
 overRideDate = ""
 overrideW = ""
-overrideL = "Wet Willies"
+overrideL = ""
 overrideDayPoints = []
 
 
