@@ -1,14 +1,14 @@
 mainArray = {
   "Name":["Jasper Collier","Conor Farrington","Alexander Galt","Rudy Hoschke","Michael Iffland","Lukas Johnston","Clarrie Jones","William Kim","Samuel McConaghy","Ryan Pattemore","Nicholas Szogi","Christopher Tomkinson","Angus Walker","Willie Weekes","Mitch Yue","Sam James"],
   "Team":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
-  "PPG":["0.25","0.33","2.75","1.75","1","0.75","1.25","0.75","2.33","1","1.75","0.5","3.33","0","0.25","0.75",],
-  "TP":["1","1","11","7","4","3","5","3","7","4","7","2","10","0","1","3"],
-  "FPG":["0","0.33","2.75","1.75","0.25","0.5","0","0.25","1","0.25","1.75","0.5","2.67","0","0.25","0.75",],
-  "TF":["0","1","11","7","1","2","0","1","3","1","7","2","8","0","1","3"],
-  "MPG":["0.25","0","0","0","0.75","0.25","0.25","0.5","1.33","0.75","0","0","0","0","0","0",],
-  "TM":["1","0","0","0","3","1","1","2","4","3","0","0","0","0","0","0"],
-  "TPG":["0","0","0","0","0","0","0.5","0","0","0","0","0","0.33","0","0","0",],
-  "TT":["0","0","0","0","0","0","2","0","0","0","0","0","1","0","0","0"],           
+  "PPG":["0.4","0.5","2.6","1.6","1.6","0.75","1","0.8","2.5","1","1.4","0.4","3.5","0","0.2","0.6",],
+  "TP":["2","2","13","8","8","3","5","4","10","5","7","2","14","0","1","3"],
+  "FPG":["0","0.5","2.6","1.4","0.6","0.5","0","0.4","0.75","0.2","1.4","0.4","2.5","0","0.2","0.6",],
+  "TF":["0","2","13","7","3","2","0","2","3","1","7","2","10","0","1","3"],
+  "MPG":["0.2","0.25","0.4","0","1","0.25","0.2","0.6","1","0.6","0","0","0.5","0","0","0",],
+  "TM":["1","1","2","0","5","1","1","3","4","3","0","0","2","0","0","0"],
+  "TPG":["0","0.25","0.4","0","0.4","0","0.4","0.2","0","0","0","0","0.75","0","0","0",],
+  "TT":["0","1","2","0","2","0","2","1","0","0","0","0","3","0","0","0"],          
   "AccoladesOne":["","","Ex-GM","Ex-GM","Playmaker T1","MVP Runner Up T1","Champion T1","MVP T1","GM","Perimeter T1","The Biggest Bird","MIP T1","TLTBO CEO","Teammate T1","",""],
   "AccoladesTwo":["","","All-Defence Team T1","All-Offence Team T1","Thirdman T1","All-Offence Team T1","Finals MVP","All-Offence Team T1","All-Offence Team T1","Champion T1","Champion T1","","GM","Champion T1","",""],
   "AccoladesThree":["","","Champion T1","All-Defence Team T1","GM","","","All-Defence Team T1","All-Defence Team T","","","","All-Offence Team T1","","",""],
@@ -59,8 +59,15 @@ WeekTwoDayTwo = {
 
 }
 
+WeekThreeDayOne = {
+  "Date":["8-May"],
+  "Points":[1,1,2,1,4,"Did not Play",0,1,3,1,0,0,4,0,0,0],
+  "Finishes":[0,1,2,0,2,"Did not Play",0,1,0,0,0,0,2,0,0,0],
+  "Midrange":[1,0,0,1,2,"Did not Play",0,0,3,1,0,0,0,0,0,0],
+  "ThreePointers":[0,0,0,0,0,"Did not Play",0,0,0,0,0,0,1,0,0,0]
+
+}
 
 
 
-
-dayArray = [WeekOneDayOne, WeekOneDayTwo, WeekTwoDayOne, WeekTwoDayTwo]
+dayArray = [WeekOneDayOne, WeekOneDayTwo, WeekTwoDayOne, WeekTwoDayTwo, WeekThreeDayOne]
