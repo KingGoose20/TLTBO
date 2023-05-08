@@ -47,51 +47,51 @@ Week2 = {
 }
 
 Week3 = {
-    "ArticleName":[""],
-    "ArticleDescription":[""],
-    "ArticleDate":[""],
-    "ImageA":[""],
-    "ImageB":[""],
+    "ArticleName":["State of the Website"],
+    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term."],
+    "ArticleDate":["8/05"],
+    "ImageA":["Logo.png"],
+    "ImageB":["LG_Final.png"],
     "ImageC":[""],
     "ImageD":[""],
-    "ArticleLink":[""],
-    "ArticleType":[""]
+    "ArticleLink":["03.html"],
+    "ArticleType":["White"]
 }
 
 Week4 = {
-    "ArticleName":[""],
-    "ArticleDescription":[""],
-    "ArticleDate":[""],
-    "ImageA":[""],
-    "ImageB":[""],
-    "ImageC":[""],
-    "ImageD":[""],
-    "ArticleLink":[""],
-    "ArticleType":[""]
+    "ArticleName":[],
+    "ArticleDescription":[],
+    "ArticleDate":[],
+    "ImageA":[],
+    "ImageB":[],
+    "ImageC":[],
+    "ImageD":[],
+    "ArticleLink":[],
+    "ArticleType":[]
 }
 
 Week5 = {
-    "ArticleName":[""],
-    "ArticleDescription":[""],
-    "ArticleDate":[""],
-    "ImageA":[""],
-    "ImageB":[""],
-    "ImageC":[""],
-    "ImageD":[""],
-    "ArticleLink":[""],
-    "ArticleType":[""]
+    "ArticleName":[],
+    "ArticleDescription":[],
+    "ArticleDate":[],
+    "ImageA":[],
+    "ImageB":[],
+    "ImageC":[],
+    "ImageD":[],
+    "ArticleLink":[],
+    "ArticleType":[]
 }
 
 Finals = {
-    "ArticleName":[""],
-    "ArticleDescription":[""],
-    "ArticleDate":[""],
-    "ImageA":[""],
-    "ImageB":[""],
-    "ImageC":[""],
-    "ImageD":[""],
-    "ArticleLink":[""],
-    "ArticleType":[""]
+    "ArticleName":[],
+    "ArticleDescription":[],
+    "ArticleDate":[],
+    "ImageA":[],
+    "ImageB":[],
+    "ImageC":[],
+    "ImageD":[],
+    "ArticleLink":[],
+    "ArticleType":[]
 }
 
 numberOfElements = 0

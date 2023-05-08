@@ -20,7 +20,26 @@ function CreateArticle() {
                 break;
 
         }
-        images.push(x.options[x.selectedIndex].text)
+        switch (x.options[x.selectedIndex].text) {
+            case "Main Logo" :
+                images.push("Logo.png")
+                break;
+            case "Loose Gooses" :
+                images.push("LG_Final.png")
+                break;
+            case "Wet Willies" :
+                images.push("WW_Final.png")
+                break;
+            case "5 Musketeers" :
+                images.push("5M_Final.png")
+                break;
+            case "Finals" :
+                images.push("Finals_Logo.png")
+                break;
+            case "None" :
+                images.push("")
+                break;
+        }
     }
     link = document.getElementById("link").value
     y = document.getElementById("colour")
