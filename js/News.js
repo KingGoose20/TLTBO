@@ -47,15 +47,15 @@ Week2 = {
 }
 
 Week3 = {
-    "ArticleName":["State of the Website","What is wrong with the Wet Willies?"],
-    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>","Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future."],
-    "ArticleDate":["8/05","8/05"],
-    "ImageA":["Logo.png","LG_Final.png"],
-    "ImageB":["LG_Final.png", "Logo.png"],
-    "ImageC":["","WW_Final.png"],
-    "ImageD":["",""],
-    "ArticleLink":["03.html","04.html"],
-    "ArticleType":["White","Normal"]
+    "ArticleName":["State of the Website","What is wrong with the Wet Willies?","The WW and LG Beef | AI Analyst"],
+    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>","Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future.","Our official LTBO AI Analyst is back and better than ever! It has analysed the beef that is currently going on between the Wet Willies and the Loose Gooses, and provided a good explanation and viewpoint."],
+    "ArticleDate":["8/05","8/05","9/05"],
+    "ImageA":["Logo.png","LG_Final.png","Logo.png"],
+    "ImageB":["LG_Final.png","Logo.png",""],
+    "ImageC":["","WW_Final.png",""],
+    "ImageD":["","",""],
+    "ArticleLink":["03.html","04.html","05.html"],
+    "ArticleType":["White","Normal","White"]
 }
 
 Week4 = {
