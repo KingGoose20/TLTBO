@@ -21,9 +21,20 @@ function header(location) {
             <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Stats.html" class="navigation-link w-nav-link">Stats</a>
             </li>
-            <li class="nav-item">
-                <a href="replacerDocumentsAndIco/Rules.html" class="navigation-link w-nav-link">Rules + More</a>
+            <div class="dropdown nav-item dropdownHide">
+                <span class="navigation-link w-nav-link">More</span>
+                <div class="dropdown-content">
+                    <a href="replacerDocumentsAndIco/Rules.html">Rules, FAQ, Calendar</a>
+                    <a href="replacerDocumentsAndIco/Contact.html">Contact Us</a>
+                </div>
+            </div>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/Rules.html" class="navigation-link w-nav-link">Rules, FAQ, Calendar</a>
             </li>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/Contact.html" class="navigation-link w-nav-link">Contact Us</a>
+            </li>
+
             </ul>
             <div class="hamburger">
             <span class="bar"></span>
@@ -58,7 +69,14 @@ function header(location) {
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
             break;
         case "Rules" :
-            template.innerHTML = template.innerHTML.replace('w-nav-link">Rules + More</a>', 'w-nav-link w--current">Rules + More</a>')
+            template.innerHTML = template.innerHTML.replace('>Rules, FAQ, Calendar', 'class="w-nav-link w--current">Rules, FAQ, Calendar')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Rules, FAQ, Calendar</a>', 'class="navigation-link w-nav-link w--current">Rules, FAQ, Calendar</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "Contact" :
+            template.innerHTML = template.innerHTML.replace('>Contact Us', 'class="w-nav-link w--current">Contact Us')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Contact Us</a>', 'class="navigation-link w-nav-link w--current">Contact Us</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "App" :
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
