@@ -47,15 +47,15 @@ Week2 = {
 }
 
 Week3 = {
-    "ArticleName":["State of the Website"],
-    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term."],
-    "ArticleDate":["8/05"],
-    "ImageA":["Logo.png"],
-    "ImageB":["LG_Final.png"],
-    "ImageC":[""],
-    "ImageD":[""],
-    "ArticleLink":["03.html"],
-    "ArticleType":["White"]
+    "ArticleName":["State of the Website","What is wrong with the Wet Willies?"],
+    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>","Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future."],
+    "ArticleDate":["8/05","8/05"],
+    "ImageA":["Logo.png","Logo.png"],
+    "ImageB":["LG_Final.png","LG_Final.png"],
+    "ImageC":["","WW_Final.png"],
+    "ImageD":["",""],
+    "ArticleLink":["03.html","04.html"],
+    "ArticleType":["White","Normal"]
 }
 
 Week4 = {
