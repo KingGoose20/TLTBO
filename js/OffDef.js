@@ -45,10 +45,21 @@ weekTwoDayTwo = {
 
 weekThreeDayOne = {
     "Date":["8/05"],
+    "WeeklyPosition":["First day of the third week"],
     "Offensive":["Michael Iffland","Angus Walker","Samuel McConaghy","Alexander Galt","Rudy Hoschke"], 
     "Defensive":["Rudy Hoschke","Michael Iffland","Samuel McConaghy","Alexander Galt","Angus Walker"], 
     "OffensiveDescription":["Michael had a day out, his shooting improving rapidly, scoring a high 4 points. Angus rivalled this, however the enormity of Michaels score gives him 1. Samuel McConaghy in a three with his typical tough shots, picking up three points. Alexander comes in at 4 after his usual day filled with layups and offensive rebounds."],
     "DefensiveDescription":["Rudy Hoschke was massive on the defensive end, leading his team to their first non-last placing. Michael additionally was massive, helping Rudy and his team. Samuel comes in at three, being an unbreachable anchor to give his team 1st place again. Same goes for Alex, with some blocks and numerous defensive rebounds, ad Angus comes in at 5 after his typical lockdown D, rarely getting penetrated by the offence. "]
+
+}
+
+weekThreeDayTwo = {
+    "Date":["9/05"],
+    "WeeklyPosition":["Second day of the third week"],
+    "Offensive":["Rudy Hoschke","Michael Iffland","Samuel McConaghy","William Kim","Christopher Tomkinson"], 
+    "Defensive":["Rudy Hoschke","Michael Iffland","Samuel McConaghy","William Kim","Clarrie Jones"], 
+    "OffensiveDescription":["Rudy Hoschke balled out, pulling up with a historical day, dropping a cum-inducing 12 points on the competition, staking his claim for MVP (I'm not meat riding). Michael had his second straight day with 4 points, going from a lack of confidence in the first few weeks to scoring tough shots 24/7. Samuel comes in at three, also with 4 points on a day without 2 of his best players. Kimmy comes in at 4, with some vintage Kimmy makes, and Chris rounds out the top 5, with a nice middie and a finish. Honourable mention to Jasper, I just thought that Chris' shots were a bit tougher. "],
+    "DefensiveDescription":["The top 4 remains the same for offence and defence. Rudy and Michael both pulled up on both ends to create one of the most dominant performances in LTBO history. Samuel comes in at third, pulling his team up to 2nd place almost singlehandedly, (Jasper and Ryan you played well). Kimmy is in 4th, doing a good of a job as he could to contest shots, pick up rebounds and hold down the paint without Angus. I come in a 5, with a couple of blocks and defensive stops. "]
 
 }
 
@@ -89,6 +100,9 @@ function findVariable(Param) {
             break;
         case "0805" :
             return weekThreeDayOne
+            break;
+        case "0905" :
+            return weekThreeDayTwo
             break;
     }
 }
