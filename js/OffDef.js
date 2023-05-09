@@ -43,6 +43,14 @@ weekTwoDayTwo = {
     "DefensiveDescription":["In a dominant performance by the 5 Musketeers, 3 players made each list as the took advantage of a weaker playing field. Samuel McConaghy is a defensive force, ever present in the paint and on the perimeter. Alex Galt held the paint in his grasp, allowing no one to breach, and no one to score. Will Kim rose up spectacularly for his usual blocks and shot contests, playing a large part in the Loose Gooses placing. Rudy Hoschke, despite his team’s poor result, was doing all he could on the defensive end. In at 5, the third player from the 5 Musketeers big three, Nicholas Szogi, using his size to box out and prevent."]
 }
 
+weekThreeDayOne = {
+    "Date":["8/05"],
+    "Offensive":["Michael Iffland","Angus Walker","Samuel McConaghy","Alexander Galt","Rudy Hoschke"], 
+    "Defensive":["Rudy Hoschke","Michael Iffland","Samuel McConaghy","Alexander Galt","Angus Walker"], 
+    "OffensiveDescription":["Michael had a day out, his shooting improving rapidly, scoring a high 4 points. Angus rivalled this, however the enormity of Michaels score gives him 1. Samuel McConaghy in a three with his typical tough shots, picking up three points. Alexander comes in at 4 after his usual day filled with layups and offensive rebounds."],
+    "DefensiveDescription":["Rudy Hoschke was massive on the defensive end, leading his team to their first non-last placing. Michael additionally was massive, helping Rudy and his team. Samuel comes in at three, being an unbreachable anchor to give his team 1st place again. Same goes for Alex, with some blocks and numerous defensive rebounds, ad Angus comes in at 5 after his typical lockdown D, rarely getting penetrated by the offence. "]
+
+}
 
 
 function main() {
@@ -78,6 +86,9 @@ function findVariable(Param) {
             break;
         case "0305" :
             return weekTwoDayTwo
+            break;
+        case "0805" :
+            return weekThreeDayOne
             break;
     }
 }
