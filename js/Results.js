@@ -1,20 +1,20 @@
 Today = {
-    "Date": ["8 May"],
-    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-    "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses"],
-    "Loser":["Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies"],
-    "Scorer":["Jasper Collier","Samuel McConaghy","Samuel McConaghy","Alexander Galt","Michael Iffland","Angus Walker","Ryan Pattemore","Michael Iffland","Michael Iffland","Rudy Hoschke","Conor Farrington","Samuel McConaghy","William Kim","Angus Walker","Alexander Galt","Michael Iffland","Angus Walker"],
-    "Type":["Midrange","Midrange","Midrange","Finish","Finish","Three Pointer","Midrange","Midrange","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Midrange","Finish"],
-    "WStreak":[1,2,3,4,1,1,1,1,2,3,4,1,1,2,1,1,1],
-    "LStreak":[1,1,2,2,1,1,1,1,2,2,3,1,1,2,1,1,1],
-    "SStreak":[1,1,2,1,1,1,1,1,2,1,1,1,1,1,1,1,1]
+    "Date": ["9 May"],
+    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,40,28,29,30,31],
+    "Winner":["Loose Gooses","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","5 Musketeers"],
+    "Loser":["5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies"],
+    "Scorer":["Christopher Tomkinson","Rudy Hoschke","Rudy Hoschke","Rudy Hoschke","Michael Iffland","Rudy Hoschke","Conor Farrington","Michael Iffland","Rudy Hoschke","Conor Farrington","Samuel McConaghy","Christopher Tomkinson","Michael Iffland","Rudy Hoschke","William Kim","Mitch Yue","Rudy Hoschke","Willie Weekes","Rudy Hoschke","Rudy Hoschke","Michael Iffland","Samuel McConaghy","Samuel McConaghy","Jasper Collier","William Kim","Rudy Hoschke","Samuel McConaghy","Jasper Collier","Rudy Hoschke","Rudy Hoschke","Ryan Pattemore"],
+    "Type":["Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Midrange","Finish","Finish","Midrange","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Midrange","Midrange","Midrange","Midrange","Midrange","Finish","Midrange","Finish","Finish","Finish","Midrange"],
+    "WStreak":[1,1,2,3,4,5,6,7,8,9,1,1,1,2,1,2,1,2,3,4,5,1,2,3,1,1,1,2,1,2,1],
+    "LStreak":[1,1,2,2,3,3,4,4,5,5,1,1,1,2,1,3,1,4,2,5,3,1,4,2,1,1,1,2,1,3,1],
+    "SStreak":[1,1,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,1,1,1,1,1,1,2,1]
   }
 
-DidNotPlay = ["Lukas Johnston"]
+DidNotPlay = ["Lukas Johnston", "Alexander Galt", "Angus Walker"]
 
-LadderPoints = [10,6,14]
-Leaders = ["Angus Walker", "Rudy Hoschke and Michael Iffland", "Alexander Galt"]
-LeadersPoints = [3.5,1.6,2.6]
+LadderPoints = [11,9,16]
+Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
+LeadersPoints = [3.5,3.33,2.8]
 
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
