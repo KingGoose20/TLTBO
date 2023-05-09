@@ -2351,7 +2351,7 @@ p {
   height: auto;
   width: auto\9;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: auto, cover;
   text-align: center;
 }
@@ -3493,4 +3493,11 @@ html {
   .dropdownShow {
     display:block;
   }
+}
+
+.container {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

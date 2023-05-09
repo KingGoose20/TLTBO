@@ -51,9 +51,16 @@ function header(location) {
         template.innerHTML = template.innerHTML.replace('w-nav-link">News</a>', 'w-nav-link w--current">News</a>')
     } else if (location == "index") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "")
-    } else {
+    } else if (location == "docs") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../")
     }
+
+    if (location == "LG") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+        template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/LG_Final.png" style="width: 1.5em"')
+    }
+
+
 
     switch (document.title.slice(0,-8)) {
         case "Ladder" :
@@ -135,7 +142,7 @@ function footer(location) {
         </div>
     `;
 
-    if (location == "news") {
+    if (location == "news" || location == "LG") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
     } else if (location == "index") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "")
