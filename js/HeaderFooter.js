@@ -26,6 +26,9 @@ function header(location) {
                 <div class="dropdown-content">
                     <a href="replacerDocumentsAndIco/Rules.html">Rules, FAQ, Calendar</a>
                     <a href="replacerDocumentsAndIco/Contact.html">Contact Us</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html">Loose Gooses Home</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html">Wet Willies Home</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html">5 Musketeers Home</a>
                 </div>
             </div>
             <li class="nav-item dropdownShow">
@@ -33,6 +36,15 @@ function header(location) {
             </li>
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/Contact.html" class="navigation-link w-nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html" class="navigation-link w-nav-link">Loose Gooses Home</a>
+            </li>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html" class="navigation-link w-nav-link">Wet Willies Home</a>
+            </li>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html" class="navigation-link w-nav-link">5 Musketeers Home</a>
             </li>
 
             </ul>
@@ -58,6 +70,16 @@ function header(location) {
     if (location == "LG") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/LG_Final.png" style="width: 1.5em"')
+    }
+
+    if (location == "5M") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+        template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/5M_Final.png" style="width: 1.5em"')
+    }
+
+    if (location == "WW") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+        template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/WW_Final.png" style="width: 0.75em"')
     }
 
 
@@ -142,7 +164,7 @@ function footer(location) {
         </div>
     `;
 
-    if (location == "news" || location == "LG") {
+    if (location == "news" || location == "LG" || location == "WW" || location == "5M") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
     } else if (location == "index") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "")
