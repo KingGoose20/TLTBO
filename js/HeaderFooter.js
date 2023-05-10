@@ -51,7 +51,7 @@ function header(location) {
         template.innerHTML = template.innerHTML.replace('w-nav-link">News</a>', 'w-nav-link w--current">News</a>')
     } else if (location == "index") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "")
-    } else if (location == "docs") {
+    } else if (location == "docs" || location == "admin") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../")
     }
 
