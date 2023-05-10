@@ -64,6 +64,16 @@ weekThreeDayTwo = {
 }
 
 
+weekThreeDayThree = {
+    "Date":["10/05"],
+    "WeeklyPosition":["Third day of the third week"],
+    "Offensive":["William Kim","Rudy Hoschke","Clarrie Jones","Michael Iffland","Mitch Yue"],
+    "Defensive":["William Kim","Samuel McConaghy","Rudy Hoschke","Christopher Tomkinson","Clarrie Jones"],
+    "OffensiveDescription":["Kimmy came out as the number 1 option without Angus on the Loose Gooses, knocking down his typical fade with breathtaking ease numerous times. Rudy places at second, after another impressive point scoring performance, with 6 points, as well as some offensive rebounds. I come in at 3rd with 4 points, including one three and multiple assists. Michael gets his 3rd offensive selection in as many days, with another impressive showing, with three tough mid-ranges. Mitch Yue gets his first offensive all team, with some playmaking passes, and doubling his points total all term. (2 today)"],
+    "DefensiveDescription":["Kimmy is really excelling without Angus, topping both teams. Kimmy was impressive on Rudy today, as well as grabbing rebounds and boxing out. Samuel comes in at second, doing a great job in stopping teams scoring for as much as 5 minutes, playing for a very weakened 5M. Rudy comes in at three, his typical impressive day at both ends shining through, with blocks, and some lockdown interior D in multiple situations.Christopher was elite with the double teams today, switching from Sam, to Rudy, to Michael and coming up with multiple defensive stops. I get 5th on the list twice in a row, with a block and holding a red hot Michael to one points against the LG all lunch."]
+
+}
+
 function main() {
     currentLocation = window.location
     myKeyValues = currentLocation.search
@@ -103,6 +113,9 @@ function findVariable(Param) {
             break;
         case "0905" :
             return weekThreeDayTwo
+            break;
+        case "1005" :
+            return weekThreeDayThree
             break;
     }
 }

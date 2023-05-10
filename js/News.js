@@ -47,15 +47,15 @@ Week2 = {
 }
 
 Week3 = {
-    "ArticleName":["State of the Website","What is wrong with the Wet Willies?","The WW and LG Beef | AI Analyst","All Lunch Team | Week 3 Day 1","All Lunch Team | Week 3 Day 2"],
-    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>","Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future.","Our official LTBO AI Analyst is back and better than ever! It has analysed the beef that is currently going on between the Wet Willies and the Loose Gooses, and provided a good explanation and viewpoint.","Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the third week!","Clarrie Jones of the Loose Gooses has announced the All-Lunch top 5 offensive and defensive players from the second day of the third week."],
-    "ArticleDate":["8/05","8/05","9/05","8/05","9/05"],
-    "ImageA":["Logo.png","LG_Final.png","Logo.png","Logo.png","Logo.png"],
-    "ImageB":["LG_Final.png","Logo.png","","LG_Final.png","LG_Final.png"],
-    "ImageC":["","WW_Final.png","","WW_Final.png","WW_Final.png"],
-    "ImageD":["","","","5M_Final.png","5M_Final.png"],
-    "ArticleLink":["03.html","04.html","05.html","OD.html?Date=0805","OD.html?Date=0905"],
-    "ArticleType":["White","Normal","White","Black","Black"]
+    "ArticleName":["State of the Website","What is wrong with the Wet Willies?","The WW and LG Beef | AI Analyst","All Lunch Team | Week 3 Day 1","All Lunch Team | Week 3 Day 2","All Lunch Team | Week 3 Day 3"],
+    "ArticleDescription":["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>","Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future.","Our official LTBO AI Analyst is back and better than ever! It has analysed the beef that is currently going on between the Wet Willies and the Loose Gooses, and provided a good explanation and viewpoint.","Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the third week!","Clarrie Jones of the Loose Gooses has announced the All-Lunch top 5 offensive and defensive players from the second day of the third week.","The top dog Clarrie Jones has announced the third All Teams from the third week!"],
+    "ArticleDate":["8/05","8/05","9/05","8/05","9/05","10/05"],
+    "ImageA":["Logo.png","LG_Final.png","Logo.png","Logo.png","Logo.png","Logo.png"],
+    "ImageB":["LG_Final.png","Logo.png","","LG_Final.png","LG_Final.png","LG_Final.png"],
+    "ImageC":["","WW_Final.png","","WW_Final.png","WW_Final.png","WW_Final.png"],
+    "ImageD":["","","","5M_Final.png","5M_Final.png","5M_Final.png"],
+    "ArticleLink":["03.html","04.html","05.html","OD.html?Date=0805","OD.html?Date=0905","OD.html?Date=1005"],
+    "ArticleType":["White","Normal","White","Black","Black","Black"]
 }
 
 Week4 = {

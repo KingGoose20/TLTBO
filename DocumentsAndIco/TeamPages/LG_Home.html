@@ -45,6 +45,11 @@
         }
 
         table td + td { border-left:2px solid rgb(150,150,150); }
+
+        .dayByDay tr:nth-child(even){background-color: rgb(146, 62, 9); }
+        .dayByDay tr:nth-child(odd){background-color: rgb(116,50,7);}
+        .dayByDay td {border: 1px solid black; color: rgb(210,210,210);}
+        .dayByDay th {border: 1px solid black; color: rgb(210,210,210);}
     </style>
 </head>
 
@@ -99,9 +104,9 @@
                         <col style="width: 33.3333%">
                         <col style="width: 33.3333%">
                         <tr>
-                            <td><h1 class="title" style="font-size: 100px; line-height: 120px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px; line-height: 120px" id="tWins">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="tLoss">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="tPercent">20</h1></td>
                         </tr>
                         <tr>
                             <td><h2 class="section-heading centered" style="line-height: 100px">Total Wins</h2></td>
@@ -117,10 +122,10 @@
                         <col style="width: 25%">
                         <col style="width: 25%">
                         <tr>
-                            <td><h1 class="title" style="font-size: 100px; line-height: 120px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px; line-height: 120px" id="lPoints">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="lFinishes">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="lMidranges">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="lThrees">20</h1></td>
                         </tr>
                         <tr>
                             <td><h2 class="section-heading centered" style="line-height: 100px">Points</h2></td>
@@ -139,12 +144,12 @@
                         <col style="width: 16.6666667%">
                         <col style="width: 16.6666667%">
                         <tr>
-                            <td><h1 class="title" style="font-size: 100px; line-height: 120px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
-                            <td><h1 class="title" style="font-size: 100px">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px; line-height: 120px" id="aPoints">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="aFinishes">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="aMidranges">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="aThrees">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="aWins">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="aLosses">20</h1></td>
                         </tr>
                         <tr>
                             <td><h2 class="section-heading centered" style="line-height: 100px">Points</h2></td>
@@ -157,7 +162,7 @@
                     </table>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Records against other teams</h2>
-                    <table style="width: 100%">
+                    <table style="width: 100%; border:2px solid rgb(150,150,150);">
                         <col style="width: 40%">
                         <col style="width: 15%">
                         <col style="width: 15%">
@@ -167,11 +172,34 @@
                             <td><h2 class="section-heading centered">Wins</h2></td>
                             <td><h2 class="section-heading centered">Losses</h2></td>
                             <td><h2 class="section-heading centered">Percentage</h2></td>
-        
                         </tr>
-                        <tr></tr>
-                        <tr></tr>
+                        <tr style="border:2px solid rgb(150,150,150);">
+                            <td><h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">Wet Willies</h2></td>
+                            <td><h1 class="title" style="font-size: 100px" id="WWwins">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="WWloss">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="WWpercent">20</h1></td>
+                        </tr>
+                        <tr style="border:2px solid rgb(150,150,150);">
+                            <td><h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">5 Musketeers</h2></td>
+                            <td><h1 class="title" style="font-size: 100px" id="5MWins">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="5MLoss">20</h1></td>
+                            <td><h1 class="title" style="font-size: 100px" id="5Mpercent">20</h1></td>
+                        </tr>
                     </table>
+                    <br><br><br><br><br><br><br><br>
+                    <h2 class="section-heading centered" style="text-align: left;">Day-By-Day</h2>
+                    <div style="overflow-y: scroll; max-height: 200px;">
+                        <table class="dayByDay" style="width: 100%; text-align: center;" id="dayByDay">
+                          <tr style="height: 50px;">
+                            <th>Date</th>
+                            <th>Points</th>
+                            <th>Finishes</th>
+                            <th>Midranges</th>
+                            <th>Three Pointers</th>
+                          </tr>
+                        </table>
+                      </div>
+                      <i><p>More dates can be viewed by scrolling on box</p></i>
                 </div>
             </div>
         </div>
