@@ -70,16 +70,19 @@ function header(location) {
     if (location == "LG") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/LG_Final.png" style="width: 1.5em"')
+        template.innerHTML = template.innerHTML.replace('animate-character', 'animate-characterLG')
     }
 
     if (location == "5M") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/5M_Final.png" style="width: 1.5em"')
+        template.innerHTML = template.innerHTML.replace('animate-character', 'animate-character5M')
     }
 
     if (location == "WW") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/WW_Final.png" style="width: 0.75em"')
+        template.innerHTML = template.innerHTML.replace('animate-character', 'animate-characterWW')
     }
 
 
@@ -164,6 +167,15 @@ function footer(location) {
         </div>
     `;
 
+    if (location == "LG") {
+        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/LG_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
+    }
+    if (location == "WW") {
+        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/WW_Final.png" style="height: 24%; width:24%; margin-left: 60px;">')
+    }
+    if (location == "5M") {
+        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/5M_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
+    }
     if (location == "news" || location == "LG" || location == "WW" || location == "5M") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
     } else if (location == "index") {

@@ -3268,8 +3268,7 @@ html {
 }
 
 
-.animate-character
-{
+.animate-character {
   background-image: linear-gradient(
     -100deg,
     #551900 0%,
@@ -3287,6 +3286,64 @@ html {
   animation: textclip 3s linear infinite;
   display: inline-block;
 }
+
+.animate-characterLG {
+  background-image: linear-gradient(
+    -100deg,
+    #d74268 0%,
+    #a32444 29%,
+    #f5b153 67%, 
+    #aa3552 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+.animate-characterWW {
+  background-image: linear-gradient(
+    -100deg,
+    #ff690c 0%,
+    #d15508 29%,
+    #8c3600 67%, 
+    #f5823a 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
+.animate-character5M {
+  background-image: linear-gradient(
+    -100deg,
+    #47aeb5 0%,
+    #237980 29%,
+    #004045 67%, 
+    #38c5cf 100%
+  );
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 3s linear infinite;
+  display: inline-block;
+}
+
 
 .animate-character-admin
 {

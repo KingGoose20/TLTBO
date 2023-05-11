@@ -56,12 +56,12 @@
             border-left: 2px solid rgb(150, 150, 150);
         }
 
-        .dayByDay tr:nth-child(even) {
-            background-color: rgb(146, 62, 9);
+        .dayByDay tr:nth-child(n) {
+            background-color: #ff690c;
         }
 
-        .dayByDay tr:nth-child(odd) {
-            background-color: rgb(116, 50, 7);
+        .dayByDay tr:nth-child(2n+1) {
+            background-color: #8c3600;
         }
 
         .dayByDay td {
@@ -70,8 +70,13 @@
         }
 
         .dayByDay th {
+            background-color: #ff690c;
             border: 1px solid black;
             color: rgb(210, 210, 210);
+        }
+
+        .h1class {
+            color: #ff690c;
         }
     </style>
 </head>
