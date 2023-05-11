@@ -3501,3 +3501,31 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.h1class {
+    font-size: 6vw;
+    line-height: calc(7vw + 10px);
+}
+
+.h2Small {
+    font-size: 4vw;
+}
+
+.h1Small {
+    font-size: 6vw;
+}
+
+.teamsSize {
+    font-size: 7vw;
+    line-height: 3vw;
+}
+
+.overflowElement {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-x: scroll; 
+}
+
+.overflowElement::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}

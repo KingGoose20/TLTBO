@@ -37,6 +37,7 @@
         td {
             font-size: 30px;
             text-align: center;
+            padding: 20px;
         }
 
         .imageBackground {
@@ -97,211 +98,221 @@
                     <p style="font-family: 'Playfair Display', serif; letter-spacing: 0.3em; font-size: 40px; line-height: 50px"><i>With Nick, we're technically the 6 Musketeers.</i></p>
                     <br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Players</h2>
-                    <table style="width: 100%">
-                        <col style="width: 20%">
-                        <col style="width: 20%">
-                        <col style="width: 20%">
-                        <col style="width: 20%">
-                        <col style="width: 20%">
-                        <tr>
-                            <td><img id="Player1" /></td>
-                            <td><img id="Player2" /></td>
-                            <td><img id="Player3" /></td>
-                            <td><img id="Player4" /></td>
-                            <td><img id="Player5" /></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h3 class="section-heading centered" style="font-size: 1em">GM - <span
-                                        id="TPlayer1"></span></h3>
-                            </td>
-                            <td>
-                                <h3 class="section-heading centered" style="font-size: 1em"><span id="TPlayer2"></span>
-                                </h3>
-                            </td>
-                            <td>
-                                <h3 class="section-heading centered" style="font-size: 1em"><span id="TPlayer3"></span>
-                                </h3>
-                            </td>
-                            <td>
-                                <h3 class="section-heading centered" style="font-size: 1em"><span id="TPlayer4"></span>
-                                </h3>
-                            </td>
-                            <td>
-                                <h3 class="section-heading centered" style="font-size: 1em"><span id="TPlayer5"></span>
-                                </h3>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="overflowElement">
+                        <table style="width: 100%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <col style="width: 20%">
+                            <tr>
+                                <td><img id="Player1" /></td>
+                                <td><img id="Player2" /></td>
+                                <td><img id="Player3" /></td>
+                                <td><img id="Player4" /></td>
+                                <td><img id="Player5" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3 class="section-heading centered" style="font-size: calc(1.5vw + 5px)">GM - <span
+                                            id="TPlayer1"></span></h3>
+                                </td>
+                                <td>
+                                    <h3 class="section-heading centered" style="font-size: calc(1.5vw + 5px)"><span id="TPlayer2"></span>
+                                    </h3>
+                                </td>
+                                <td>
+                                    <h3 class="section-heading centered" style="font-size: calc(1.5vw + 5px)"><span id="TPlayer3"></span>
+                                    </h3>
+                                </td>
+                                <td>
+                                    <h3 class="section-heading centered" style="font-size: calc(1.5vw + 5px)"><span id="TPlayer4"></span>
+                                    </h3>
+                                </td>
+                                <td>
+                                    <h3 class="section-heading centered" style="font-size: calc(1.5vw + 5px)"><span id="TPlayer5"></span>
+                                    </h3>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Team Stats</h2>
-                    <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
-                        <col style="width: 33.3333%">
-                        <col style="width: 33.3333%">
-                        <col style="width: 33.3333%">
-                        <tr>
-                            <td>
-                                <h1 class="title" style="font-size: 100px; line-height: 120px" id="tWins">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="tLoss">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="tPercent">20</h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h2 class="section-heading centered" style="line-height: 100px">Total Wins</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Total Losses</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Win Percentage</h2>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="overflowElement">
+                        <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
+                            <col style="width: 33.3333%">
+                            <col style="width: 33.3333%">
+                            <col style="width: 33.3333%">
+                            <tr>
+                                <td>
+                                    <h1 class="title h1class"  id="tWins">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class" id="tLoss">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class" id="tPercent">20</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Total Wins</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Total Losses</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Win Percentage</span></h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Team Leaders</h2>
-                    <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
-                        <col style="width: 25%">
-                        <col style="width: 25%">
-                        <col style="width: 25%">
-                        <col style="width: 25%">
-                        <tr>
-                            <td style="height: 200px">
-                                <h1 class="title" style="font-size: 40px;" id="lPointsN">Angus Walker</h1><br><br>
-                                <h1 class="title" style="font-size: 100px;" id="lPointsS">20</h1>
-                            </td>
-                            <td style="height: 200px">
-                                <h1 class="title" style="font-size: 40px;" id="lFinishesN">Angus Walker</h1><br><br>
-                                <h1 class="title" style="font-size: 100px;" id="lFinishesS">20</h1>
-                            </td>
-                            <td style="height: 200px">
-                                <h1 class="title" style="font-size: 40px;" id="lMidrangesN">Angus Walker</h1><br><br>
-                                <h1 class="title" style="font-size: 100px;" id="lMidrangesS">20</h1>
-                            </td>
-                            <td style="height: 200px">
-                                <h1 class="title" style="font-size: 40px;" id="lThreesN">Angus Walker</h1><br><br>
-                                <h1 class="title" style="font-size: 100px;" id="lThreesS">20</h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h2 class="section-heading centered" style="line-height: 100px">Points</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Finishes</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Midranges</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Threes</h2>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="overflowElement">
+                        <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                            <col style="width: 25%">
+                            <tr>
+                                <td style="height: 200px">
+                                    <h1 class="title h1class"><span class="h1Small" id="lPointsN">Angus Walker</span></h1><br><br>
+                                    <h1 class="title h1class" id="lPointsS">20</h1>
+                                </td>
+                                <td style="height: 200px">
+                                    <h1 class="title h1class"><span class="h1Small" id="lFinishesN">Angus Walker</span></h1><br><br>
+                                    <h1 class="title h1class" id="lFinishesS">20</h1>
+                                </td>
+                                <td style="height: 200px">
+                                    <h1 class="title h1class"><span class="h1Small" id="lMidrangesN">Angus Walker</span></h1><br><br>
+                                    <h1 class="title h1class" id="lMidrangesS">20</h1>
+                                </td>
+                                <td style="height: 200px">
+                                    <h1 class="title h1class"><span class="h1Small" id="lThreesN">Angus Walker</span></h1><br><br>
+                                    <h1 class="title h1class" id="lThreesS">20</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Points</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Finishes</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Midranges</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Threes</span></h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Team Averages</h2>
-                    <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
-                        <col style="width: 16.6666667%">
-                        <col style="width: 16.6666667%">
-                        <col style="width: 16.6666667%">
-                        <col style="width: 16.6666667%">
-                        <col style="width: 16.6666667%">
-                        <col style="width: 16.6666667%">
-                        <tr>
-                            <td>
-                                <h1 class="title" style="font-size: 100px; line-height: 120px" id="aPoints">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="aFinishes">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="aMidranges">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="aThrees">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="aWins">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="aLosses">20</h1>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <h2 class="section-heading centered" style="line-height: 100px">Points</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Finishes</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Midranges</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Threes</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Wins</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Losses</h2>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="overflowElement">
+                        <table style="width: 100%; height: auto; border:2px solid rgb(150,150,150);">
+                            <col style="width: 16.6666667%">
+                            <col style="width: 16.6666667%">
+                            <col style="width: 16.6666667%">
+                            <col style="width: 16.6666667%">
+                            <col style="width: 16.6666667%">
+                            <col style="width: 16.6666667%">
+                            <tr>
+                                <td>
+                                    <h1 class="title h1class" id="aPoints">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="aFinishes">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="aMidranges">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="aThrees">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="aWins">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="aLosses">20</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h2 class="h2Small section-heading centered"><span class="h2Small">Points</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Finishes</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered h2Small"><span class="h2Small">Midranges</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered h2Small"><span class="h2Small">Threes</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered h2Small"><span class="h2Small">Wins</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered h2Small"><span class="h2Small">Losses</span></h2>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Records against other teams</h2>
-                    <table style="width: 100%; border:2px solid rgb(150,150,150);">
-                        <col style="width: 40%">
-                        <col style="width: 15%">
-                        <col style="width: 15%">
-                        <col style="width: 15%">
-                        <tr>
-                            <td>
-                                <h2 class="section-heading centered" style="line-height: 100px">Team</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Wins</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Losses</h2>
-                            </td>
-                            <td>
-                                <h2 class="section-heading centered">Percentage</h2>
-                            </td>
-                        </tr>
-                        <tr style="border:2px solid rgb(150,150,150);">
-                            <td>
-                                <h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">Loose Gooses</h2>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="AWins">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="ALoss">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="APercent">20</h1>
-                            </td>
-                        </tr>
-                        <tr style="border:2px solid rgb(150,150,150);">
-                            <td>
-                                <h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">Wet Willies</h2>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="BWins">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="BLoss">20</h1>
-                            </td>
-                            <td>
-                                <h1 class="title" style="font-size: 100px" id="BPercent">20</h1>
-                            </td>
-                        </tr>
-                    </table>
+                    <div class="overflowElement">
+                        <table style="width: 100%; border:2px solid rgb(150,150,150);">
+                            <col style="width: 40%">
+                            <col style="width: 15%">
+                            <col style="width: 15%">
+                            <col style="width: 15%">
+                            <tr>
+                                <td>
+                                    <h2 class="section-heading centered" style="line-height: 70px;"><span class="h2Small">Team</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Wins</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Losses</span></h2>
+                                </td>
+                                <td>
+                                    <h2 class="section-heading centered"><span class="h2Small">Percentage</span></h2>
+                                </td>
+                            </tr>
+                            <tr style="border:2px solid rgb(150,150,150);">
+                                <td>
+                                    <h2 class="section-heading centered" style="font-size: 80px;"><span class="teamsSize">Loose Gooses</span></h2>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="AWins">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="ALoss">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="APercent">20</h1>
+                                </td>
+                            </tr>
+                            <tr style="border:2px solid rgb(150,150,150);">
+                                <td>
+                                    <h2 class="section-heading centered" style="font-size: 80px; line-height: 130px"><span class="teamsSize">Wet Willies</span></h2>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="BWins">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="BLoss">20</h1>
+                                </td>
+                                <td>
+                                    <h1 class="title h1class"  id="BPercent">20</h1>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left;">Day-By-Day</h2>
                     <div style="overflow-y: scroll; max-height: 200px;">
