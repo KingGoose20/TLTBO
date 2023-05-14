@@ -3311,8 +3311,11 @@ html {
     -100deg,
     #ff690c 0%,
     #d15508 29%,
-    #8c3600 67%, 
-    #f5823a 100%
+    #ad4d11 45%,
+    #00778c 65%, 
+    #00778c 75%, 
+    #9c3f05 85%,
+    #ff690c 100%
   );
   background-clip: border-box;
   background-size: 200% auto;
