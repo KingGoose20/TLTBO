@@ -59,15 +59,15 @@ Week3 = {
 }
 
 Week4 = {
-    "ArticleName":[],
-    "ArticleDescription":[],
-    "ArticleDate":[],
-    "ImageA":[],
-    "ImageB":[],
-    "ImageC":[],
-    "ImageD":[],
-    "ArticleLink":[],
-    "ArticleType":[]
+    "ArticleName":["The TLTBO All Teams | Week 4 Day 1"],
+    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3."],
+    "ArticleDate":["15/05"],
+    "ImageA":["Logo.png"],
+    "ImageB":["LG_Final.png"],
+    "ImageC":["WW_Final.png"],
+    "ImageD":[""],
+    "ArticleLink":["OD.html?Date=1505"],
+    "ArticleType":["Black"]
 }
 
 Week5 = {
