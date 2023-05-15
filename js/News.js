@@ -59,15 +59,15 @@ Week3 = {
 }
 
 Week4 = {
-    "ArticleName":["The TLTBO All Teams | Week 4 Day 1"],
-    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3."],
-    "ArticleDate":["15/05"],
-    "ImageA":["Logo.png"],
-    "ImageB":["LG_Final.png"],
-    "ImageC":["WW_Final.png"],
-    "ImageD":[""],
-    "ArticleLink":["OD.html?Date=1505"],
-    "ArticleType":["Black"]
+    "ArticleName":["The TLTBO All Teams | Week 4 Day 1","What is wrong with the Wet Willies? Part 2!"],
+    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3.","Dumbass Samuel McConaghy proves his ability to 'poke the bear', talking shit to the Wet Willies once again."],
+    "ArticleDate":["15/05","15/05"],
+    "ImageA":["Logo.png","Logo.png"],
+    "ImageB":["LG_Final.png","WW_Final.png"],
+    "ImageC":["WW_Final.png","5M_Final.png"],
+    "ImageD":["",""],
+    "ArticleLink":["OD.html?Date=1505","06.html"],
+    "ArticleType":["Black","Normal"]
 }
 
 Week5 = {
