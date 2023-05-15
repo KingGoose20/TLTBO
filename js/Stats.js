@@ -82,7 +82,8 @@ function RunMain() {
     points.innerHTML = String((mainArray.PPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TP[number]*nbamode).toFixed(1))
     finishes.innerHTML = String((mainArray.FPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TF[number]*nbamode).toFixed(1))
     midranges.innerHTML = String((mainArray.MPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TM[number]*nbamode).toFixed(1))
-    threepointers.innerHTML = String((mainArray.TPG[number]*nbamode*0.8).toFixed(1)) + "-" + String((mainArray.TT[number]*nbamode*0.8).toFixed(1))
+    threepointers.innerHTML = String((mainArray.TPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TT[number]*nbamode).toFixed(1))
+
     accolade1.innerHTML = mainArray.AccoladesOne[number]
     accolade2.innerHTML = mainArray.AccoladesTwo[number]
     accolade3.innerHTML = mainArray.AccoladesThree[number]
