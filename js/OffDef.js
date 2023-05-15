@@ -78,7 +78,7 @@ weekFourDayOne = {
     "Date":["15/05"],
     "WeeklyPosition":["First day of the fourth week"],
     "Offensive":["Michael Iffland","Rudy Hoschke","Clarrie Jones","Lukas Johnston","Mitch Yue"], 
-    "Defensive":["Rudy Hoschke","Michael Iffland","Angus Walker","Clarrie Jones","Lukas Johnston"], 
+    "Defensive":["Rudy Hoschke","Michael Iffland","Angus Walker","William Kim","Lukas Johnston"], 
     "OffensiveDescription":["Michael Iffland and Rudy Hoschke both had great days, dropping 5 and 4 points respectively to guide the Wet Willies to the win. Michael hit the first three pointer this term that wasn't scored by a Loose Goose. I come in a third, with as many points, including a three at the start of the day. On his first day back Lukas dropped two points, he's in at 4 and Mitch finds his spot at 5 with 2 points, one of which was a nifty fake. "],
     "DefensiveDescription":["The top two remain the same, both Rudy and Michael had a great day on both ends, strong to give the WW the win. Angus is in at 3 on his first day back, his effect obvious as the LG were struggling today without him on defense. Kimmy comes in at 4, with a good effort to guard the other teams bigs. Lukas Johnston makes both lists in his return, doing a great job on the defensive team to create a strong big three to guide the WW to the dub on the day."]
 
