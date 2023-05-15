@@ -1,7 +1,7 @@
 mainArray = {
   "Name":["Jasper Collier","Conor Farrington","Alexander Galt","Rudy Hoschke","Michael Iffland","Lukas Johnston","Clarrie Jones","William Kim","Samuel McConaghy","Ryan Pattemore","Nicholas Szogi","Christopher Tomkinson","Angus Walker","Willie Weekes","Mitch Yue","Sam James"],
   "Team":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
-  "PPG":[0.63,1,2.6,3.75,2.5,1,1.5,1.63,2.43,0.75,1.17,0.75,3.5,0.25,0.75,0.5,],
+  "PPG":[0.63,1,2.6,3.75,2.5,1,1.5,1.63,2.43,0.75,1.17,0.75,2.8,0.25,0.75,0.5,],
   "TP":[5,7,13,30,20,5,12,13,17,6,7,6,14,2,6,4,],
   "FPG":[0.25,0.71,2.6,3.5,0.75,0.6,0.38,0.63,0.57,0.13,1.17,0.38,2.5,0.25,0.38,0.38,],
   "TF":[2,5,13,28,6,3,3,5,4,1,7,3,10,2,3,3],
@@ -89,10 +89,10 @@ WeekThreeDayThree = {
 
 WeekFourDayOne = {
   "Date":["15-May"],
-  "Points":[0,2,"Did not Play",4,5,2,3,0,1,0,0,1,"Did not Play",1,2,1],
-  "Finishes":[0,0,"Did not Play",4,3,1,1,0,1,0,0,0,"Did not Play",1,0,0],
-  "Midrange":[0,2,"Did not Play",0,0,1,0,0,0,0,0,1,"Did not Play",0,2,1],
-  "ThreePointers":[0,0,"Did not Play",0,1,0,1,0,0,0,0,0,"Did not Play",0,0,0]
+  "Points":[0,2,"Did not Play",4,5,2,3,0,1,0,0,1,0,1,2,1],
+  "Finishes":[0,0,"Did not Play",4,3,1,1,0,1,0,0,0,0,1,0,0],
+  "Midrange":[0,2,"Did not Play",0,0,1,0,0,0,0,0,1,0,0,2,1],
+  "ThreePointers":[0,0,"Did not Play",0,1,0,1,0,0,0,0,0,0,0,0,0]  
 
 }
 

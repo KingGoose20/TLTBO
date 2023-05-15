@@ -14,7 +14,7 @@ DidNotPlay = ["Alexander Galt"]
 
 LadderPoints = [16,14,18]
 Leaders = ["Angus Walker", "Rudy Hoschke", "Alexander Galt"]
-LeadersPoints = [3.5,3.75,2.6]
+LeadersPoints = [2.8,3.75,2.6]
 
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
