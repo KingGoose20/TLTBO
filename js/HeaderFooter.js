@@ -188,8 +188,8 @@ function footer(location) {
         x = `
         accent">
         <div>
-            <a href="../Admin/AdminHome.html" class="button" style="width: 45%">Click here to go to admin!</a>
-            <a href="../Admin/StatTracker.html" class="button" style="width: 45%">Click here to go to score tracking app</a>
+            <a href="../Admin/AdminHome.html" class="button fade-inHeading" style="width: 45%">Click here to go to admin!</a>
+            <a href="../Admin/StatTracker.html" class="button fade-inHeading" style="width: 45%">Click here to go to score tracking app</a>
         </div>
         `;
         
