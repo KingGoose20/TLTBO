@@ -84,6 +84,16 @@ weekFourDayOne = {
 
 }
 
+weekFourDayTwo = {
+    "Date":["16/05"],
+    "WeeklyPosition":["Second day of the fourth week"],
+    "Offensive":["Samuel McConaghy","Alexander Galt","Rudy Hoschke","Michael Iffland","Angus Walker"], 
+    "Defensive":["Samuel McConaghy","Alexander Galt","Michael Iffland","Rudy Hoschke","Angus Walker"], 
+    "OffensiveDescription":["A big day by big two for the 5M and the WW. The return of Alex boded danger for the rest of the league, and we certainly got it. Sam tops the list with 5 points, and despite having the third most points, Alex comes in at second in his return, playing a major part in the 5M's reclaiming their throne. Rudy comes in at 3rd with 5 points, and his teammate and GM Michael is in at 4 with as many points (all threes?!?!) Rounding out the offensive list is Angus, coming in with 2 points in his second game back from injury."],
+    "DefensiveDescription":["Samuel and Alex top both lists, guiding their team to a dominate performance on the day. They were both on their two-way games, with strong plays to get a win on the day. Michael is in at three, with his teammate Rudy in at four, another tandem of two players being strong alongside each other on the defensive end. Rounding off the defensive all team, as with the offensive all team, is Angus Walker, who gave it his all in his return, despite coming last on the day."]
+
+}
+
 function main() {
     currentLocation = window.location
     myKeyValues = currentLocation.search
@@ -129,6 +139,9 @@ function findVariable(Param) {
             break;
         case "1505" :
             return weekFourDayOne
+            break;
+        case "1605" :
+            return weekFourDayTwo
             break;
     }
 }

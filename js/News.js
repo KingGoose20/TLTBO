@@ -59,15 +59,15 @@ Week3 = {
 }
 
 Week4 = {
-    "ArticleName": ["The TLTBO All Teams | Week 4 Day 1", "What is wrong with the Wet Willies? Part 2!", "Crunching Numbers | Term 2"],
-    "ArticleDescription": ["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3.", "Dumbass Samuel McConaghy proves his ability to 'poke the bear', talking shit to the Wet Willies once again.", "TLTBO CEO Angus Walker is back with the first 'Crunching Numbers' from the second season of lunchtime basketball."],
-    "ArticleDate": ["15/05", "15/05", "16/05"],
-    "ImageA": ["Logo.png", "Logo.png", "Logo.png"],
-    "ImageB": ["LG_Final.png", "WW_Final.png", ""],
-    "ImageC": ["WW_Final.png", "5M_Final.png", ""],
-    "ImageD": ["", "", ""],
-    "ArticleLink": ["OD.html?Date=1505", "06.html", "07.html"],
-    "ArticleType": ["Black", "Normal", "White"]
+    "ArticleName":["The TLTBO All Teams | Week 4 Day 1","What is wrong with the Wet Willies? Part 2!","Crunching Numbers | Term 2","The TLTBO All Teams | Week 4 Day 2"],
+    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3.","Dumbass Samuel McConaghy proves his ability to 'poke the bear', talking shit to the Wet Willies once again.","TLTBO CEO Angus Walker is back with the first 'Crunching Numbers' from the second season of lunchtime basketball.<br><br><br>","Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, dominated by the 5 Musketeers with the return of the Alexander Galt"],
+    "ArticleDate":["15/05","15/05","16/05","16/05"],
+    "ImageA":["Logo.png","Logo.png","Logo.png","Logo.png"],
+    "ImageB":["LG_Final.png","WW_Final.png","","LG_Final.png"],
+    "ImageC":["WW_Final.png","5M_Final.png","","WW_Final.png"],
+    "ImageD":["","","","5M_Final.png"],
+    "ArticleLink":["OD.html?Date=1505","06.html","07.html","OD.html?Date=1605"],
+    "ArticleType":["Black","Normal","White","Black"]
 }
 
 Week5 = {
