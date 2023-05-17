@@ -1,20 +1,20 @@
 Today = {
-    "Date": ["16 May"],
-    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],
-    "Winner":["Wet Willies","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies"],
-    "Loser":["5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses"],
-    "Scorer":["Rudy Hoschke","Rudy Hoschke","Michael Iffland","Clarrie Jones","Samuel McConaghy","Ryan Pattemore","Alexander Galt","Samuel McConaghy","Alexander Galt","Jasper Collier","Angus Walker","Rudy Hoschke","Samuel McConaghy","Angus Walker","Rudy Hoschke","Ryan Pattemore","Alexander Galt","Samuel McConaghy","Alexander Galt","Nicholas Szogi","Samuel McConaghy","Rudy Hoschke","Christopher Tomkinson","Christopher Tomkinson","Michael Iffland"],
-    "Type":["Finish","Finish","Three Pointer","Three Pointer","Midrange","Midrange","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Midrange","Finish","Midrange","Finish","Three Pointer","Midrange","Finish","Finish","Midrange","Three Pointer"],
-    "WStreak":[1,2,3,1,1,2,3,4,5,6,1,1,1,1,1,1,2,3,4,5,6,1,1,2,1],
-    "LStreak":[1,1,2,1,1,2,2,3,3,4,1,1,1,1,1,1,2,2,3,3,4,1,1,2,1],
-    "SStreak":[1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,1]
+    "Date": ["17 May"],
+    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13],
+    "Winner":["5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies","Wet Willies"],
+    "Loser":["Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses"],
+    "Scorer":["Samuel McConaghy","Nicholas Szogi","William Kim","Christopher Tomkinson","William Kim","William Kim","Nicholas Szogi","Jasper Collier","Angus Walker","Clarrie Jones","Alexander Galt","Conor Farrington","Rudy Hoschke"],
+    "Type":["Finish","Finish","Finish","Finish","Midrange","Midrange","Midrange","Midrange","Finish","Finish","Finish","Midrange","Midrange"],
+    "WStreak":[1,2,1,2,3,4,1,2,1,2,1,1,2],
+    "LStreak":[1,1,1,2,2,3,1,4,1,5,1,1,2],
+    "SStreak":[1,1,1,1,1,2,1,1,1,1,1,1,1]
   }
 
 DidNotPlay = []
 
-LadderPoints = [17,16,21]
+LadderPoints = [20,17,23]
 Leaders = ["Angus Walker", "Rudy Hoschke", "Alexander Galt"]
-LeadersPoints = [2.67,3.89,2.83]
+LeadersPoints = [2.43,3.6,2.57]
 
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
