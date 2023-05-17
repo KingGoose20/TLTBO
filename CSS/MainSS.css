@@ -3764,6 +3764,126 @@ input:checked+.slider:before {
 }
 
 @keyframes fadeinHeading {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.theFinals {
+  color: #dab128;
+  background-image: linear-gradient(100deg,
+  darkgoldenrod 0%,
+  darkgoldenrod 29%,
+  darkgoldenrod 67%,
+  darkgoldenrod 100%);
+  font-size: 1em;
+  font-family: "Brush King";
+  animation: textclip 2s reverse infinite;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s reverse infinite;
+}
+
+@font-face {
+  font-family: "Brush King";
+  src: url("../Fonts/Brush\ King.otf");
+}
+
+.theFinals:hover {
+  font-size: 1.25em;
+  background-image: linear-gradient(100deg,
+      darkgoldenrod 0%,
+      #cf980d 29%,
+      #7a5a09 67%,
+      #e7aa10 100%);
+
+}
+
+.headingImage {
+  content: url("../Images/Logo.png");
+  animation: blnk 10s infinite;
+}
+
+@keyframes blink {
+  0% {
+    content: url("../Images/Logo.png");
+    opacity: 1;
+  }
+
+  30% {
+    content: url("../Images/Logo.png");
+    opacity: 1;
+  }
+
+  40% {
+    content: url("../Images/Logo.png");
+    opacity: 0;
+  }
+
+  41% {
+    content: url("../Images/Finals_Logo.png");
+  }
+
+  50% {
+    content: url("../Images/Finals_Logo.png");
+    opacity: 1;
+  }
+
+  80% {
+    content: url("../Images/Finals_Logo.png");
+    opacity: 1;
+  }
+
+  90% {
+    content: url("../Images/Finals_Logo.png");
+    opacity: 0;
+  }
+
+  91% {
+    content: url("../Images/Logo.png");
+  }
+
+  100% {
+    content: url("../Images/Logo.png");
+    opacity: 1;
+  }
+
+}
+
+@keyframes border {
+  from {width: 0px;}
+  to {width:45vw}
+}
+
+#heading:after {
+content: '';
+float: left;
+display: block;
+margin: auto;
+height: 20px;
+width: 0px;
+margin-left: 36.8vw;
+position: relative;
+top: -50px;
+background: rgb(255, 255, 255);  
+-webkit-animation-name: border; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+-webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+animation-name: border;
+animation-duration: 1s;
+animation-delay: 1s;
+animation-fill-mode: forwards;
+}
+
+html {
+  scroll-behavior: smooth;
 }
