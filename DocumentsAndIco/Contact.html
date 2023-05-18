@@ -5,14 +5,14 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HQVTG4K1E"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-NGSFYZ4P9D');
+    gtag('config', 'G-NGSFYZ4P9D');
   </script>
   <script src="../js/HeaderFooter.js"></script>
-  
+
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
   <title>Contact | TLTBO</title>
@@ -30,23 +30,25 @@
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon" />
   <style>
     td {
-        padding-bottom: 30px;
+      padding-bottom: 30px;
     }
 
     option {
-            font-family: sans-serif;
-        }
-
-    input, textarea {
-        font-family: sans-serif;
-        color: black;
+      font-family: sans-serif;
     }
+
+    input,
+    textarea {
+      font-family: sans-serif;
+      color: black;
+    }
+
     input {
-        font-size: 20px;
+      font-size: 20px;
     }
 
     textarea {
-        font-size:15px;
+      font-size: 15px;
     }
   </style>
 
@@ -62,77 +64,87 @@
       <h1 class="hero-heading mainHeading animate-heading fade-inHeading">Contact Us</h1>
       <br>
       <a href="#rulesbook">
-        <div class="button fade-inHeading"><i>Have an equiry for the LTBO? The form below will help start your email.</i></div>
+        <div class="button fade-inHeading"><i>Have an equiry for the LTBO? The form below will help start your
+            email.</i></div>
       </a>
     </div>
   </div>
   <div class="section">
     <div class="w-container">
-        <form>
-            <table style="width: 100%;" class="menu">
-                <tr>
-                    <td><h1 class="title" style="color: white; width: 30vw">Enter your Name: </h1></td>
-                    <td>
-                        <input type="text" style="width: 60vw; height: 40px" id="name"></input>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h1 class="title" style="color: white; width: 30vw">Category of Enquiry: </h1></td>
-                    <td>
-                        <select style="width: 40%; color:black;" class="menu" id="category">
-                            <option disabled selected>Topic</option>
-                            <option value="zero">General Enquiry</option>
-                            <option value="one">Complaint :(</option>
-                            <option value="two">Compliment :)</option>
-                            <option value="three">Website Bug</option>
-                            <option value="four">Stats Error</option>
-                            <option value="five">Feature Request</option>
-                            <option value="six">Other</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h1 class="title" style="color: white; width: 30vw">Subject of Enquiry: </h1></td>
-                    <td>
-                        <input type="text" style="width: 60vw; height: 40px" id="subject"></input>
-                    </td>
-                </tr>
-                <tr>
-                    <td><h1 class="title" style="color: white; width: 30vw">Body of Enquiry: </h1></td>
-                    <td>
-                        <textarea type="text" style="width: 60vw; height: 130px" id="body"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </form>
-        <br><br>
-        <div class="button fade-inHeading" style="width: 60%; cursor: pointer;" onclick="SendEmail()"><i>Send Email</i></div>
+      <form>
+        <table style="width: 100%;" class="menu">
+          <tr>
+            <td>
+              <h1 class="title" style="color: white; width: 30vw">Enter your Name: </h1>
+            </td>
+            <td>
+              <input type="text" style="width: 60vw; height: 40px" id="name"></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 class="title" style="color: white; width: 30vw">Category of Enquiry: </h1>
+            </td>
+            <td>
+              <select style="width: 40%; color:black;" class="menu" id="category">
+                <option disabled selected>Topic</option>
+                <option value="zero">General Enquiry</option>
+                <option value="one">Complaint :(</option>
+                <option value="two">Compliment :)</option>
+                <option value="three">Website Bug</option>
+                <option value="four">Stats Error</option>
+                <option value="five">Feature Request</option>
+                <option value="six">Other</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 class="title" style="color: white; width: 30vw">Subject of Enquiry: </h1>
+            </td>
+            <td>
+              <input type="text" style="width: 60vw; height: 40px" id="subject"></input>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h1 class="title" style="color: white; width: 30vw">Body of Enquiry: </h1>
+            </td>
+            <td>
+              <textarea type="text" style="width: 60vw; height: 130px" id="body"></textarea>
+            </td>
+          </tr>
+        </table>
+      </form>
+      <br><br>
+      <div class="button fade-inHeading" style="width: 60%; cursor: pointer;" onclick="SendEmail()"><i>Send Email</i>
+      </div>
     </div>
   </div>
   <div id="footer">
     <script>footer("docs")</script>
-  </div> 
- <script src="heading.js"></script>
- <script src="../js/Scroll.js"></script>
- <script>
+  </div>
+  <script src="heading.js"></script>
+  <script src="../js/Scroll.js"></script>
+  <script>
     function SendEmail() {
-        Name = document.getElementById("name").value
-        x = document.getElementById("category")
-        Category = x.options[x.selectedIndex].text
-        Subject = document.getElementById("subject").value
-        Body = document.getElementById("body").value
+      Name = document.getElementById("name").value
+      x = document.getElementById("category")
+      Category = x.options[x.selectedIndex].text
+      Subject = document.getElementById("subject").value
+      Body = document.getElementById("body").value
 
-        if (Name != "" && Category != "" && Subject != "" && Body != "") {
-            EmailSubject = Subject + " (" + Category + ")"
-            EmailBody = "Dear TLTBO,%0D%0A%0D%0A" + Body + "%0D%0A%0D%0A" + "From " + Name
-            window.open('mailto:011445@asas.qld.edu.au?subject=' + EmailSubject + "&body=" + EmailBody);
-        } else {
-            alert("You have left a field blank. Please fill it in.")
-        }
+      if (Name != "" && Category != "" && Subject != "" && Body != "") {
+        EmailSubject = Subject + " (" + Category + ")"
+        EmailBody = "Dear TLTBO,%0D%0A%0D%0A" + Body + "%0D%0A%0D%0A" + "From " + Name
+        window.open('mailto:011445@asas.qld.edu.au?subject=' + EmailSubject + "&body=" + EmailBody);
+      } else {
+        alert("You have left a field blank. Please fill it in.")
+      }
 
 
     }
- </script>
+  </script>
 </body>
 
 </html>

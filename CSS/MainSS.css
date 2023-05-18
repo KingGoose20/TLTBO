@@ -3810,7 +3810,7 @@ input:checked+.slider:before {
 
 .headingImage {
   content: url("../Images/Logo.png");
-  animation: blnk 10s infinite;
+  animation: blnk 10s infinite; 
 }
 
 @keyframes blink {
