@@ -3667,7 +3667,7 @@ iframe {
   }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 700px) {
   .container {
     background-attachment: fixed;
     background-position: center;
@@ -3781,10 +3781,10 @@ input:checked+.slider:before {
 .theFinals {
   color: #dab128;
   background-image: linear-gradient(100deg,
-  darkgoldenrod 0%,
-  darkgoldenrod 29%,
-  darkgoldenrod 67%,
-  darkgoldenrod 100%);
+      darkgoldenrod 0%,
+      darkgoldenrod 29%,
+      darkgoldenrod 67%,
+      darkgoldenrod 100%);
   font-size: 1em;
   font-family: "Brush King";
   animation: textclip 2s reverse infinite;
@@ -3813,7 +3813,7 @@ input:checked+.slider:before {
 
 .headingImage {
   content: url("../Images/Logo.png");
-  animation: blnk 10s infinite; 
+  animation: blnk 10s infinite;
 }
 
 @keyframes blink {
@@ -3863,29 +3863,40 @@ input:checked+.slider:before {
 }
 
 @keyframes border {
-  from {width: 0px;}
-  to {width:45vw}
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 45vw
+  }
 }
 
-#heading:after {
-content: '';
-float: left;
-display: block;
-margin: auto;
-height: 20px;
-width: 0px;
-margin-left: 36.8vw;
-position: relative;
-top: -50px;
-background: rgb(255, 255, 255);  
--webkit-animation-name: border; /* Safari 4.0 - 8.0 */
--webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
--webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-animation-name: border;
-animation-duration: 1s;
-animation-delay: 1s;
-animation-fill-mode: forwards;
+@media screen and (min-width: 1300px) {
+  #heading:after {
+    content: '';
+    float: left;
+    display: block;
+    margin: auto;
+    height: 20px;
+    width: 0px;
+    margin-left: 36.8vw;
+    position: relative;
+    top: -50px;
+    background: rgb(255, 255, 255);
+    -webkit-animation-name: border;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    /* Safari 4.0 - 8.0 */
+    animation-name: border;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
 }
+
 
 html {
   scroll-behavior: smooth;

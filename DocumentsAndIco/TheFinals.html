@@ -84,6 +84,29 @@
                 left: -20px;
             }
         }
+
+        .mainHeading {
+            font-size: 20em;
+            line-height: 1em;
+        }
+
+        @media screen and (max-width: 800px) {
+            .mainHeading {
+                font-size: 15em;
+                line-height: 0.8em;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .mainHeading {
+                font-size: 35vw;
+                line-height: 0.8em;
+            }
+        }
+
+        h2 {
+            line-height: 1.15em;
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -108,8 +131,9 @@
     <div class="hero-section centered container gf" style="background-size: cover;">
         <br>
         <div data-ix="new-interaction" class="w-container">
-            <h1 class="hero-heading mainHeading animate-heading fade-inHeading"
-                style="font-size: 20em; line-height: 1em;">The <span id="heading">Finals</span></h1><br>
+            <br><br>
+            <h1 class="hero-heading mainHeading animate-heading fade-inHeading">The <span id="heading">Finals</span>
+            </h1><br>
             <div class="button fade-inHeading"><i>From the 29th of May to the 9th of June</i></div>
         </div>
     </div>
@@ -117,9 +141,9 @@
         <div class="w-container">
             <div class="LearnMore">
                 <div class="section-title-group">
-                    <h2 class="section-heading centered" id="counter" style="font-size: 150px; line-height: 170px;">--
-                        -- -- --</h2>
-                    <h2 class="section-heading centered" style="line-height: 1.2em">After a season filled with <span
+                    <h2 class="section-heading centered" id="counter" style="font-size: 15vw; line-height: 16vw;">--
+                        -- -- --</h2><br><br>
+                    <h2 class="section-heading centered" style="line-height: 1.3em">After a season filled with <span
                             style="color: #ff690c">higher
                             scoring</span>, new <span style="color: #47aeb5">super teams</span>, and the most
                         <span style="color: #d74268">balanced league</span> in TLTBO history, we've reached
@@ -232,8 +256,10 @@
                                             an advantage over their opposition.</li>
                                     </ul>
                                 </li>
-                                <li>Between each game will be a 5-minute break, allowing each team to rest and regather themselves before their next challenge.</li>
-                                <li>Before the Championship Game, there will be player introductions. We will start with the winner of the 'Play-In', then the 1st place team.</li>
+                                <li>Between each game will be a 5-minute break, allowing each team to rest and regather
+                                    themselves before their next challenge.</li>
+                                <li>Before the Championship Game, there will be player introductions. We will start with
+                                    the winner of the 'Play-In', then the 1st place team.</li>
                             </ul>
                         </li>
                     </ul>
