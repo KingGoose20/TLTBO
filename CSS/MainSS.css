@@ -3805,7 +3805,6 @@ input:checked+.slider:before {
       #cf980d 29%,
       #7a5a09 67%,
       #e7aa10 100%);
-
 }
 
 .headingImage {
@@ -3886,4 +3885,20 @@ animation-fill-mode: forwards;
 
 html {
   scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: "Diamante Serial";
+  src: url("../Fonts/Diamante-Serial-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Diamante Serial Bold";
+  src: url("../Fonts/Diamante-Serial-bold.ttf");
+}
+
+@font-face {
+  font-family: "Diamante Serial Italic";
+  src: url("../Fonts/Diamante-Serial-RegularItalic.ttf");
 }
