@@ -3667,12 +3667,16 @@ iframe {
   }
 }
 
-.container {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 500px) {
+  .container {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
+
+
 
 .h1class {
   font-size: 6vw;
