@@ -315,12 +315,12 @@
     <script src="heading.js"></script>
     <script src="../js/Scroll.js"></script>
     <script>
-        /*
+        window.scrollTo({top: 0, left: 0, behavior: "smooth", });
         var header = document.getElementById("header");
         header.style.overflow = "hidden";
         setTimeout(function () {
-            window.scroll({ top: 800, left: 0, behavior: "smooth" }); setTimeout(function() {header.style.overflow = "auto"; },10400);
-        }, 2500); */
+            window.scroll({ top: 800, left: 0, behavior: "smooth" }); setTimeout(function() {header.style.overflow = "auto"; },400);
+        }, 2500);
     </script>
 
 </body>
