@@ -3813,51 +3813,71 @@ input:checked+.slider:before {
 
 .headingImage {
   content: url("../Images/Logo.png");
-  animation: blnk 10s infinite;
+  position: relative;
+  animation: blink 10s infinite;
 }
 
 @keyframes blink {
   0% {
     content: url("../Images/Logo.png");
     opacity: 1;
+    width:0.75em;
+    margin-right: 9px;
   }
 
   30% {
     content: url("../Images/Logo.png");
     opacity: 1;
+    width:0.75em;
+    margin-right: 9px;
   }
 
   40% {
     content: url("../Images/Logo.png");
     opacity: 0;
+    width:0.75em;
+    margin-right: 9px;
   }
 
   41% {
     content: url("../Images/Finals_Logo.png");
+    width:0.85em;
+    margin-right: 5px;
+
   }
 
   50% {
     content: url("../Images/Finals_Logo.png");
     opacity: 1;
+    width:0.85em;
+    margin-right: 5px;
   }
 
   80% {
     content: url("../Images/Finals_Logo.png");
     opacity: 1;
+    width:0.85em;
+    margin-right: 5px;
   }
 
   90% {
     content: url("../Images/Finals_Logo.png");
     opacity: 0;
+    width:0.85em;
+    margin-right: 5px;
   }
 
   91% {
     content: url("../Images/Logo.png");
+    width:0.75em;
+    margin-right: 9px;
   }
 
   100% {
     content: url("../Images/Logo.png");
     opacity: 1;
+    width:0.75em;
+    margin-right: 9px;
   }
 
 }

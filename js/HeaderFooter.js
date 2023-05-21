@@ -2,13 +2,17 @@ function header(location) {
     const template = document.createElement('template');
 
     template.innerHTML = `
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <div class="Whole" id="Whole">
         <div class="w-container">
         <a href="replacerindex.html" class="heading w--current" style="padding:8px;">
-            <h1 class="title animate-character"><img src="replacerImages/Logo.png" style="width:0.75em"><span class="heading-hide">   Lunch Time Basketballers</span><span class="inverseheading-hide">   TLTBO</span></h1>
+            <h1 class="title animate-character"><img src="" style="" class="headingImage"><span class="heading-hide">   Lunch Time Basketballers</span><span class="inverseheading-hide">   TLTBO</span></h1>
         </a>
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="replacerDocumentsAndIco/TheFinals.html" class="navigation-link w-nav-link theFinals">The Finals</a>
+            </li>
             <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
             </li>
@@ -142,6 +146,8 @@ function footer(location) {
                 <div class="spc w-col w-col-6">
                     <h5>About the Lunch Time Basketball Organisation</h5>
                     <p>This website is a free source of knowledge to learn more about the lunch time basketball.</p>
+                    <br><br>
+                    <a href="https://www.instagram.com/tltbo_official/" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
                 </div>
                 <div class="spc w-col w-col-6">
                     <h5>useful links</h5>
@@ -175,6 +181,10 @@ function footer(location) {
     }
     if (location == "5M") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/5M_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
+    }
+
+    if (location == "finals") {
+        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/Finals_Logo.png" style="height: 25%; width:25%; margin-left: 60px;">')
     }
     if (location == "news" || location == "LG" || location == "WW" || location == "5M") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
