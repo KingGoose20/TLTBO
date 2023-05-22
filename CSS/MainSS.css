@@ -3062,7 +3062,10 @@ html {
   filter: brightness(100%);
 }
 
-
+.insta {
+  background-image: url("../Images/Instagram.jpg");
+  filter: brightness(100%);
+}
 .champions {
   background-image: url("../Images/warriors-championship.jpg");
   filter: brightness(100%);
@@ -3316,7 +3319,7 @@ iframe {
 }
 
 .mainHeading {
-  font-size: 150px;
+  font-size: 200px;
   line-height: 180px;
 }
 
@@ -3335,7 +3338,7 @@ iframe {
   }
 
   .mainHeading {
-    font-size: 100px;
+    font-size: 130px;
     line-height: 120px;
   }
 }

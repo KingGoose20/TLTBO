@@ -33,6 +33,7 @@ function header(location) {
                     <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html">Loose Gooses Home</a>
                     <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html">Wet Willies Home</a>
                     <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html">5 Musketeers Home</a>
+                    <a href="replacerDocumentsAndIco/InstagramHighlights.html">Instagram</a>
                 </div>
             </div>
             <li class="nav-item dropdownShow">
@@ -49,6 +50,9 @@ function header(location) {
             </li>
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html" class="navigation-link w-nav-link">5 Musketeers Home</a>
+            </li>
+            <li class="nav-item dropdownShow">
+                <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="navigation-link w-nav-link">Instagram</a>
             </li>
 
             </ul>
@@ -147,7 +151,7 @@ function footer(location) {
                     <h5>About the Lunch Time Basketball Organisation</h5>
                     <p>This website is a free source of knowledge to learn more about the lunch time basketball.</p>
                     <br><br>
-                    <a href="https://www.instagram.com/tltbo_official/" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
+                    <a href="replacer/DocumentsAndIco/InstagramHighlights.html" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
                 </div>
                 <div class="spc w-col w-col-6">
                     <h5>useful links</h5>
