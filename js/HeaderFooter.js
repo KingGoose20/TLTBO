@@ -151,7 +151,7 @@ function footer(location) {
                     <h5>About the Lunch Time Basketball Organisation</h5>
                     <p>This website is a free source of knowledge to learn more about the lunch time basketball.</p>
                     <br><br>
-                    <a href="replacer/DocumentsAndIco/InstagramHighlights.html" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
+                    <a href="replacerDocumentsAndIco/InstagramHighlights.html" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
                 </div>
                 <div class="spc w-col w-col-6">
                     <h5>useful links</h5>
