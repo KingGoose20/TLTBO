@@ -94,6 +94,16 @@ weekFourDayTwo = {
 
 }
 
+weekFiveDayTwo = {
+    "Date":["23/05"],
+    "WeeklyPosition":["Second day of the fifth week"],
+    "Offensive":["Angus Walker","Christopher Tomkinson","William Kim","Lukas Johnston","Rudy Hoschke"],
+    "Defensive":["Angus Walker","William Kim","Christopher Tomkinson","Clarrie Jones","Mitch Yue"],
+    "OffensiveDescription":["First off, apologies for missing the last two days, there's been a few distractions, however from now I will be releasing them ASAP after every lunch. <br>Angus Walker led his Loose Gooses to a dominate win on the day, scoring a league high four points, some of those being extremely tough. The LG's big man and primary rebounder in Chris finds himself at 2 after a great scoring day, he comes in with 3 points.  The 3rd place goes to another Loose Goose in Kimmy with two tough middies to contribute to the LG's success. Lukas comes in at four with 2 points, and his teammate Rudy rounds out the offensive list with 2 points himself."],
+    "DefensiveDescription":["The defensive team is made up of entirely Loose Gooses today with a truly dominate performance. Again I apologise, the 5 Musketeers yesterday had an even better day, however today the LG's only losing two games means that their players make up the list. First in the defensive list is the GM Angus, a great day guarding the other teams 1 options, and his term 1 retained player and second option Kimmy comes in a two. Chrissy had a great day with defensive rebounds, and myself and Mitch round out the list at 4/5, as we both contributed to the help defense and the teams defensive success."]
+    
+}
+
 function main() {
     currentLocation = window.location
     myKeyValues = currentLocation.search
@@ -142,6 +152,9 @@ function findVariable(Param) {
             break;
         case "1605" :
             return weekFourDayTwo
+            break;
+        case "2305" :
+            return weekFiveDayTwo
             break;
     }
 }

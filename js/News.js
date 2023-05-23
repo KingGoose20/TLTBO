@@ -71,15 +71,15 @@ Week4 = {
 }
 
 Week5 = {
-    "ArticleName": [],
-    "ArticleDescription": [],
-    "ArticleDate": [],
-    "ImageA": [],
-    "ImageB": [],
-    "ImageC": [],
-    "ImageD": [],
-    "ArticleLink": [],
-    "ArticleType": []
+    "ArticleName":["The TLTBO All Teams | Week 5 Day 2"],
+    "ArticleDescription":["Clarrie Jones is back with his TLTBO All Teams, with a Loose Gooses dominated list, after their outstanding performance."],
+    "ArticleDate":["23/05"],
+    "ImageA":["Logo.png"],
+    "ImageB":["LG_Final.png"],
+    "ImageC":["WW_Final.png"],
+    "ImageD":[""],
+    "ArticleLink":["OD.html?Date=2305"],
+    "ArticleType":["Black"]
 }
 
 Finals = {
