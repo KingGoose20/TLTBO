@@ -1,15 +1,15 @@
 mainArray = {
   "Name":["Jasper Collier","Conor Farrington","Alexander Galt","Rudy Hoschke","Michael Iffland","Lukas Johnston","Clarrie Jones","William Kim","Samuel McConaghy","Ryan Pattemore","Nicholas Szogi","Christopher Tomkinson","Angus Walker","Willie Weekes","Mitch Yue","Sam James"],
   "Team":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
-  "PPG":[0.64,0.8,2.75,3.27,2.27,0.63,1.36,1.45,2.8,0.91,1.33,0.91,2.38,0.18,0.55,0.4,],
-  "TP":[7,8,22,36,25,5,15,16,28,10,12,10,19,2,6,4,],
-  "FPG":[0.18,0.5,2.75,3,0.64,0.38,0.36,0.55,0.7,0.09,0.89,0.55,1.63,0.18,0.27,0.3,],
-  "TF":[2,5,22,33,7,3,4,6,7,1,8,6,13,2,3,3],
-  "MPG":[0.45,0.3,0,0.27,1.09,0.25,0.09,0.91,2.1,0.82,0.22,0.36,0,0,0.27,0.1,],
-  "TM":[5,3,0,3,12,2,1,10,21,9,2,4,0,0,3,1],
-  "TPG":[0,0,0,0,0.27,0,0.45,0,0,0,0.11,0,0.38,0,0,0,],
+  "PPG":[0.58,0.8,2.56,3.17,2.08,0.78,1.33,1.5,2.55,0.91,1.2,1.08,2.56,0.17,0.58,0.36,],
+  "TP":[7,8,23,38,25,7,16,18,28,10,12,13,23,2,7,4,],
+  "FPG":[0.17,0.5,2.56,2.92,0.58,0.44,0.33,0.5,0.64,0.09,0.8,0.58,1.78,0.17,0.33,0.27,],
+  "TF":[2,5,23,35,7,4,4,6,7,1,8,7,16,2,4,3],
+  "MPG":[0.42,0.3,0,0.25,1,0.33,0.17,1,1.91,0.82,0.2,0.5,0.11,0,0.25,0.09,],
+  "TM":[5,3,0,3,12,3,2,12,21,9,2,6,1,0,3,1],
+  "TPG":[0,0,0,0,0.25,0,0.42,0,0,0,0.1,0,0.33,0,0,0,],
   "TT":[0,0,0,0,3,0,5,0,0,0,1,0,3,0,0,0],
-  "NBAMODENUMBER":[12.59],  
+  "NBAMODENUMBER":[12.83],  
   "AccoladesOne":["","","Ex-GM","TLTBO Manager","TLTBO Manager","MVP Runner Up T1","TLTBO Manager","MVP T1","TLTBO Manager","Perimeter T1","The Biggest Bird","MIP T1","TLTBO CEO","Teammate T1","",""],
   "AccoladesTwo":["","","All-Defence Team T1","Ex-GM","Playmaker T1","All-Offence Team T1","Champion T1","All-Offence Team T1","GM","Champion T1","Champion T1","","GM","Champion T1","",""],
   "AccoladesThree":["","","Champion T1","All-Offence Team T1","Thirdman T1","","Finals MVP","All-Defence Team T1","All-Offence Team T1","","","","All-Offence Team T1","","",""],
@@ -123,4 +123,13 @@ WeekFiveDayOne = {
 
 }
 
-dayArray = [WeekOneDayOne, WeekOneDayTwo, WeekTwoDayOne, WeekTwoDayTwo, WeekThreeDayOne, WeekThreeDayTwo, WeekThreeDayThree, WeekFourDayOne, WeekFourDayTwo, WeekFourDayThree, WeekFiveDayOne]
+WeekFiveDayTwo = {
+  "Date":["23-May"],
+  "Points":[0,"Did not Play",1,2,0,2,1,2,0,"Did not Play",0,3,4,0,1,0],
+  "Finishes":[0,"Did not Play",1,2,0,1,0,0,0,"Did not Play",0,1,3,0,1,0],
+  "Midrange":[0,"Did not Play",0,0,0,1,1,2,0,"Did not Play",0,2,1,0,0,0],
+  "ThreePointers":[0,"Did not Play",0,0,0,0,0,0,0,"Did not Play",0,0,0,0,0,0]
+
+}
+
+dayArray = [WeekOneDayOne, WeekOneDayTwo, WeekTwoDayOne, WeekTwoDayTwo, WeekThreeDayOne, WeekThreeDayTwo, WeekThreeDayThree, WeekFourDayOne, WeekFourDayTwo, WeekFourDayThree, WeekFiveDayOne, WeekFiveDayTwo]
