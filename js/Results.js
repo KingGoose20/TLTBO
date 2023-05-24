@@ -1,27 +1,27 @@
 Today = {
-    "Date": ["23 May"],
-    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-    "Winner":["Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
-    "Loser":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers"],
-    "Scorer":["Lukas Johnston","William Kim","Christopher Tomkinson","Angus Walker","Angus Walker","Lukas Johnston","Alexander Galt","Christopher Tomkinson","Rudy Hoschke","Rudy Hoschke","Angus Walker","William Kim","Mitch Yue","Christopher Tomkinson","Clarrie Jones","Angus Walker"],
-    "Type":["Midrange","Midrange","Midrange","Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Midrange","Finish"],
-    "WStreak":[1,1,2,3,4,1,1,1,1,2,1,2,3,4,5,6],
-    "LStreak":[1,1,2,2,3,1,1,1,1,2,1,3,2,4,3,5],
-    "SStreak":[1,1,1,1,2,1,1,1,1,2,1,1,1,1,1,1]
+    "Date": ["24 May"],
+    "Game Number":[1,2,3,4,5,6,7,8],
+    "Winner":["5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers"],
+    "Loser":["Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies"],
+    "Scorer":["Alexander Galt","Samuel McConaghy","Angus Walker","Angus Walker","Clarrie Jones","Christopher Tomkinson","Alexander Galt","Ryan Pattemore"],
+    "Type":["Finish","Midrange","Finish","Midrange","Three Pointer","Midrange","Finish","Midrange"],
+    "WStreak":[1,2,1,2,3,4,1,2],
+    "LStreak":[1,1,1,2,2,3,1,4],
+    "SStreak":[1,1,1,2,1,1,1,1]
   }
 
-DidNotPlay = ["Conor Farrington", "Ryan Pattemore"]
+DidNotPlay = []
 
-LadderPoints = [25,20,27]
+LadderPoints = [28,21,29]
 Leaders = ["Angus Walker", "Rudy Hoschke", "Alexander Galt"]
-LeadersPoints = [2.56,3.17,2.56]
+LeadersPoints = [2.5,2.92,2.5]
 
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
 overRideDate = ""
 overrideW = ""
 overrideL = ""
-overrideDayPoints = []
+overrideDayPoints = [3, 1, 2]
 
 
 
