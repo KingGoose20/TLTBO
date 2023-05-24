@@ -71,15 +71,15 @@ Week4 = {
 }
 
 Week5 = {
-    "ArticleName":["The TLTBO All Teams | Week 5 Day 2"],
-    "ArticleDescription":["Clarrie Jones is back with his TLTBO All Teams, with a Loose Gooses dominated list, after their outstanding performance."],
-    "ArticleDate":["23/05"],
-    "ImageA":["Logo.png"],
-    "ImageB":["LG_Final.png"],
-    "ImageC":["WW_Final.png"],
-    "ImageD":[""],
-    "ArticleLink":["OD.html?Date=2305"],
-    "ArticleType":["Black"]
+    "ArticleName":["The TLTBO All Teams | Week 5 Day 2","The TLTBO All Teams | Week 5 Day 3"],
+    "ArticleDescription":["Clarrie Jones is back with his TLTBO All Teams, with a Loose Gooses dominated list, after their outstanding performance.<br><br>","Clarrie Jones has announced the LTBO All Teams from the last day of the regular season, which has a rare exclusion of any Wet Willies players."],
+    "ArticleDate":["23/05","24/05"],
+    "ImageA":["Logo.png","Logo.png"],
+    "ImageB":["LG_Final.png","LG_Final.png"],
+    "ImageC":["WW_Final.png","5M_Final.png"],
+    "ImageD":["",""],
+    "ArticleLink":["OD.html?Date=2305","OD.html?Date=2405"],
+    "ArticleType":["Black","Black"]
 }
 
 Finals = {
