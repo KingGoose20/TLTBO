@@ -19,7 +19,7 @@ LeadersPoints = [2.5,2.92,2.5]
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
 overRideDate = ""
-overrideW = ""
+overrideW = "Loose Gooses"
 overrideL = ""
 overrideDayPoints = [3, 1, 2]
 
