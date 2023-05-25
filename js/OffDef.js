@@ -171,3 +171,44 @@ function findVariable(Param) {
             break;
     }
 }
+
+
+
+function getAllTeamsResults() {
+    players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland",
+        "Lukas Johnston", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi",
+        "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue", "Sam James"]
+    playersOffPoints = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    playersDefPoints = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    allTeamsList = [weekOnedayOne, weekOneDayTwo, weekTwoDayOne, weekTwoDayTwo, weekThreeDayOne, weekThreeDayTwo, weekThreeDayThree, weekFourDayOne, weekFourDayTwo, weekFiveDayTwo, weekFiveDayThree]
+
+    for (i = 0; i < allTeamsList.length; i++) {
+        for (x=0; x < 5; x++) {
+            player = allTeamsList[i].Offensive[x]
+            number = (5-x)
+            for (y = 0; y<players.length; y++) {
+                if(players[y] == player) {
+                    playersOffPoints[y] += number;
+                    break;
+                }
+            }
+        }
+        for (x=0; x < 5; x++) {
+            player = allTeamsList[i].Defensive[x]
+            number = (5-x)
+            for (y = 0; y<players.length; y++) {
+                if(players[y] == player) {
+                    playersDefPoints[y] += number;
+                    break;
+                }
+            }
+        }
+    }
+
+    for (i = 0; i < players.length; i++) {
+        console.log(players[i] + " Off: " + playersOffPoints[i] + " Def: " + playersDefPoints[i])
+    }
+}
+
+
+getAllTeamsResults()

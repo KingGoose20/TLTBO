@@ -83,15 +83,15 @@ Week5 = {
 }
 
 Finals = {
-    "ArticleName": [],
-    "ArticleDescription": [],
-    "ArticleDate": [],
-    "ImageA": [],
-    "ImageB": [],
-    "ImageC": [],
-    "ImageD": [],
-    "ArticleLink": [],
-    "ArticleType": []
+    "ArticleName":["All-Second Teams Announced!"],
+    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list."],
+    "ArticleDate":["26/05"],
+    "ImageA":["Logo.png"],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":["08.html"],
+    "ArticleType":["White"]
 }
 
 numberOfElements = 0
