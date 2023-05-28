@@ -83,15 +83,15 @@ Week5 = {
 }
 
 Finals = {
-    "ArticleName":["All-Second Teams Announced!"],
-    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list."],
-    "ArticleDate":["26/05"],
-    "ImageA":["Logo.png"],
-    "ImageB":[""],
-    "ImageC":[""],
-    "ImageD":[""],
-    "ArticleLink":["08.html"],
-    "ArticleType":["White"]
+    "ArticleName":["All-Second Teams Announced!","Rudy Hoschke wins TLTBO Scoring Champ!", "The TLTBO All-Teams!"],
+    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list.", "Wet Willies star Rudy Hoschke wins the Season 2 TLTBO Scoring Title!<br><br>", "The TLTBO All-Team is out now! Click here to check out the 6 incredible players who made the squad. Congratulations to each player!"],
+    "ArticleDate":["26/05","29/05", "29/05"],
+    "ImageA":["Logo.png", "Logo.png", "Logo.png"],
+    "ImageB":["","WW_Final.png",""],
+    "ImageC":["",""],
+    "ImageD":["",""],
+    "ArticleLink":["08.html","10.html","09.html"],
+    "ArticleType":["White","Normal","White"]
 }
 
 numberOfElements = 0
