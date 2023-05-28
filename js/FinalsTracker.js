@@ -176,7 +176,7 @@ function logDetails() {
     var cell9 = row.insertCell(8);
 
 
-    if (aScore == needed || bScore == needed) {
+    if (aScore >= needed || bScore >= needed) {
         updateStreaks()
     }
     cell1.innerHTML = gameNumber;
@@ -189,7 +189,7 @@ function logDetails() {
     cell8.innerHTML = lStreak;
     cell9.innerHTML = sStreak;
 
-    if (aScore == needed || bScore == needed) {
+    if (aScore >= needed || bScore >= needed) {
         gameNumber += 1;
         aScore = 0
         bScore = 0
