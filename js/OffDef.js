@@ -114,6 +114,16 @@ weekFiveDayThree = {
 
 }
 
+FinalsOne = {
+    "Date": ["29/05"],
+    "WeeklyPosition": ["First day of finals week"],
+    "Offensive": ["Angus Walker", "William Kim", "Clarrie Jones", "Nicholas Szogi", "Michael Iffland"],
+    "Defensive": ["Angus Walker", "Michael Iffland", "William Kim", "Christopher Tomkinson", "Sam James"],
+    "OffensiveDescription": ["The Loose Gooses main offensive players had a good day scoring, despite the overall amount of missed shots. Angus had the equal most points with 3, one of those being a very tough left hand. His teammate Kimmy comes in a two, and despite me having more points, Kimmy's offensive rebounds were truly influential in a day of bricks. I come in at third with as many points, one of those being a three. Nicholas Szogi is the only 5M to make an all team today, his three gave the 5M's one of their 2 wins. "],
+    "DefensiveDescription": ["Angus Walker had a great day on both ends of the court today, playing great defense to ensure the Loose Gooses win. Michael Iffland did all he could to help his team to a second place finish, and in third place Kimmy did a great job working in tandem with Angus, and playing good defensive basketball. Christopher Tomkinson and Sam James come in at 4/5, both playing great defence, and coming down with many rebounds for their Loose Gooses."]
+
+}
+
 function main() {
     currentLocation = window.location
     myKeyValues = currentLocation.search
@@ -169,6 +179,9 @@ function findVariable(Param) {
         case "2405":
             return weekFiveDayThree
             break;
+        case "F1":
+            return FinalsOne
+            break;
     }
 }
 
@@ -178,26 +191,26 @@ function getAllTeamsResults() {
     players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland",
         "Lukas Johnston", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi",
         "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue", "Sam James"]
-    playersOffPoints = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    playersDefPoints = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    playersOffPoints = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    playersDefPoints = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     allTeamsList = [weekOnedayOne, weekOneDayTwo, weekTwoDayOne, weekTwoDayTwo, weekThreeDayOne, weekThreeDayTwo, weekThreeDayThree, weekFourDayOne, weekFourDayTwo, weekFiveDayTwo, weekFiveDayThree]
 
     for (i = 0; i < allTeamsList.length; i++) {
-        for (x=0; x < 5; x++) {
+        for (x = 0; x < 5; x++) {
             player = allTeamsList[i].Offensive[x]
-            number = (5-x)
-            for (y = 0; y<players.length; y++) {
-                if(players[y] == player) {
+            number = (5 - x)
+            for (y = 0; y < players.length; y++) {
+                if (players[y] == player) {
                     playersOffPoints[y] += number;
                     break;
                 }
             }
         }
-        for (x=0; x < 5; x++) {
+        for (x = 0; x < 5; x++) {
             player = allTeamsList[i].Defensive[x]
-            number = (5-x)
-            for (y = 0; y<players.length; y++) {
-                if(players[y] == player) {
+            number = (5 - x)
+            for (y = 0; y < players.length; y++) {
+                if (players[y] == player) {
                     playersDefPoints[y] += number;
                     break;
                 }

@@ -83,15 +83,15 @@ Week5 = {
 }
 
 Finals = {
-    "ArticleName":["All-Second Teams Announced!","Rudy Hoschke wins TLTBO Scoring Champ!", "The TLTBO All-Teams!"],
-    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list.", "Wet Willies star Rudy Hoschke wins the Season 2 TLTBO Scoring Title!<br><br>", "The TLTBO All-Team is out now! Click here to check out the 6 incredible players who made the squad. Congratulations to each player!"],
-    "ArticleDate":["26/05","29/05", "29/05"],
-    "ImageA":["Logo.png", "Logo.png", "Logo.png"],
-    "ImageB":["","WW_Final.png",""],
-    "ImageC":["",""],
-    "ImageD":["",""],
-    "ArticleLink":["08.html","10.html","09.html"],
-    "ArticleType":["White","Normal","White"]
+    "ArticleName":["All-Second Teams Announced!","Rudy Hoschke wins TLTBO Scoring Champ!","The TLTBO All-Teams!","The TLTBO All Teams | Finals Day 1"],
+    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list.","Wet Willies star Rudy Hoschke wins the Season 2 TLTBO Scoring Title!<br><br>","The TLTBO All-Team is out now! Click here to check out the 6 incredible players who made the squad. Congratulations to each player!","After the recent announcement of the all-season teams, Clarrie Jones is back with the day-by-day teams from the first day of Finals Week."],
+    "ArticleDate":["26/05","29/05","29/05","29/05"],
+    "ImageA":["Logo.png","Logo.png","Logo.png","Finals_Logo.png"],
+    "ImageB":["","WW_Final.png","","LG_Final.png"],
+    "ImageC":["","","","WW_Final.png"],
+    "ImageD":["","","","5M_Final.png"],
+    "ArticleLink":["08.html","10.html","09.html","OD.html?Date=F1"],
+    "ArticleType":["White","Normal","White","Black"]
 }
 
 numberOfElements = 0
@@ -149,6 +149,10 @@ function createArticles(variableToUse, elementID) {
 
         if (variableToUse.ImageD[i] != "" && variableToUse.ImageD != "None") {
             clone.getElementById("ImageD").src = "../Images/" + variableToUse.ImageD[i]
+            clone.getElementById("ImageA").style.width = "20%"
+            clone.getElementById("ImageB").style.width = "20%"
+            clone.getElementById("ImageC").style.width = "20%"
+            clone.getElementById("ImageD").style.width = "20%"
         } else {
             clone.getElementById("ImageD").remove();
         }
