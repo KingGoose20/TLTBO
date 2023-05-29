@@ -1,27 +1,28 @@
 Today = {
-    "Date": ["24 May"],
-    "Game Number":[1,2,3,4,5,6,7,8],
-    "Winner":["5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers"],
-    "Loser":["Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies"],
-    "Scorer":["Alexander Galt","Samuel McConaghy","Angus Walker","Angus Walker","Clarrie Jones","Christopher Tomkinson","Alexander Galt","Ryan Pattemore"],
-    "Type":["Finish","Midrange","Finish","Midrange","Three Pointer","Midrange","Finish","Midrange"],
-    "WStreak":[1,2,1,2,3,4,1,2],
-    "LStreak":[1,1,1,2,2,3,1,4],
-    "SStreak":[1,1,1,2,1,1,1,1]
+    "Date": ["29 May"],
+    "Game Number":[1,1,2,2,3,3,4,5,5,6,6,6],
+    "Winner":["Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
+    "Loser":["Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Wet Willies","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies"],
+    "Score":["1-0","2-0","1-0","3-0","1-0","2-0","2-0","1-0","2-0","1-0","1-1","2-1"],
+    "Scorer":["Angus Walker","Angus Walker","Alexander Galt","Nicholas Szogi","Michael Iffland","Lukas Johnston","Clarrie Jones","Angus Walker","Clarrie Jones","Conor Farrington","William Kim","William Kim"],
+    "Type":["Finish","Midrange","Finish","Three Pointer","Finish","Midrange","Three Pointer","Finish","Finish","Finish","Midrange","Midrange"],
+    "WStreak":["-","1","-","1","-","1","1","-","2","-","-","3"],
+    "LStreak":["-","1","-","1","-","1","1","-","2","-","-","2"],
+    "SStreak":[1,2,1,1,1,1,1,1,1,1,1,2]
   }
 
-DidNotPlay = []
+DidNotPlay = ["Samuel McConaghy", "Rudy Hoschke"]
 
-LadderPoints = [28,21,29]
-Leaders = ["Angus Walker", "Rudy Hoschke", "Alexander Galt"]
-LeadersPoints = [2.5,2.92,2.5]
+LadderPoints = [30,21,29]
+Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
+LeadersPoints = [2.55,2.92,2.42]
 
 Override = false
 OverrideOrder = ["WW", "WW", "5M"]
-overRideDate = ""
+overRideDate = "First Finals"
 overrideW = "Loose Gooses"
-overrideL = ""
-overrideDayPoints = [3, 1, 2]
+overrideL = "5 Musketeers"
+overrideDayPoints = [2, 0, 0]
 
 
 
@@ -409,15 +410,17 @@ function results() {
     var cell6 = row.insertCell(5);
     var cell7 = row.insertCell(6);
     var cell8 = row.insertCell(7);
+    var cell9 = row.insertCell(8);
 
     cell1.innerHTML = i + 1;
     cell2.innerHTML = Today.Winner[i];
     cell3.innerHTML = Today.Loser[i];
     cell4.innerHTML = Today.Scorer[i];
-    cell5.innerHTML = Today.Type[i];
-    cell6.innerHTML = Today.WStreak[i];
-    cell7.innerHTML = Today.LStreak[i];
-    cell8.innerHTML = Today.SStreak[i];
+    cell5.innerHTML = Today.Score[i]
+    cell6.innerHTML = Today.Type[i];
+    cell7.innerHTML = Today.WStreak[i];
+    cell8.innerHTML = Today.LStreak[i];
+    cell9.innerHTML = Today.SStreak[i];
   }
 
   for (x = 0; x < players.length; x ++) {
