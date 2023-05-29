@@ -307,19 +307,25 @@
                     return ("")
                 }
             }
-            document.getElementById("counter").innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
-                + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
+
+            if (distance > 0) {
+                document.getElementById("counter").innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
+                    + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
+            } else {
+                document.getElementById("counter").innerHTML = "Finals Day 1 in progress."
+            }
+
         });
     </script>
 
     <script src="heading.js"></script>
     <script src="../js/Scroll.js"></script>
     <script>
-        window.scrollTo({top: 0, left: 0, behavior: "smooth", });
+        window.scrollTo({ top: 0, left: 0, behavior: "smooth", });
         var header = document.getElementById("header");
         header.style.overflow = "hidden";
         setTimeout(function () {
-            window.scroll({ top: 800, left: 0, behavior: "smooth" }); setTimeout(function() {header.style.overflow = "auto"; },900);
+            window.scroll({ top: 800, left: 0, behavior: "smooth" }); setTimeout(function () { header.style.overflow = "auto"; }, 900);
         }, 2500);
     </script>
 
