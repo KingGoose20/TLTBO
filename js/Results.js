@@ -1,3 +1,7 @@
+LooseGooses = ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"]
+WetWillies = ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"]
+Musketeers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"]
+
 Today = {
     "Date": ["1 June"],
     "Game Number":[1,1,2,2,3,4,4,5,5,6,6,7,7,8,8,8,9,9,10,10,10],
@@ -548,3 +552,8 @@ function openStatsLadder(item) {
   }
   window.location.href = ourHref
 }
+
+
+AddData(LooseGooses, "teamLista")
+AddData(Musketeers, "teamListb")
+AddData(WetWillies, "teamListc")
