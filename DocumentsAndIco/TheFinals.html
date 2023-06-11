@@ -129,6 +129,27 @@
         table tr:nth-child(even) {
             background-color: rgb(35, 35, 35);
         }
+
+        .iframeContainer {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%;
+            /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+        }
+
+        /* Then style the iframe to fit in the container div with full height and width */
+        .responsiveIframe {
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+        }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -177,7 +198,8 @@
                 <br><br><br><br><br>
                 <h2 class="section-heading centered">Results</h2>
                 <br><br>
-                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('part1')">Click to show <u>Part 1</u></h5>
+                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('part1')">Click to show <u>Part
+                        1</u></h5>
                 <table style="width: 100%; display: none;" id="part1">
                     <col style="width:11%">
                     <col style="width:16%">
@@ -245,9 +267,20 @@
                     </tr>
                     <tr>
                         <td>2</td>
+                        <td>Loose Gooses</td>
+                        <td>5 Musketeers</td>
+                        <td>1-0</td>
+                        <td>Angus Walker</td>
+                        <td>Midrange</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
                         <td>5 Musketeers</td>
                         <td>Loose Gooses</td>
-                        <td>1-0</td>
+                        <td>1-1</td>
                         <td>Samuel McConaghy</td>
                         <td>Midrange</td>
                         <td>-</td>
@@ -258,7 +291,7 @@
                         <td>2</td>
                         <td>Loose Gooses</td>
                         <td>5 Musketeers</td>
-                        <td>1-1</td>
+                        <td>2-1</td>
                         <td>Christopher Tomkinson</td>
                         <td>Finish</td>
                         <td>-</td>
@@ -269,7 +302,7 @@
                         <td>2</td>
                         <td>5 Musketeers</td>
                         <td>Loose Gooses</td>
-                        <td>2-1</td>
+                        <td>2-2</td>
                         <td>Samuel McConaghy</td>
                         <td>Midrange</td>
                         <td>-</td>
@@ -280,7 +313,7 @@
                         <td>2</td>
                         <td>5 Musketeers</td>
                         <td>Loose Gooses</td>
-                        <td>3-1</td>
+                        <td>3-2</td>
                         <td>Alexander Galt</td>
                         <td>Finish</td>
                         <td>1</td>
@@ -454,7 +487,8 @@
                     </tr>
                 </table>
                 <br><br><br><br><br><br><br><br>
-                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('part2')">Click to show <u>Part 2</u></h5>
+                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('part2')">Click to show <u>Part
+                        2</u></h5>
                 <table style="width: 100%; display: none;" id="part2">
                     <col style="width:11%">
                     <col style="width:16%">
@@ -676,7 +710,9 @@
                     </tr>
                 </table>
                 <br><br><br><br><br><br><br><br>
-                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('playin')">Click to show <u>Play-In</u></h5>
+                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('playin')">Click to show
+                    <u>Play-In</u>
+                </h5>
                 <table style="width: 100%; display: none;" id="playin">
                     <col style="width:20%">
                     <col style="width:20%">
@@ -769,7 +805,9 @@
                     </tr>
                 </table>
                 <br><br><br><br><br><br><br><br>
-                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('championship')">Click to show <u>Championship Game</u></h5>
+                <h5 style="font-size: 2em; line-height: 2.1em;" onclick="showElement('championship')">Click to show
+                    <u>Championship Game</u>
+                </h5>
                 <table style="width: 100%; display: none;" id="championship">
                     <col style="width:20%">
                     <col style="width:20%">
@@ -929,9 +967,9 @@
                     </tr>
                     <tr>
                         <td>Angus Walker</td>
-                        <td>10</td>
+                        <td>11</td>
                         <td>7</td>
-                        <td>3</td>
+                        <td>4</td>
                     </tr>
                     <tr>
                         <td>Willie Weekes</td>
@@ -942,12 +980,27 @@
                 </table>
                 <br><br><br><br><br>
                 <h2 class="section-heading centered">Videos</h2>
-                <h5 style="font-size: 2em; line-height: 2.1em;">Play-In</h5>
-                <div>
-                    <iframe width="1125vw" height="630vw" src="https://www.youtube.com/embed/rjKwMpqN8n4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h5 style="font-size: 2em; line-height: 2.1em;">Part 1</h5>
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/MB8joCGb5tg" class="responsiveIframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
-                <p>Over the next few days, the full results, stats, and all videos will be released. Check back here for
-                    any updates!</p>
+                <h5 style="font-size: 2em; line-height: 2.1em;">Part 2</h5>
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/cb2HXeBz_LM" class="responsiveIframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h5 style="font-size: 2em; line-height: 2.1em;">Play-In</h5>
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/rjKwMpqN8n4" class="responsiveIframe"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <h5 style="font-size: 2em; line-height: 2.1em;">Championship Game</h5>
+                <div class="iframeContainer">
+                    <iframe src="https://www.youtube.com/embed/K81SQ_PFCiE" class="responsiveIframe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <br><br><br><br><br><br><br><br>
+                <p>Thank you everyone for a great season. See you all next term!</p>
             </div>
         </div>
     </div>
