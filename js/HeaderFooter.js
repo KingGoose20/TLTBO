@@ -64,6 +64,19 @@ function header(location) {
         </nav>
         </div>
         </div>
+        <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+          <div id="san">
+            <a href="#" class="close agree" style="color: red; font-size: 1.1em; text-decoration: underline;">Close</a>
+            <br><br>
+            <h2 class="section-heading centered">The LTBO is moving!</h2>
+            <p>To match our name change to 'LTBO', the TLTBO is moving. Our new address is <span style="color: black;">https://kinggoose20.github.io/LTBO/</span></p>
+            <p>You can still use this website for the old information if desired.</p>
+          </div>
+        </div>
+        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask">
+        </div>
+      </div>
     `;
 
     if (location == "news") {
@@ -95,33 +108,33 @@ function header(location) {
 
 
 
-    switch (document.title.slice(0,-8)) {
-        case "Ladder" :
+    switch (document.title.slice(0, -8)) {
+        case "Ladder":
             template.innerHTML = template.innerHTML.replace('w-nav-link">Ladder</a>', 'w-nav-link w--current">Ladder</a>')
             break;
-        case "Results" :
+        case "Results":
             template.innerHTML = template.innerHTML.replace('w-nav-link">Results</a>', 'w-nav-link w--current">Results</a>')
             break;
-        case "News" :
+        case "News":
             template.innerHTML = template.innerHTML.replace('w-nav-link">News</a>', 'w-nav-link w--current">News</a>')
             break;
-        case "Stats" :
+        case "Stats":
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
             break;
-        case "Rules" :
+        case "Rules":
             template.innerHTML = template.innerHTML.replace('>Rules, FAQ, Calendar', 'class="w-nav-link w--current">Rules, FAQ, Calendar')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Rules, FAQ, Calendar</a>', 'class="navigation-link w-nav-link w--current">Rules, FAQ, Calendar</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
-        case "Contact" :
+        case "Contact":
             template.innerHTML = template.innerHTML.replace('>Contact Us', 'class="w-nav-link w--current">Contact Us')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Contact Us</a>', 'class="navigation-link w-nav-link w--current">Contact Us</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
-        case "App" :
+        case "App":
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
-            break;          
-            
+            break;
+
     }
     if (location == "admin") {
         template.innerHTML = template.innerHTML.replace('Lunch Time Basketballers', 'Lunch Time Basketballers | Admin')
@@ -197,8 +210,8 @@ function footer(location) {
     } else {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../")
     }
-    
-    if (location == "stats"){
+
+    if (location == "stats") {
         x = `
         accent">
         <div>
@@ -206,7 +219,7 @@ function footer(location) {
             <a href="../Admin/StatTracker.html" class="button fade-inHeading" style="width: 45%">Click here to go to score tracking app</a>
         </div>
         `;
-        
+
         template.innerHTML = template.innerHTML.replace('accent">', x)
     }
     if (location == "results" || location == "stats") {
@@ -220,3 +233,47 @@ function footer(location) {
 
 
 imageURL = ["mvp", "rules", "champions", "lebron", "ja", "curry", "dwade", "kyrie"]
+
+
+$(document).ready(function () {
+
+    var id = '#dialog';
+
+    //Get the screen height and width
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+
+    //Set heigth and width to mask to fill up the whole screen
+    $('#mask').css({ 'width': maskWidth, 'height': maskHeight });
+
+    //transition effect		
+    $('#mask').fadeIn(500);
+    $('#mask').fadeTo("slow", 0.9);
+
+    //Get the window height and width
+    var winH = $(window).height();
+    var winW = $(window).width();
+
+    //Set the popup window to center
+    $(id).css('top', winH / 2 - $(id).height() / 2);
+    $(id).css('left', winW / 2 - $(id).width() / 2);
+
+    //transition effect
+    $(id).fadeIn(2000);
+
+    //if close button is clicked
+    $('.window .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+
+        $('#mask').hide();
+        $('.window').hide();
+    });
+
+    //if mask is clicked
+    $('#mask').click(function () {
+        $(this).hide();
+        $('.window').hide();
+    });
+
+});
