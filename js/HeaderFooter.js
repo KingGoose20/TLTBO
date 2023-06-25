@@ -70,7 +70,7 @@ function header(location) {
             <a href="#" class="close agree" style="color: red; font-size: 1.1em; text-decoration: underline;">Close</a>
             <br><br>
             <h2 class="section-heading centered">The LTBO is moving!</h2>
-            <p>To match our name change to 'LTBO', the TLTBO is moving. Our new address is <span style="color: black;">https://kinggoose20.github.io/LTBO/</span></p>
+            <p>To match our name change to 'LTBO', the TLTBO is moving. Our new address is <a style="color: black;" href="">https://kinggoose20.github.io/LTBO/</a></p>
             <p>You can still use this website for the old information if desired.</p>
           </div>
         </div>
@@ -256,7 +256,8 @@ $(document).ready(function () {
 
     //Set the popup window to center
     $(id).css('top', winH / 2 - $(id).height() / 2);
-    $(id).css('left', winW / 2 - $(id).width() / 2);
+    $(id).css('left', (winW - $(id).width()-40) / 2);
+    console.log($(id).width())
 
     //transition effect
     $(id).fadeIn(2000);
